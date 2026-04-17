@@ -3,6 +3,8 @@ import os
 import pandas as pd
 import torch
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 from spagat.estimator import SPAGAT_estimator
 from spagat.spatial_visualizer import Spatial_visualizer
@@ -37,8 +39,7 @@ def downstream_analysis(sample, output_dir):
             sender, receiver = pair.split('__')
             if sender in ct_to_idx and receiver in ct_to_idx:
                 z_matrix_gene[ct_to_idx[sender], ct_to_idx[receiver]] = z_df.loc[pair, target_gene]
-        import matplotlib.pyplot as plt
-        import seaborn as sns
+       
         fig, ax = plt.subplots(figsize=(12, 10))
         sns.heatmap(z_matrix_gene, xticklabels=cell_types, yticklabels=cell_types,
                     cmap='RdBu_r', center=0, vmin=-5, vmax=5, ax=ax,
