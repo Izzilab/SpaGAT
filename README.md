@@ -81,9 +81,6 @@ Results are saved to the specified `--output_dir`:
 - CCC network z-score heatmaps
 - Cell subtype analysis (UMAP, spatial clusters, marker genes, sender profiles)
 
-## Acknowledgments
- 
-SpaGAT builds upon the [GITIII](https://github.com/lugia-xiao/GITIII) framework. We thank the authors for making their code publicly available.
  
 ## License
  
