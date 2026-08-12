@@ -68,7 +68,7 @@ class Embedding(nn.Module):
             groupi=[torch.LongTensor([genes.index(groupi[j][k]) for k in range(len(groupi[j]))]) for j in range(len(groupi))]
             self.ligands_index.append(groupi)
 
-    def forward(self,x):
+    def forward(self, x, ligand_feature_mask=None):
         '''
         :param x:
         x["x"]--b,n,in_node
@@ -111,6 +111,8 @@ class Embedding(nn.Module):
 
         # ligand score scaled by distance
         ligand_score=distance_scaler*data_ligand
+        if ligand_feature_mask is not None:
+            ligand_score = ligand_score * ligand_feature_mask
         edge_ligand=self.ligands_encoder(ligand_score)
 
         # edge features

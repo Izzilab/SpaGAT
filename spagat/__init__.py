@@ -1,12 +1,12 @@
-'''
-GITIII
+"""
+SpaGAT package.
+"""
 
-Investigation of pair-wise single cell interactions through statistically
-interpreting spatial cell state correlations learned by self-supervised
-graph inductive bias transformer
+from .gene_program_model import SpaGP, SpaGP_Loss
+from .dataloader import SPAGAT_dataset
 
-'''
-
-from . import estimator, subtyping_analyzer, network_analyzer, spatial_visualizer
-
-__all__ = ['estimator', 'subtyping_analyzer', 'network_analyzer', 'spatial_visualizer']
+__all__ = [
+    "SpaGP",
+    "SpaGP_Loss",
+    "SPAGAT_dataset",
+]
