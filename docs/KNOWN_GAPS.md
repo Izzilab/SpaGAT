@@ -1,6 +1,6 @@
 # Materials not included or not revalidated
 
-1. This local package has not itself been pushed to GitHub or published as a release.
+1. The manuscript-scoped code and saved result records are available in this repository. External files and unverified workflows are listed below.
 2. Actual checkpoint files and full expression/neighborhood model inputs are absent. Six full-model checkpoint paths/hashes are records, not downloads.
 3. Complete raw-to-model-input conversion and exact source versions were not recovered for every dataset. Fixed indices require the original input ordering, and upstream provider filtering remains incomplete.
 4. Mouse LightGBM uses a documented recovered adapter. A fresh full-data rerun of that adapter was not performed.
