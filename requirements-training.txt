@@ -1,6 +1,6 @@
 # Convenience dependency names, not an exact lockfile.
 # Install a hardware-appropriate PyTorch build first.
-# Recorded training versions are in environment/; a fresh install is unverified.
+# Original CUDA versions and the separately tested macOS CPU environment are in environment/.
 numpy
 pandas
 scipy

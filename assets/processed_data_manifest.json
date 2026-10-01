@@ -1,0 +1,2435 @@
+{
+  "scope": "Original processed inputs for Figure 2 and revised Table 1; no checkpoints or liver matrices.",
+  "archives": [
+    {
+      "file": "SpaGAT_Mouse_inputs.part01.zip",
+      "bytes": 754292710,
+      "sha256": "5c7039ef578d14f8e91bff0d3c5a613fe0e4fcbe7bf0864f4b5819bcaeb95a73",
+      "members": [
+        "Mouse/data/genes.pth",
+        "Mouse/data/ligands.pth",
+        "Mouse/data/preprocessing_audit.csv",
+        "Mouse/data/preprocessing_summary.json",
+        "Mouse/data/split_manifest.csv",
+        "Mouse/data/train_only_cell_type_baselines.csv",
+        "Mouse/data/processed/mouse1_slice1.csv",
+        "Mouse/data/processed/mouse1_slice10.csv",
+        "Mouse/data/processed/mouse1_slice102.csv",
+        "Mouse/data/processed/mouse1_slice112.csv",
+        "Mouse/data/processed/mouse1_slice122.csv",
+        "Mouse/data/processed/mouse1_slice131.csv",
+        "Mouse/data/processed/mouse1_slice153.csv",
+        "Mouse/data/processed/mouse1_slice162.csv",
+        "Mouse/data/processed/mouse1_slice170.csv",
+        "Mouse/data/processed/mouse1_slice180.csv",
+        "Mouse/data/processed/mouse1_slice190.csv",
+        "Mouse/data/processed/mouse1_slice200.csv",
+        "Mouse/data/processed/mouse1_slice201.csv",
+        "Mouse/data/processed/mouse1_slice21.csv",
+        "Mouse/data/processed/mouse1_slice212.csv",
+        "Mouse/data/processed/mouse1_slice221.csv",
+        "Mouse/data/processed/mouse1_slice232.csv",
+        "Mouse/data/processed/mouse1_slice241.csv",
+        "Mouse/data/processed/mouse1_slice251.csv",
+        "Mouse/data/processed/mouse1_slice260.csv",
+        "Mouse/data/processed/mouse1_slice271.csv",
+        "Mouse/data/processed/mouse1_slice283.csv",
+        "Mouse/data/processed/mouse1_slice291.csv",
+        "Mouse/data/processed/mouse1_slice301.csv",
+        "Mouse/data/processed/mouse1_slice31.csv",
+        "Mouse/data/processed/mouse1_slice313.csv",
+        "Mouse/data/processed/mouse1_slice326.csv",
+        "Mouse/data/processed/mouse1_slice40.csv",
+        "Mouse/data/processed/mouse1_slice50.csv",
+        "Mouse/data/processed/mouse1_slice62.csv",
+        "Mouse/data/processed/mouse1_slice71.csv",
+        "Mouse/data/processed/mouse1_slice81.csv",
+        "Mouse/data/processed/mouse1_slice91.csv",
+        "Mouse/data/processed/mouse2_slice1.csv",
+        "Mouse/data/processed/mouse2_slice10.csv",
+        "Mouse/data/processed/mouse2_slice109.csv",
+        "Mouse/data/processed/mouse2_slice119.csv",
+        "Mouse/data/processed/mouse2_slice129.csv",
+        "Mouse/data/processed/mouse2_slice139.csv",
+        "Mouse/data/processed/mouse2_slice151.csv",
+        "Mouse/data/processed/mouse2_slice160.csv",
+        "Mouse/data/processed/mouse2_slice169.csv",
+        "Mouse/data/processed/mouse2_slice189.csv",
+        "Mouse/data/processed/mouse2_slice20.csv",
+        "Mouse/data/processed/mouse2_slice201.csv",
+        "Mouse/DATA_LICENSES.md"
+      ],
+      "public_url": "https://github.com/WuBoFu/SpaGAT/releases/download/untagged-b72c98c4205433667241/SpaGAT_Mouse_inputs.part01.zip"
+    },
+    {
+      "file": "SpaGAT_Mouse_inputs.part02.zip",
+      "bytes": 267621825,
+      "sha256": "7eb11bcc96754e153eb04b23f82c71e7576e3a2b39f3bca62235a64f0cb3b0cc",
+      "members": [
+        "Mouse/data/processed/mouse2_slice209.csv",
+        "Mouse/data/processed/mouse2_slice219.csv",
+        "Mouse/data/processed/mouse2_slice229.csv",
+        "Mouse/data/processed/mouse2_slice249.csv",
+        "Mouse/data/processed/mouse2_slice261.csv",
+        "Mouse/data/processed/mouse2_slice270.csv",
+        "Mouse/data/processed/mouse2_slice280.csv",
+        "Mouse/data/processed/mouse2_slice289.csv",
+        "Mouse/data/processed/mouse2_slice300.csv",
+        "Mouse/data/processed/mouse2_slice309.csv",
+        "Mouse/data/processed/mouse2_slice31.csv",
+        "Mouse/data/processed/mouse2_slice319.csv",
+        "Mouse/data/processed/mouse2_slice40.csv",
+        "Mouse/data/processed/mouse2_slice50.csv",
+        "Mouse/data/processed/mouse2_slice61.csv",
+        "Mouse/data/processed/mouse2_slice70.csv",
+        "Mouse/data/processed/mouse2_slice79.csv",
+        "Mouse/data/processed/mouse2_slice90.csv",
+        "Mouse/data/processed/mouse2_slice99.csv",
+        "Mouse/data/processed/mouse1_slice102_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice10_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice112_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice122_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice131_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice153_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice162_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice170_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice180_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice190_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice1_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice200_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice201_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice212_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice21_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice221_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice232_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice241_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice251_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice260_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice271_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice283_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice291_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice301_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice313_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice31_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice326_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice40_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice50_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice62_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice71_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice81_TypeExp.npz",
+        "Mouse/data/processed/mouse1_slice91_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice109_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice10_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice119_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice129_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice139_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice151_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice160_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice169_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice189_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice1_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice201_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice209_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice20_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice219_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice229_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice249_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice261_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice270_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice280_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice289_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice300_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice309_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice319_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice31_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice40_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice50_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice61_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice70_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice79_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice90_TypeExp.npz",
+        "Mouse/data/processed/mouse2_slice99_TypeExp.npz",
+        "Mouse/DATA_ASSET_NOTICE.md"
+      ],
+      "public_url": "https://github.com/WuBoFu/SpaGAT/releases/download/untagged-b72c98c4205433667241/SpaGAT_Mouse_inputs.part02.zip"
+    },
+    {
+      "file": "SpaGAT_SEA_AD_inputs.part01.zip",
+      "bytes": 421364511,
+      "sha256": "b5d0c83855e0b80e23b286f5ce0583742574c5de490df061ab1adb255f6ca245",
+      "members": [
+        "SEA_AD/data/genes.pth",
+        "SEA_AD/data/ligands.pth",
+        "SEA_AD/data/preprocessing_audit.csv",
+        "SEA_AD/data/preprocessing_summary.json",
+        "SEA_AD/data/split_manifest.csv",
+        "SEA_AD/data/train_only_cell_type_baselines.csv",
+        "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.02.csv",
+        "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.03.csv",
+        "SEA_AD/data/processed/H20.33.001.Cx28.MTG.02.007.1.01.03.csv",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.05.csv",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.02.csv",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.03.csv",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.04.csv",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.01.01.csv",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.02.csv",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.03.csv",
+        "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.01.csv",
+        "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.02.csv",
+        "SEA_AD/data/processed/H20.33.015.Cx24.MTG.02.007.1.03.03.csv",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.02.csv",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.06.csv",
+        "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.03.csv",
+        "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.03.csv",
+        "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.02.csv",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.03.csv",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.03.csv",
+        "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.03.csv",
+        "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.04.csv",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.02.csv",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.03.csv",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.04.csv",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.04.csv",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.05.csv",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.06.csv",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.05.csv",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.06.csv",
+        "SEA_AD/data/processed/H21.33.013.Cx24.MTG.02.007.1.06.csv",
+        "SEA_AD/data/processed/H21.33.014.CX26.MTG.02.007.1.02.02.csv",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.0.csv",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.1.csv",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.2.csv",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.01.csv",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.02.csv",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.03.csv",
+        "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.0.csv",
+        "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.01.02.csv",
+        "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.04.csv",
+        "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.06.csv",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.02.csv",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.03.csv",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.04.csv",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.01.csv",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.04.csv",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.05.csv",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.02.csv",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.04.csv",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.06.csv",
+        "SEA_AD/data/processed/H21.33.028.CX28.MTG.02.007.1.01.01.csv",
+        "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.02.csv",
+        "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.04.csv",
+        "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.01.csv",
+        "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.02.csv",
+        "SEA_AD/data/processed/H21.33.032.CX24.MTG.02.007.1.01.04.csv",
+        "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.02.csv",
+        "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.04.csv",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.01.csv",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.03.csv",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.04.csv",
+        "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.001.Cx28.MTG.02.007.1.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.05_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.04_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.01.01_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.01_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.015.Cx24.MTG.02.007.1.03.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.06_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.05_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.06_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.05_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.06_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.013.Cx24.MTG.02.007.1.06_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.014.CX26.MTG.02.007.1.02.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.0_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.1_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.2_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.01_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.0_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.06_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.01_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.05_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.06_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.028.CX28.MTG.02.007.1.01.01_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.01_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.032.CX24.MTG.02.007.1.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.02_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.04_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.01_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.03_TypeExp.npz",
+        "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.04_TypeExp.npz",
+        "SEA_AD/DATA_ASSET_NOTICE.md",
+        "SEA_AD/DATA_LICENSES.md"
+      ],
+      "public_url": "https://github.com/WuBoFu/SpaGAT/releases/download/untagged-b72c98c4205433667241/SpaGAT_SEA_AD_inputs.part01.zip"
+    }
+  ],
+  "files": [
+    {
+      "path": "Mouse/data/genes.pth",
+      "bytes": 4385,
+      "sha256": "5a749a56db0068b1f6f6753159f5eb449a452d8ca44f36ed1d088f07babc0181",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/ligands.pth",
+      "bytes": 2285,
+      "sha256": "7efe23ad45874d070462ad1997d8ffdaab698743a83bbb64af22158d56cac833",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/preprocessing_audit.csv",
+      "bytes": 5159,
+      "sha256": "6cf01c4e53511ce3053a49d139d2533ce2236f7d9ceabd5af0c33365631c5bf4",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/preprocessing_summary.json",
+      "bytes": 770,
+      "sha256": "786f35cc32dbf67862cd68acfca5c5f420be6f5acae3af3be5cf5d69b5a6e610",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/split_manifest.csv",
+      "bytes": 3988,
+      "sha256": "2458edc64cdc44c66c2730ecae4015921f346f9f28d5f4a2ef895d42ab58845a",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/train_only_cell_type_baselines.csv",
+      "bytes": 748,
+      "sha256": "049dd738f6b020a0d7f75843328a587e18c88025da1146b7cd4f2d4e89a89a02",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice1.csv",
+      "bytes": 21516794,
+      "sha256": "6976fdf7e4caaf3123cad4a38625a83bb50f4c891217fc90cb31dc5d09635431",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice10.csv",
+      "bytes": 21950334,
+      "sha256": "67eb137ad4c93021897cb4e1fbb37fb807135469761349912ca1adfb2f16e0b6",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice102.csv",
+      "bytes": 61185897,
+      "sha256": "99294eceeb8657a8ca0995451308a1caf15784d529be42e5162954fa1edf6be1",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice112.csv",
+      "bytes": 44789680,
+      "sha256": "c6e80572dd048b3d59774b5b70abe74edf5f2c1ec3a2ac4f84317f1449c44627",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice122.csv",
+      "bytes": 55479784,
+      "sha256": "b17cee3aeee5a938a137fc8550267d69a11e633969e4bdbcd0ce425afa6b83c8",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice131.csv",
+      "bytes": 45772609,
+      "sha256": "50a061900120fc0ec1b28dafdc42477321a48154c5f5e8e0e0591eecf278189b",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice153.csv",
+      "bytes": 68898261,
+      "sha256": "56fd841e40570726761274c66919796bc09730dd16f4a0220b8dcbde21b3af49",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice162.csv",
+      "bytes": 62937867,
+      "sha256": "bd63db41cc769e2acae8ef4d6ac79795fa9b96792d525acbb4c7831ed65b2686",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice170.csv",
+      "bytes": 57927037,
+      "sha256": "ff21f87bf2897a46e41058aef2830a8adefd518cae783e2eb80fceadd4a8b691",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice180.csv",
+      "bytes": 56121549,
+      "sha256": "f87a0e185b24d09d8b4a35935d1e4f1e26a92539b2b6a904a435c8ab9dfed78a",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice190.csv",
+      "bytes": 50545818,
+      "sha256": "466225c77935a28b722f13162ebd9652b903802b51529356d2d566448f4d90a2",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice200.csv",
+      "bytes": 19706627,
+      "sha256": "b871abb28959599d78ac956d5d85c17a5774a19935fb095aed36fa6316d9173e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice201.csv",
+      "bytes": 55721216,
+      "sha256": "94997ab4662b9d288b1f10a9ed9dc88e5ac0479284fd51f43f946a214380eaa0",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice21.csv",
+      "bytes": 18403494,
+      "sha256": "3c0d5bb8b131f182bdac3b77ec60ee54ac41ce7a5c5f5dbe6d42354a4c7f2e6f",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice212.csv",
+      "bytes": 58845927,
+      "sha256": "192b9857748c816b56a1d114931948132ed34ee6f6487c1c2e88197827e29310",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice221.csv",
+      "bytes": 51945617,
+      "sha256": "b4b4fa5c6fc6b49cce6ac66f976d10346ff4adb2e9eae9f2671c55b5f3c304b6",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice232.csv",
+      "bytes": 47894855,
+      "sha256": "5145df77e84baadd11f771e3c7bb89c224e9b3d61c02d5ac6ce7fbebdcbdba9b",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice241.csv",
+      "bytes": 35813033,
+      "sha256": "ee9d4aea99b248a77707d271ec3207930e7be7e39200e831929114628a7eb60a",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice251.csv",
+      "bytes": 39398928,
+      "sha256": "3626864e1228ad5d1bf2a985469e4404ea02743b9a63fa44afe7d22942ebb863",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice260.csv",
+      "bytes": 51153522,
+      "sha256": "79ee7e05cf05343e3d4022fafdf0200344c3d53dd7ebb2eb4e1beb29b62dcc1f",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice271.csv",
+      "bytes": 35181627,
+      "sha256": "b610789acb70207464c38ba5615fbb910572b4205f404cd6fd6d74f1fbdce29f",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice283.csv",
+      "bytes": 38952016,
+      "sha256": "dd7c118a89636bdcf549c08100ba092d75537ca981122aa36462b9c4e7acbe54",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice291.csv",
+      "bytes": 39461660,
+      "sha256": "8d1424b5b99cfaed1780d65ad6b74178cf23be008500351203370705668740d3",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice301.csv",
+      "bytes": 38962734,
+      "sha256": "eaa189e9b8a3a4cad18c8219d70676c414e309a8a65f6dfb56195251056841c7",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice31.csv",
+      "bytes": 28252323,
+      "sha256": "990b80818a5711cfe6690c6a3e176f00b81630b0d15abd3e460cf3df1a9ba280",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice313.csv",
+      "bytes": 35130816,
+      "sha256": "1a3dab34f7afb93b316fecf09a329e82c4c591799bc3820ed6f854f84c4310eb",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice326.csv",
+      "bytes": 37108701,
+      "sha256": "245140945e270ee237a8070a8b85a0c9154646c36ac57ad2367c969b29159353",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice40.csv",
+      "bytes": 37825972,
+      "sha256": "c2602db342035d72ad3cbf8e145e910c4de993035d9f2d2a59ca28f29476de98",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice50.csv",
+      "bytes": 39855115,
+      "sha256": "6941259625cae1c33c58c1b0c8c81447b81c5fa3a3cd0fc9dfe7349835114bdf",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice62.csv",
+      "bytes": 43834236,
+      "sha256": "61d394dbebbb33854c56d5f5f35d0290c3aa7a8ba4ad1385df51b6eecd250789",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice71.csv",
+      "bytes": 52006499,
+      "sha256": "912c40d1313f43129ae2185acc9d5774159a82db8b781afe185ba67ae53adcd7",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice81.csv",
+      "bytes": 47720738,
+      "sha256": "a95f1bb58cc1c6ad0ad14df07263158e039c3e6411e9cee64843d8030f959c38",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice91.csv",
+      "bytes": 51306665,
+      "sha256": "f29c3ddffbca3a0c367455169267280b9d4bbc47b73b445d19cc792147c5537d",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice1.csv",
+      "bytes": 15722193,
+      "sha256": "95a439c8f896d2c287bb04dbc07a606735a8b50b5cbb01db5f7d603dce765d1c",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice10.csv",
+      "bytes": 10594146,
+      "sha256": "3d6efcac2b7799eb6aa456d4ab0ec62df4316c3c6765b341b3417ad723bbc3ce",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice109.csv",
+      "bytes": 47212307,
+      "sha256": "399956ae14a27a3390b60e6f1710bfc3e54e8212d7d15ad10352149e3c208ac9",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice119.csv",
+      "bytes": 46027746,
+      "sha256": "7b8d3cc505ac750413d1a82da8cb1ac89229361d7230e90077b5c47ebcba20d7",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice129.csv",
+      "bytes": 46619464,
+      "sha256": "f36dfd3de444a80e47ee7fac4f1404ef906e78265a01996aa6ee51ef2cf358a7",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice139.csv",
+      "bytes": 38340443,
+      "sha256": "134805955c64dd1034c62b52c4f3db5d674f6dd0184db313825d4733399b4792",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice151.csv",
+      "bytes": 45819902,
+      "sha256": "ee7963c017fbf298c5efebb46486f070f8ed0aa49ecb07f97c940e898d09c1c9",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice160.csv",
+      "bytes": 41423632,
+      "sha256": "b9789c4977b1eb683432ec4bd885b3c8731cd606cbb2eea2a9b95e6fc966a49e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice169.csv",
+      "bytes": 47182422,
+      "sha256": "6674241a0eb242a43fec64d4fc2b8a71a30a3465b498799ec3c66b592d3f288e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice189.csv",
+      "bytes": 40099321,
+      "sha256": "129e5e18b3ea010553d82c3f9db41b0aee995e76b0c03a07480709cb360fd596",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice20.csv",
+      "bytes": 6194348,
+      "sha256": "8705536764ec85f456641e1c3afa71df3ce0e0e45b3b31134c62b0fb94027e23",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice201.csv",
+      "bytes": 33667461,
+      "sha256": "db319ca7b948810772174a009621bfdfe868691f3409a5e69d6cbd17fd119743",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice209.csv",
+      "bytes": 40010095,
+      "sha256": "c484bd30d140f5b864e731d04bd823b919077ecb29cf1fdc4005ec73d810b22c",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice219.csv",
+      "bytes": 32476389,
+      "sha256": "03993875d4db3c82d1f47c16be7fbd5a3fd79b79fa0bce60e0f5c41238720293",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice229.csv",
+      "bytes": 46267957,
+      "sha256": "a936795599ee41b60adccb5d546b8a7a615cb9b2fe4110bbe3f0fcf0cc138874",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice249.csv",
+      "bytes": 37328257,
+      "sha256": "1b2341971dc3bfa56c2058d687f9629689e3f4d2fb0ba6e81d4229e7d541259a",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice261.csv",
+      "bytes": 32188562,
+      "sha256": "39aa63d27d7a37f1c2c7e6132727a2f11e56b2f27aa63f8b8612e42c4bc6d027",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice270.csv",
+      "bytes": 37124338,
+      "sha256": "1bad49fd0dd79b9be9df888860a8d93a840d1fc06a9f19143a81aec88d1c54c0",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice280.csv",
+      "bytes": 34934318,
+      "sha256": "83ab70c17db139d80ed2dbec4a900ebb43fa6a43f529fb753c42fbc4533188d2",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice289.csv",
+      "bytes": 39452087,
+      "sha256": "a7092387a404637144881ec745d3274148731d4a218df7f43d5a240128a2ddb2",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice300.csv",
+      "bytes": 33944777,
+      "sha256": "62911c0539386df7881976508e1a983fcfc8df36f13062b712e19789886dd6f2",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice309.csv",
+      "bytes": 29062375,
+      "sha256": "1d788602fee7cadee85162752642c0148e364402dfebecdc014f04de84d0c9fd",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice31.csv",
+      "bytes": 18687718,
+      "sha256": "525244e8c88cebf5c56fa672e3c2014ce768e346d86658b34f0ffaf70d94fac4",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice319.csv",
+      "bytes": 25196177,
+      "sha256": "b0e546271cea06156b82998d5ba4ebcb0995bed2339b146ef00db538e6404b25",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice40.csv",
+      "bytes": 29073801,
+      "sha256": "e122b88271d1e71b2f697c05cff3c4f26198fa64419c197c55e9866e265f532a",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice50.csv",
+      "bytes": 26298845,
+      "sha256": "1e4e9c7b6d5b477ea5f93e1cd673b9d1b4cd9e85c7219131b2b10b6677f74607",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice61.csv",
+      "bytes": 30510433,
+      "sha256": "5806944ec4d05fbf2f503a58522b231ae9a8fa0337ea689af4eff5d37382577e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice70.csv",
+      "bytes": 37107354,
+      "sha256": "7b7748bb868eec2541046a0e409623d5d7487943594b92912b70747355478b0e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice79.csv",
+      "bytes": 35423035,
+      "sha256": "f7d60a65d8d45ad34f6dd2b53a7573b590794aa58b60999901b52a8492af4c9e",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice90.csv",
+      "bytes": 44719918,
+      "sha256": "d5bcbea63ff99e071b3f5f771f5dacfc7b692e0edcc932a1ac0d975ab50d96a2",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice99.csv",
+      "bytes": 47749779,
+      "sha256": "82dc5f1bfe94a9b954c617c221ee4aecfeb65c3625b3eb7fcc2f1340c7b6a6ac",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice102_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice10_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice112_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice122_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice131_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice153_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice162_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice170_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice180_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice190_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice1_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice200_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice201_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice212_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice21_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice221_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice232_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice241_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice251_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice260_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice271_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice283_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice291_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice301_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice313_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice31_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice326_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice40_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice50_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice62_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice71_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice81_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse1_slice91_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice109_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice10_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice119_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice129_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice139_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice151_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice160_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice169_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice189_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice1_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice201_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice209_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice20_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice219_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice229_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice249_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice261_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice270_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice280_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice289_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice300_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice309_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice319_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice31_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice40_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice50_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice61_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice70_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice79_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice90_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "Mouse/data/processed/mouse2_slice99_TypeExp.npz",
+      "bytes": 54588,
+      "sha256": "08caedf62d2265b581a049fe193b6e5c8f7a2226dd8aaf061d44b7719b9d0197",
+      "group": "Mouse"
+    },
+    {
+      "path": "SEA_AD/data/genes.pth",
+      "bytes": 2520,
+      "sha256": "e094c26d5aab956a667bb3a0909e26d30a3eec256b5ea09fe5b8ee6cff7240c3",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/ligands.pth",
+      "bytes": 1376,
+      "sha256": "a8a1cd7e7485e5b29850e464221e7403c202fcfe09a1f0c7ce81aed0f512091f",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/preprocessing_audit.csv",
+      "bytes": 8308,
+      "sha256": "e63d0e977604d691df5589e2134c08490c017ef6069208bd6c33eee23027b4e6",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/preprocessing_summary.json",
+      "bytes": 821,
+      "sha256": "f70d6dab4d7711a8b268fd5528d0928eb2e1c5753dee640e10312b0211b5a50c",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/split_manifest.csv",
+      "bytes": 7253,
+      "sha256": "be4d17e70a0f18549b3bae15c16553ef54c65caef4cfb7fbc177c1aa7706f968",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/train_only_cell_type_baselines.csv",
+      "bytes": 795,
+      "sha256": "211adcddf192d9259e74f18027e8b29d704c2e33fd9b5eb31b0053f0e1a16ecb",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.02.csv",
+      "bytes": 25230854,
+      "sha256": "cb25bd19af1db4cda81608b08a38a34bbfa87e16ddd7b771f1361e801553cf85",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.03.csv",
+      "bytes": 48598423,
+      "sha256": "2cf9b5256cc7448fb7c8f38655c85ded3b780c9b692549cc3b4de74a6663b6f8",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.Cx28.MTG.02.007.1.01.03.csv",
+      "bytes": 21168801,
+      "sha256": "85b2c98efb531e3e39ad2d735add0199852f0b0f90bec0af8854e93fc1244fcb",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.04.csv",
+      "bytes": 16898593,
+      "sha256": "c56cf858740ff61b1c12e855451a8eef7b28eee01b7887e448af5422b882e3c7",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.05.csv",
+      "bytes": 10004009,
+      "sha256": "2a64bb193ea72c43011f567daf0111a089abefc0e041a14cd44421986b8ce0ec",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.02.csv",
+      "bytes": 13009912,
+      "sha256": "936ef94cbbd354f3abe3317113ca1f2da929467dee580a5e52b912f8173a9bc1",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.03.csv",
+      "bytes": 14890293,
+      "sha256": "eb81121deb3d7208397e585dd243bb38da342f37e785e4a831f4843257049f90",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.04.csv",
+      "bytes": 20906516,
+      "sha256": "0c724c3a697a86c71dda07eaab02cf83b5a43613b7f53f2ebd4818ca43a5255a",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.01.01.csv",
+      "bytes": 11147819,
+      "sha256": "271be8b46769e64820eb6621894de745b05f6e9b550b09a73565bfeb94534f23",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.02.csv",
+      "bytes": 10123706,
+      "sha256": "caacce7f163c9349f624fcfd6318da89feb0f2b576b935efc30f3dd228f29f59",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.03.csv",
+      "bytes": 11951678,
+      "sha256": "145477334c31677a7174f6e3e695aa436a37eb0d2f2951471e7bb277cbba74da",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.01.csv",
+      "bytes": 20679684,
+      "sha256": "9e451eb078a9ede0be9241021bf1893dbd37649270b2e140d45fb1473975691f",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.02.csv",
+      "bytes": 9537830,
+      "sha256": "a685bb6fb6fd22d4bc0e7b4f2b0439fabe6ef7003133a666607bd2b5ffc6bbd0",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.Cx24.MTG.02.007.1.03.03.csv",
+      "bytes": 18879191,
+      "sha256": "9bcd74758ed17fe8e4e9efc210137d50f0557e02013a50747fafb62df828758e",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.02.csv",
+      "bytes": 17036500,
+      "sha256": "49b4171f9c2f47f42140c02c058531a38c90edc4503e71280897d6d19800fd41",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.04.csv",
+      "bytes": 16017284,
+      "sha256": "4b35702540cb03d6c258f0ad2f6bb4057cc3c576732a33d048b872b22ce097e5",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.06.csv",
+      "bytes": 10841414,
+      "sha256": "66b6f9ccf0451612a36296ad34959177ad83c0daf8c66f71452122a464c3768e",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.03.csv",
+      "bytes": 19111085,
+      "sha256": "b17f836816ab202cb83c108d7fce4d9f97434322858e01eba6f308fddb119565",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.04.csv",
+      "bytes": 13851866,
+      "sha256": "7f57be054f96b1a31b0e1785c4809eb95750ab52bb6b3d8af2d2535c9fc5ba10",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.03.csv",
+      "bytes": 27395980,
+      "sha256": "090a6004e7840e9f1d544e925ac63bbac12ef4c887bf2e5b6baeabc9b924cc8b",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.04.csv",
+      "bytes": 28216623,
+      "sha256": "3cac7084af12f4ccc57f5c4ebb7e5f2953a593f0f798ff75830a904afa66391c",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.02.csv",
+      "bytes": 9597760,
+      "sha256": "ddd6f0a3ffc2d527020305fd5515aaa51d6fadac17b723c100f996c42f315c81",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.03.csv",
+      "bytes": 16096769,
+      "sha256": "6684ddbc21f35766372c0bc36e56ba4fec41519ac08687f9aceb8565bb65f8fd",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.04.csv",
+      "bytes": 20516189,
+      "sha256": "e5a83a3340d1248de5a4e9a7c1ae1d02cf75566297acada09b1f3e70f246d6bc",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.03.csv",
+      "bytes": 33173136,
+      "sha256": "07911805b4b07f37ccc959d012574e16073fbaa0d13ce6ecf3d45eecbb9c86d4",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.04.csv",
+      "bytes": 21115032,
+      "sha256": "db85fa15b35dc3a7cb5cc1bc61fdc79c4b924ddecd14ca4ae8f14fdbbc6eceaf",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.03.csv",
+      "bytes": 6706007,
+      "sha256": "a15894595fc50c64a5e02b8a2440f30297e17f72fc1d93f313f7b2467fb794b7",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.04.csv",
+      "bytes": 11731143,
+      "sha256": "8cd79582c1c590244f620490fddb39a281404c7641da16c02e55d349ec18f044",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.02.csv",
+      "bytes": 6157146,
+      "sha256": "e4ee19ea59def8c016829d02a4379493f8e9f0f6b145008a1adf5124f9c1e555",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.03.csv",
+      "bytes": 2423115,
+      "sha256": "9701b2d68676afd5b6f4d34084d7a8d844d4b5706f3aeff799682abda56d2b42",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.04.csv",
+      "bytes": 9176471,
+      "sha256": "92f9a3d120020e6c19dfc99d6b2aef432656a84b68cfd70867d90ed7f3008f35",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.04.csv",
+      "bytes": 20515098,
+      "sha256": "fd5f07cecf0b1c5934ea5341b489839a058563b328e6f4d7c88f74164d32983d",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.05.csv",
+      "bytes": 19879722,
+      "sha256": "8ed8b8526453dc9939efe2d48153bde4747dc426005c8f65a36a22a4fb71eaf0",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.06.csv",
+      "bytes": 16973366,
+      "sha256": "e9436c39de8eb347cd04f66384c12faff90503a96c7ada214b20951c46049fd4",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.04.csv",
+      "bytes": 18120046,
+      "sha256": "79331deaad40b6f5700aaf022de9f58a959a60c535b6385d359d6e89c7168c17",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.05.csv",
+      "bytes": 23622185,
+      "sha256": "b6a4c86b3e7cb304ac3ae60eee9d50c8cbc17185e1c847132a299fa8017ef912",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.06.csv",
+      "bytes": 21639418,
+      "sha256": "b4da917bd68c1fd0e95e21adc3a1cd497309b6afacd7ae5a1b5e705fd671c2d6",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.013.Cx24.MTG.02.007.1.06.csv",
+      "bytes": 7030773,
+      "sha256": "1eb7e99ca7875079289a3f24ae97408a401649c8dab3d11ee97a7df68a2855a4",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.014.CX26.MTG.02.007.1.02.02.csv",
+      "bytes": 12883904,
+      "sha256": "7bcfbc4aba8afe1ca27239fc0e42e66feaf7b6552134e8a5456564172523966c",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.0.csv",
+      "bytes": 23963405,
+      "sha256": "2b2efdbf84f941940e6c57d6530239a9149c416ee9d91626ec11da2f73077f3c",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.1.csv",
+      "bytes": 34995634,
+      "sha256": "c852aa0fc956df0b6fd17e144ec3703fddb55f9b0f899beb15215bcb4a49ee88",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.2.csv",
+      "bytes": 25475583,
+      "sha256": "ddaed8c1a208aa0fd2fe7d82212be8822f56120be4a27675091485a7a4b44715",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.01.csv",
+      "bytes": 14777491,
+      "sha256": "3c8025bbbec9038bb1ab288820923de51d300fcbd572c95db45c624aa476e07a",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.02.csv",
+      "bytes": 19615019,
+      "sha256": "4b0cd136cf12445163d0b80569632215ba427c77c869e9b0e7f48087fab0d8fe",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.03.csv",
+      "bytes": 17580436,
+      "sha256": "1541b410e593931d6c886abb028696936ec683660a24a385a8e804047bca039b",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.0.csv",
+      "bytes": 12734842,
+      "sha256": "dc6b970d68ea0127a39195594ca135cde59dbf2dbeedadcb632ed798b7dd609d",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.01.02.csv",
+      "bytes": 16700796,
+      "sha256": "7c3050c7a6d6da4a6eed8030054b9cc0cf4ea6ea3bdb4b524c0fb8edc524e7f3",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.04.csv",
+      "bytes": 15333357,
+      "sha256": "a438eb2cb5f4a0d5c4f4e4332744f697022986f3becb3e13ef683f4c000fdb35",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.06.csv",
+      "bytes": 11539193,
+      "sha256": "2c23e6b15068e592c16217bd9c299d7642a348898a8de520df446e0a4d5f8cea",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.02.csv",
+      "bytes": 5618224,
+      "sha256": "52e07766238657a9cb260219cb4569e2291e09c75b31ea80bb02726ee52a2064",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.03.csv",
+      "bytes": 7035398,
+      "sha256": "90a26138cd49d7cfbfb7b38ec086b4a7b8fdf53a39e10f8abf5813f27dcd5940",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.04.csv",
+      "bytes": 7196714,
+      "sha256": "067a40700351c4db493c53b49df0e1cff1fa60d330e24e933c368357a4a6acf4",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.01.csv",
+      "bytes": 21243268,
+      "sha256": "f2617fca681947a7c385bfa1eb079ba1f6e281d9994bd77a53080e32846954db",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.04.csv",
+      "bytes": 26201990,
+      "sha256": "06192caee6cc981a57e5bba8577b792b3ece317643fffea9598b68a4684f904d",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.05.csv",
+      "bytes": 22717755,
+      "sha256": "e3ee0b5d397bf684369be273589a636097a934800de0fced21527f0c5e4ed34d",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.02.csv",
+      "bytes": 9564229,
+      "sha256": "80606f1bf75ee2ca16d419f89452a3984e33c47040113e171b1a2eb453f134dd",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.04.csv",
+      "bytes": 8585709,
+      "sha256": "d65a6227cc49e515972cdaec220517fb180d3d2774769c8e2775557dff3900e4",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.06.csv",
+      "bytes": 6083793,
+      "sha256": "00a09909490bd9b48fe316828ea0ec0cdc5ab63bfdcbb0d6acfa38b84448ff6f",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.CX28.MTG.02.007.1.01.01.csv",
+      "bytes": 14109436,
+      "sha256": "8f9733ebf9c071b6d0467a84eca27ea242817802340a507d2968a255648b6228",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.02.csv",
+      "bytes": 10542878,
+      "sha256": "51c20acfdbaeedbf0093a91ef561bc20599df0c07ececae38fc5ff8c4c926098",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.04.csv",
+      "bytes": 9552538,
+      "sha256": "992c0a0196dda5457bbee32015794e6e9b05dccc1b53a4715d710ea8acb55384",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.01.csv",
+      "bytes": 28547398,
+      "sha256": "e568b3eaf63d055ab45bb383c1c7de288fd7a38019deef15d0f5b3ed20e74be9",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.02.csv",
+      "bytes": 27082078,
+      "sha256": "acb9cab029b022cf71b00a5de9d528ec69c319ed51cebb3dc8c43043ea039e98",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.032.CX24.MTG.02.007.1.01.04.csv",
+      "bytes": 15670763,
+      "sha256": "cbe184d88e5e73b92843a50307e952a06f4382edf8018ad422d48494c36a7b55",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.02.csv",
+      "bytes": 7671901,
+      "sha256": "94097bcf18717df58b2908ee48e921b07dff1c237e74d099551296a5b430922d",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.04.csv",
+      "bytes": 13096421,
+      "sha256": "df63299deafcaf97e62ef2a262e26ff72d9958e646c56bf50f5895add0f1ceef",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.01.csv",
+      "bytes": 18407522,
+      "sha256": "423ff879bc666ccda73f6d8a945cd0e265aee18839154ca3947468eb37d4c958",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.03.csv",
+      "bytes": 15430242,
+      "sha256": "f3102fce23f890cbe11b65940db3ceb64462e841f671327d0be987705d827a16",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.04.csv",
+      "bytes": 28144851,
+      "sha256": "2f3b3ef7f3595a25a0b00a88a7843359b6419f6c6dfbd068c518ad734a351856",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.CX28.MTG.02.007.1.02.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.001.Cx28.MTG.02.007.1.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.01.05_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.004.Cx26.MTG.02.007.1.02.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.01.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.012.Cx24.MTG.02.007.1.03.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.CX24.MTG.02.007.1.03.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.015.Cx24.MTG.02.007.1.03.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.025.Cx28.MTG.02.007.1.01.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.035.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.040.Cx25.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H20.33.044.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.001.Cx22.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.005.Cx18.MTG.02.007.02.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.006.Cx28.MTG.02.007.1.01.09.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.05_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.011.Cx26.MTG.02.007.3.01.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.05_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.012.Cx26.MTG.02.007.1.01.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.013.Cx24.MTG.02.007.1.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.014.CX26.MTG.02.007.1.02.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.0_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.1_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.015.Cx26.MTG.02.007.1.2_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.016.Cx26.MTG.02.007.3.01.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.019.Cx30.MTG.02.007.5.0_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.021.Cx26.MTG.02.007.1.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.022.Cx26.MTG.02.007.2.M.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.023.Cx26.MTG.02.007.1.03.05_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.025.CX26.MTG.02.007.4.01.06_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.CX28.MTG.02.007.1.01.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.028.Cx28.MTG.02.007.1.02.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.031.CX24.MTG.02.007.1.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.032.CX24.MTG.02.007.1.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.02_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.038.Cx20.MTG.02.007.3.01.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.01_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.03_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "SEA_AD/data/processed/H21.33.040.Cx22.MTG.02.007.3.03.04_TypeExp.npz",
+      "bytes": 32790,
+      "sha256": "f270e9d3a15a0a5dc2eee66537bbae1d47d9523ac76eb6515ee6f582eb60d896",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "Mouse/DATA_ASSET_NOTICE.md",
+      "bytes": 2223,
+      "sha256": "b7a0709974fb1e052633abef294212d245b232ce9d6a4e85341a1501f7a03cd1",
+      "group": "Mouse"
+    },
+    {
+      "path": "SEA_AD/DATA_ASSET_NOTICE.md",
+      "bytes": 2223,
+      "sha256": "b7a0709974fb1e052633abef294212d245b232ce9d6a4e85341a1501f7a03cd1",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "Mouse/DATA_LICENSES.md",
+      "bytes": 1271,
+      "sha256": "66c74ffb97231bec015c51d01e03d2e46b6642ed0eea0d9c1a9523b32b7c2673",
+      "group": "Mouse"
+    },
+    {
+      "path": "SEA_AD/DATA_LICENSES.md",
+      "bytes": 1271,
+      "sha256": "66c74ffb97231bec015c51d01e03d2e46b6642ed0eea0d9c1a9523b32b7c2673",
+      "group": "SEA_AD"
+    }
+  ],
+  "validation": [
+    {
+      "dataset": "Mouse",
+      "sections": 64,
+      "genes": 254,
+      "train_receivers": 122886,
+      "validation_receivers": 36193,
+      "test_receivers": 117257,
+      "test_target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "test_mse0_float64": 0.17663703124852556,
+      "all_test_targets_match_paper": true,
+      "sample_order_and_counts_match": true,
+      "neighbor_indices_in_bounds": true,
+      "receiver_first": true,
+      "gene_order": [
+        "1700022I11Rik",
+        "1810046K07Rik",
+        "5031425F14Rik",
+        "5730522E02Rik",
+        "Acta2",
+        "Adam2",
+        "Adamts2",
+        "Adamts4",
+        "Adra1b",
+        "Alk",
+        "Ankfn1",
+        "Ano4",
+        "Aqp4",
+        "Asic4",
+        "B4galnt2",
+        "B4galnt3",
+        "Barx2",
+        "Bcl11b",
+        "Bdnf",
+        "Bgn",
+        "Blnk",
+        "Bmpr1b",
+        "Brinp3",
+        "C1ql3",
+        "C1qtnf7",
+        "Cacng5",
+        "Calb2",
+        "Camk2d",
+        "Car3",
+        "Cbln2",
+        "Cbln4",
+        "Ccbe1",
+        "Ccdc162",
+        "Ccdc3",
+        "Ccdc80",
+        "Ccnb1",
+        "Cd14",
+        "Cd24a",
+        "Cdca7",
+        "Cdcp1",
+        "Cdh12",
+        "Cdh13",
+        "Cdh20",
+        "Cdh9",
+        "Ceacam9",
+        "Cemip",
+        "Chat",
+        "Chn2",
+        "Chodl",
+        "Chrm2",
+        "Chrna2",
+        "Cldn5",
+        "Clrn1",
+        "Cntnap5b",
+        "Cobll1",
+        "Col14a1",
+        "Col15a1",
+        "Col23a1",
+        "Col24a1",
+        "Col25a1",
+        "Corin",
+        "Cplx3",
+        "Crhr2",
+        "Crispld2",
+        "Cspg4",
+        "Ctss",
+        "Cux2",
+        "Cxcl14",
+        "Daam2",
+        "Dmkn",
+        "Dnase1l3",
+        "Dscaml1",
+        "Egfem1",
+        "Egfr",
+        "Egln3",
+        "Egr2",
+        "Elfn1",
+        "Enpp6",
+        "Epha7",
+        "Fam19a2",
+        "Fam84b",
+        "Fbxl7",
+        "Fezf2",
+        "Flrt3",
+        "Flt1",
+        "Fndc7",
+        "Fosb",
+        "Foxp2",
+        "Frem2",
+        "Fst",
+        "Gfap",
+        "Glra1",
+        "Gpc6",
+        "Grik1",
+        "Grin3a",
+        "Grm1",
+        "Grm8",
+        "Hpse",
+        "Hs3st5",
+        "Igf2",
+        "Igfbp4",
+        "Igfbp5",
+        "Ikzf2",
+        "Il1rapl2",
+        "Il4ra",
+        "Inpp4b",
+        "Iqgap2",
+        "Itgb8",
+        "Kcng1",
+        "Kcnj8",
+        "L3mbtl4",
+        "Lama3",
+        "Lhx6",
+        "Lmo1",
+        "Lsp1",
+        "Ltf",
+        "Luzp2",
+        "Lypd1",
+        "Lyzl4",
+        "1-Mar",
+        "Marcksl1",
+        "Meis2",
+        "Moxd1",
+        "Mrc1",
+        "Mrgprx2",
+        "Muc20",
+        "Myh14",
+        "Ndst4",
+        "Nhs",
+        "Nkain3",
+        "Nnmt",
+        "Nos1",
+        "Npas1",
+        "Npnt",
+        "Npsr1",
+        "Npy2r",
+        "Nr2f2",
+        "Nr4a1",
+        "Nr4a2",
+        "Ntng2",
+        "Nxph1",
+        "Nxph2",
+        "Nxph4",
+        "Olah",
+        "Olfm3",
+        "Opalin",
+        "Oprk1",
+        "Osr1",
+        "Otof",
+        "Parm1",
+        "Pcdh8",
+        "Pde11a",
+        "Pdgfc",
+        "Pdgfra",
+        "Pdlim5",
+        "Phactr2",
+        "Plch1",
+        "Plcxd3",
+        "Pld5",
+        "Plekhg3",
+        "Pou3f1",
+        "Pou3f3",
+        "Pou6f2",
+        "Prdm8",
+        "Prok2",
+        "Prokr2",
+        "Prox1",
+        "Prr16",
+        "Prss12",
+        "Prss23",
+        "Ptger3",
+        "Ptprk",
+        "Ptprm",
+        "Ptprt",
+        "Ptpru",
+        "Pxdc1",
+        "Ramp1",
+        "Reln",
+        "Rerg",
+        "Rfx3",
+        "Rgs5",
+        "Rgs6",
+        "Rnf152",
+        "Ror1",
+        "Rorb",
+        "Rspo1",
+        "Rxfp1",
+        "Rxfp2",
+        "Satb2",
+        "Scgn",
+        "Sema3e",
+        "Sema5a",
+        "Serpinf1",
+        "Sertm1",
+        "Sgcd",
+        "Shisa9",
+        "Slc17a6",
+        "Slc17a8",
+        "Slc25a13",
+        "Slc30a3",
+        "Slc32a1",
+        "Slc44a5",
+        "Slco5a1",
+        "Sncg",
+        "Sox10",
+        "Sox6",
+        "Sp8",
+        "Spon1",
+        "St6galnac5",
+        "Sulf1",
+        "Sulf2",
+        "Syndig1",
+        "Syt10",
+        "Syt6",
+        "Tbc1d4",
+        "Tcap",
+        "Teddm3",
+        "Tenm3",
+        "Th",
+        "Thbs2",
+        "Thsd7a",
+        "Timp3",
+        "Tmem163",
+        "Tmtc2",
+        "Tnfaip6",
+        "Tox",
+        "Trp53i11",
+        "Trpc4",
+        "Trpc6",
+        "Tshz2",
+        "Tunar",
+        "Ubash3b",
+        "Unc13c",
+        "Unc5b",
+        "Unc5d",
+        "Ust",
+        "Vipr2",
+        "Vtn",
+        "Vwc2",
+        "Wipf3",
+        "Wnt7b",
+        "Zfp804b",
+        "Vip",
+        "Calb1",
+        "Gad2",
+        "Tac2",
+        "Lamp5",
+        "Cnr1",
+        "Pvalb",
+        "Sst",
+        "Rab3b",
+        "Slc17a7",
+        "Penk",
+        "Gad1"
+      ]
+    },
+    {
+      "dataset": "SEA_AD",
+      "sections": 69,
+      "genes": 140,
+      "train_receivers": 257152,
+      "validation_receivers": 54026,
+      "test_receivers": 54762,
+      "test_target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "test_mse0_float64": 0.34525770223939817,
+      "all_test_targets_match_paper": true,
+      "sample_order_and_counts_match": true,
+      "neighbor_indices_in_bounds": true,
+      "receiver_first": true,
+      "gene_order": [
+        "PRRT4",
+        "GRIP2",
+        "FOXP2",
+        "PDZD2",
+        "KIAA1217",
+        "PALMD",
+        "LRRC4C",
+        "ASIC2",
+        "NPAS3",
+        "LUZP2",
+        "GRIN2A",
+        "NLGN1",
+        "NTNG2",
+        "TACR1",
+        "PDGFD",
+        "ANK1",
+        "DLX1",
+        "CBLN2",
+        "ZNF804A",
+        "CACNA2D3",
+        "CDH6",
+        "CD22",
+        "ETNPPL",
+        "CALB1",
+        "TSHZ2",
+        "FGF13",
+        "KIRREL3",
+        "ROBO1",
+        "RBFOX3",
+        "ASTN2",
+        "ID3",
+        "TH",
+        "TENM2",
+        "ZMAT4",
+        "CLSTN2",
+        "SEMA6D",
+        "HPSE2",
+        "BTBD11",
+        "LRP1B",
+        "NOS1",
+        "GPC5",
+        "SNTB1",
+        "COL11A1",
+        "TMEM255A",
+        "SATB2",
+        "SORCS3",
+        "FBXL7",
+        "GRM8",
+        "GALNTL6",
+        "NOSTRIN",
+        "DCC",
+        "SOX6",
+        "MEIS2",
+        "STXBP6",
+        "SMYD1",
+        "SCUBE1",
+        "LAMA4",
+        "CNTN5",
+        "GRM7",
+        "KCNMB2",
+        "CUX2",
+        "LAMP5",
+        "SLIT3",
+        "TAFA1",
+        "PRKG1",
+        "CSMD1",
+        "CNTNAP5",
+        "NFIA",
+        "FRMPD4",
+        "GRID2",
+        "HS6ST3",
+        "SORCS1",
+        "ATRNL1",
+        "ADAMTS3",
+        "SLC24A2",
+        "RBFOX1",
+        "TMEM132D",
+        "NKAIN2",
+        "PEX5L",
+        "TNR",
+        "DGKG",
+        "RFX3",
+        "UNC5B",
+        "HTR2A",
+        "RGS12",
+        "CACHD1",
+        "RORB",
+        "LRRK1",
+        "THEMIS",
+        "CARTPT",
+        "SLC32A1",
+        "GAD2",
+        "MOG",
+        "DCN",
+        "TOX",
+        "ZNF385D",
+        "PDE4B",
+        "GRIP1",
+        "ITGB8",
+        "PLD5",
+        "NPY",
+        "NDNF",
+        "SEMA3E",
+        "KAZN",
+        "DLC1",
+        "PLCB1",
+        "HCN1",
+        "ITGA8",
+        "EBF1",
+        "PRRX1",
+        "SLC14A1",
+        "EGFR",
+        "FEZF2",
+        "PAX6",
+        "ROBO2",
+        "SV2C",
+        "DCLK1",
+        "EYA4",
+        "RYR3",
+        "L3MBTL4",
+        "GRIN3A",
+        "CD74",
+        "RGS6",
+        "CTSS",
+        "KCNIP4",
+        "DACH1",
+        "HTR2C",
+        "PVALB",
+        "HS3ST2",
+        "GRIK3",
+        "FGF12",
+        "LHX6",
+        "VIP",
+        "CA10",
+        "ADAMTSL1",
+        "CHODL",
+        "SULF1",
+        "NRG1",
+        "NXPH2",
+        "TLL1"
+      ]
+    }
+  ],
+  "unpack_into": "EXTERNAL_DATA",
+  "published": true
+}

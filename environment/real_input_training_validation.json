@@ -1,0 +1,106 @@
+{
+  "scope": "Real-input CPU smoke check, not full-epoch or paper-performance reproduction.",
+  "system": "macOS-15.7.3-arm64-arm-64bit",
+  "python": "3.12.14",
+  "torch": "2.14.1",
+  "numpy": "2.5.3",
+  "runs": [
+    {
+      "dataset": "Mouse",
+      "variant": "full",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.21890372037887573,
+        0.1980583518743515
+      ]
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "no_distance",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.21872872114181519,
+        0.1979943811893463
+      ]
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "uniform_routing",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.21897251904010773,
+        0.19812452793121338
+      ]
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "matched_random_edge",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.22024944424629211,
+        0.199258953332901
+      ]
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "full",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.2838114798069,
+        0.26181671023368835
+      ]
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "no_distance",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.2834260165691376,
+        0.26153016090393066
+      ]
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "uniform_routing",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.2838592529296875,
+        0.26187965273857117
+      ]
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "matched_random_edge",
+      "training_receivers": 4,
+      "optimizer_steps": 2,
+      "finite_loss_and_gradients": true,
+      "checkpoint_roundtrip_equal": true,
+      "losses": [
+        0.284499853849411,
+        0.26243919134140015
+      ]
+    }
+  ],
+  "full_benchmark_retrained": false
+}

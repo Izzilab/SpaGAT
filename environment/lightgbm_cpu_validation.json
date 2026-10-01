@@ -1,0 +1,9 @@
+{
+  "scope": "Synthetic LightGBM import/fit/predict smoke check only",
+  "version": "4.7.0",
+  "rows": 80,
+  "features": 8,
+  "boosting_iterations": 3,
+  "system_dependency": "macOS arm64 llvm-openmp 22.1.0, loaded from an existing installation",
+  "passed": true
+}

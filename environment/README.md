@@ -4,3 +4,24 @@ Mouse_recorded.json and SEA_AD_recorded.json preserve the benchmark runtime repo
 component_ablation_full_freeze.txt is the saved package freeze for the completed component ablations. component_ablation_selected_pins.txt extracts only directly relevant packages. These are observed environment records, not a claim that a fresh installation has been validated. Colab-specific or platform-specific entries in the full freeze should not be blindly installed on macOS.
 
 requirements-plots.txt is a lightweight convenience dependency list for table/figure regeneration; it is not the training environment. The current assembly checks use the local environment reported in validation_report.json, which differs from the training environment. Original liver runtime details are not sufficiently complete here for an exact environment reconstruction.
+
+## Fresh CPU installation checked on 2026-10-01
+
+`macos_cpu_smoke_freeze.txt` records a new Python 3.12.14 / macOS arm64 environment
+with PyTorch 2.14.1, NumPy 2.5.3, pandas 3.0.6 and PyG 2.8.0.post1. It differs
+from the original CUDA training environment. The checks completed were:
+
+- Synthetic CLI training, validation selection, checkpoint save/reload and test
+  export for full, distance removal and uniform routing (`synthetic_training_validation.json`).
+- Loading all original brain inputs, reproducing every test-target hash, and two
+  optimizer steps plus checkpoint roundtrip on four real training receivers for
+  both datasets and all four Table 1 configurations (`real_input_training_validation.json`).
+- LightGBM synthetic fit/predict (`lightgbm_cpu_validation.json`). macOS required
+  an OpenMP runtime; the check used an existing llvm-openmp 22.1.0 installation.
+  A plain pip install without that system dependency initially failed.
+
+For the tested Python dependencies use the CPU freeze file in an isolated
+environment. On Linux/CUDA, select the appropriate PyTorch build and consult
+the original recorded versions. These checks do not establish bit-identical
+training across platforms or reproduce complete paper-training runs. The
+original trained checkpoint files are still required for inference validation.

@@ -13,7 +13,8 @@ revised manuscript. The maintained repository is
 | Check included files and split records | `python scripts/verify_bundle.py` | None; Python standard library |
 | Regenerate numerical summaries | `scripts/reproduce_tables.py` | None beyond the included records |
 | Redraw Figure 2 and Figure S2 | `figures/plot_Figure2.py`, `figures/plot_FigureS2.py` | None beyond the included records |
-| Train and evaluate a brain benchmark or component control | `scripts/run_benchmark.py` | The original model-ready data and a training environment |
+| Download verified brain inputs | `scripts/download_data.py` | Public release assets |
+| Train and evaluate a brain benchmark or component control | `scripts/run_benchmark.py` | Downloaded inputs and a training environment |
 | Inspect or adapt the supplementary analyses | [analysis/README.md](analysis/README.md) | Original inputs/predictions/checkpoints as specified in each workflow |
 
 ## Reproduce included results without training
@@ -41,12 +42,15 @@ is then evaluated on the held-out test set. Neighborhoods remain within
 sections, and receiver/homotypic-neighbor residuals are masked in the inputs.
 
 The five methods are SpaGAT, GITIII, GAT, SPICE-adapted and LightGBM. Use the
-same externally supplied model-ready inputs for every method. For example:
+same verified model-ready inputs for every method. Download them once:
 
 ```bash
-python scripts/run_benchmark.py --dataset SEA_AD --method SpaGAT --seed 123 --data-dir /path/to/SEA_AD/data/processed --output-dir runs/SEA_AD_SpaGAT_123
+python scripts/download_data.py --dataset all --output-dir EXTERNAL_DATA
+python scripts/run_benchmark.py --dataset SEA_AD --method SpaGAT --seed 123 --data-dir EXTERNAL_DATA/SEA_AD/data/processed --output-dir runs/SEA_AD_SpaGAT_123
 ```
 
+Install PyTorch and `requirements-training.txt` before training; see the environment notes below.
+The downloader checks archive and per-file SHA-256 values and preserves cell/gene order.
 The launcher validates required paths and creates a separate run directory.
 It stages the fixed partitions rather than generating a new random split.
 The underlying `scripts/train.py` requires all three partitions and includes
@@ -88,11 +92,18 @@ The file-to-manuscript mapping is in [docs/PAPER_SCOPE.md](docs/PAPER_SCOPE.md).
 
 Public dataset sources and the model-ready input contract are documented in
 [docs/DATA_AND_PREPROCESSING.md](docs/DATA_AND_PREPROCESSING.md).
-**Actual checkpoints, complete model-ready matrices and complete raw-to-input
-conversion pipelines are not included.** Exact historical input order and
-scale are necessary to reuse the split indices. The Mouse LightGBM runner is
-a documented recovered adapter. Recorded environments have not been validated
-as a fresh portable training installation. Complete Figure 1/3/4 workflows and
+**Verified SEA-AD and Mouse model-ready matrices are available in the
+[benchmark input release](https://github.com/WuBoFu/SpaGAT/releases/tag/benchmark-inputs-v1).**
+The download manifest includes individual-file hashes and complete test-target
+hash checks against Figure 2. Original CSV/baseline bytes are retained.
+See [data licenses and attribution](docs/DATA_LICENSES.md).
+Trained checkpoints and liver matrices are not yet included. Complete raw-to-input
+conversion pipelines remain incomplete. The Mouse LightGBM runner is
+a documented recovered adapter. A fresh macOS CPU environment passed a synthetic train/validation/test CLI
+check and two optimizer steps on four real training receivers for each brain
+dataset and Table 1 configuration. These are execution checks, not full GPU
+retraining or reproduction of paper scores. The tested environment and reports
+are in [environment/README.md](environment/README.md). Complete Figure 1/3/4 workflows and
 the original Figure 5 composite are not provided.
 
 [docs/COVERAGE.csv](docs/COVERAGE.csv) and [docs/KNOWN_GAPS.md](docs/KNOWN_GAPS.md)

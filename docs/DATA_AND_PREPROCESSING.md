@@ -6,7 +6,7 @@ Source: Seattle Alzheimer's Disease Brain Cell Atlas, middle temporal gyrus, spa
 - Spatial bucket: s3://sea-ad-spatial-transcriptomics/
 - Coordinate comparison used the public object middle-temporal-gyrus/all_donors-h5ad/SEAAD_MTG_MERFISH.2024-12-11.h5ad. This establishes coordinate correspondence; it is not proof that this exact release supplied every historical expression value/filter.
 - Model input AD.csv: 366,272 cells, 69 sections, 27 donors, 140 genes. Receiver-eligible: 365,940 cells. Partitions: 257,152 train / 54,026 validation / 54,762 test receivers; 18/5/4 donors and 47/13/9 sections.
-- Input expression was transformed with natural log ln(1+x), not log2. Local baseline comparison and reconstruction of test MSE0=0.345257702239 support this scale. This audit did not recover a byte-identical full target matrix or a complete historical conversion script.
+- Input expression was transformed with natural log ln(1+x), not log2. Local baseline comparison and reconstruction of test MSE0=0.345257702239 support this scale. The earlier scale audit did not recover a complete historical conversion script. The subsequently recovered original processed inputs reproduce the full Figure 2 test-target hash exactly (see assets/processed_data_manifest.json).
 - Baselines come from training sections and are applied unchanged to validation/test. The numerical reconstruction agrees when all input cells in training sections contribute to the baseline, including cells not eligible as prediction receivers. No validation/test cells are used.
 - All 366,272 local coordinates were matched to provider tiled coordinates by section-specific translations; raw coordinates additionally involve a y-axis reflection. Neither operation changes within-section Euclidean distance; no scale multiplier was required. Units are micrometers.
 
@@ -34,4 +34,15 @@ The recorded spatial eligibility check is a labeled receiver with nearest-other-
 
 Neighborhoods stay within sections and partitions. The focal receiver residual and all homotypic-neighbor residuals are zeroed in inputs; heterotypic residuals remain. k includes the receiver. Distance features are [1/(d+1), 1/(sqrt(d)+1), 1/(1+d^2), exp(-d), exp(-d^2)] without an additional coordinate rescaling. Original graph indices should be retained, including their tie order.
 
-This bundle intentionally does not provide a speculative raw-data converter that could silently change targets. Use recorded model-ready inputs for exact-run reconstruction until the upstream conversion scripts or a verified model-ready archive are deposited.
+This bundle intentionally does not provide a speculative raw-data converter that could silently change targets. Use recorded model-ready inputs for exact-run reconstruction from the verified brain input release; this does not imply that all earlier raw-data filtering scripts have been recovered.
+
+## Download the verified brain inputs
+
+Run `python scripts/download_data.py --dataset all --output-dir EXTERNAL_DATA`.
+The public release retains the original processed CSV/NPZ/PTH bytes and preprocessing
+audit records. The supplied splits use that exact cell/gene/sample order.
+SHA-256 checks for every archive and member are in `assets/processed_data_manifest.json`.
+Both full test-target matrices match the archived Figure 2 hashes.
+Use `scripts/verify_data.py` to repeat the loader/target check.
+Liver inputs and trained checkpoints are not included in this data release.
+See DATA_LICENSES.md for provider terms and attribution.

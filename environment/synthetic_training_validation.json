@@ -1,0 +1,27 @@
+{
+  "scope": "Synthetic CPU execution check only; no paper-data performance validation.",
+  "system": "macOS-15.7.3-arm64-arm-64bit",
+  "python": "3.12.14",
+  "torch": "2.14.1",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "runs": [
+    {
+      "variant": "full",
+      "training_checkpoint_reload_test_export": "passed",
+      "seconds": 1.6091394580435008
+    },
+    {
+      "variant": "no_distance",
+      "training_checkpoint_reload_test_export": "passed",
+      "seconds": 1.3385257080662996
+    },
+    {
+      "variant": "uniform_routing",
+      "training_checkpoint_reload_test_export": "passed",
+      "seconds": 1.3642008330207318
+    }
+  ],
+  "paper_data_used": false,
+  "full_benchmark_retrained": false
+}

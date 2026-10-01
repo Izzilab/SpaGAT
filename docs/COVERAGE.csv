@@ -1,8 +1,8 @@
 item,status,scope
 SpaGAT model/source,included,reported architecture and Table 1 controls; checkpoint-compatible aliases retained
-five-model brain benchmark,source + 30 run summaries included,training requires external model-ready inputs
+five-model brain benchmark,source + 30 run summaries included,verified brain inputs available as release assets
 fixed splits,included,exact index arrays; relocated paths; derived section audit validated
-environment,recorded versions included,fresh training installation not tested
+environment,recorded versions plus tested macOS CPU environment,synthetic CLI and real-input execution checks; no full GPU rerun
 raw-data conversion,partial documentation,complete original conversion not recovered
 checkpoint downloads,manifest only,six recorded hashes; no checkpoint bytes or public links
 Figure 2,plot script + data included,regeneration without inference
@@ -16,3 +16,4 @@ random-gene/uniform-routing,12 completed runs + source + frozen mappings include
 resource measurements,measured tables + notebook + worker included,original external inputs/checkpoints required; no fresh resource rerun
 cohort flow and EV audit,tables + notebooks/source included,model-input filtering only; raw upstream reconstruction remains incomplete
 50% proportional masking,complete execution workflow not recovered,not claimed reproducible from this repository alone
+brain model-ready data,public release assets,original CSV and baseline bytes; all test targets match Figure 2 hashes

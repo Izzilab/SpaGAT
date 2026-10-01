@@ -1,5 +1,5 @@
 {
-  "python_source_syntax_files": 55,
+  "python_source_syntax_files": 61,
   "supplementary_notebooks": 9,
   "notebook_code_cells_syntax": 38,
   "embedded_sources_parsed": 9,
@@ -13,7 +13,7 @@
   "retained_result_bytes_unchanged": "passed",
   "manuscript_scope_mapping": "docs/PAPER_SCOPE.md",
   "other_unreported_workflow_scan": "passed",
-  "scope": "Local checks of the manuscript-scoped publication repository; no full-data training or inference",
+  "scope": "Publication source checks plus verified real brain inputs and fresh CPU execution checks; no full benchmark retraining",
   "launcher_dry_runs": 16,
   "launcher_prepared_runs": 16,
   "matching_helper_and_map_staging": "passed",
@@ -32,8 +32,8 @@
   },
   "full_GPU_training_rerun": false,
   "checkpoint_inference_rerun": false,
-  "real_input_loading_tested": false,
-  "fresh_training_environment_installation_tested": false,
+  "real_input_loading_tested": true,
+  "fresh_training_environment_installation_tested": true,
   "repository_replacement_simulation": {
     "tracked_files": 167,
     "old_root_validation_entry_removed": true,
@@ -41,5 +41,15 @@
     "git_history_preserved": true,
     "remote_modified": false
   },
-  "plotting_verification": "Figure 2 and Figure S2 commands passed in the preceding replacement-package check; plotting scripts and their numerical inputs are byte-identical in this manuscript-scoped package."
+  "plotting_verification": "Figure 2 and Figure S2 commands passed in the preceding replacement-package check; plotting scripts and their numerical inputs are byte-identical in this manuscript-scoped package.",
+  "fresh_environment_scope": "macOS arm64 CPU; synthetic CLI training/test export and two optimizer steps on four real training receivers per dataset/configuration; original CUDA environment not reinstalled",
+  "all_test_target_hashes_match_Figure2": true,
+  "original_trained_checkpoint_inference_rerun": false,
+  "execution_reports": [
+    "environment/synthetic_training_validation.json",
+    "environment/real_input_training_validation.json",
+    "environment/lightgbm_cpu_validation.json"
+  ],
+  "input_report": "assets/processed_data_manifest.json",
+  "download_archive_extraction_and_member_hashes": "passed with cached release archives; no network-download claim"
 }

@@ -28,3 +28,7 @@ analysis an independent-patient benchmark.
 Current benchmark entry points use the fixed train/validation/test protocol.
 Figure 3/4/5 cohorts retain their separately documented original protocols.
 Required external inputs and unrecovered workflows are listed in KNOWN_GAPS.md.
+
+The separate benchmark-input release supplies the exact processed SEA-AD and
+Mouse inputs. Download, integrity and execution-check scripts support reproduction
+and do not add scientific experiments to the manuscript.

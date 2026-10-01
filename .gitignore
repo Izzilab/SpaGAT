@@ -21,3 +21,8 @@ venv/
 /reproduced_figures/
 
 # Published analysis/, results/, configs/ and splits/ are intentionally tracked.
+
+/EXTERNAL_DATA/
+/asset_downloads/
+/smoke_synthetic/
+/smoke_real_inputs/
