@@ -1,0 +1,201 @@
+{
+  "record_type": "full-model-only extracts of saved reference checks",
+  "checks": [
+    {
+      "source_record": "completed_controls_SEA_AD_full_preflight.json",
+      "dataset": "SEA_AD",
+      "all_test_targets_match": true,
+      "full_runs": [
+        {
+          "seed": 123,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/spagat_seed123_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/seed123_test/test_predictions.npz",
+          "checkpoint_sha256": "e91438490d10c906007a18c1f0ed619b44e056940ee96b5c73f346b5afeda23b",
+          "prediction_sha256_float32": "0f01da16dd33ff71822a1899a58cb656437e4ed9b55725b8d8cd4bc12c13dc77",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.3237167631689283,
+          "mse": 0.2928351588134735,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.183598536948839
+        },
+        {
+          "seed": 456,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/spagat_seed456_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/seed456_test/test_predictions.npz",
+          "checkpoint_sha256": "87063e3cc3ee303657b2e0d9be6bd062af03abb1d37ef2c84a9e764c44351c9f",
+          "prediction_sha256_float32": "160da522ae377789f3759f043953661fffb8faed9dbd0c245abb746a8215c253",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.32882370384254134,
+          "mse": 0.29277612358701766,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.20069742455451
+        },
+        {
+          "seed": 789,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/spagat_seed789_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/seed789_test/test_predictions.npz",
+          "checkpoint_sha256": "e3226224abd0c266f411b85f31b2cc083c6f9c574fbb967a304d3021dbdc1fde",
+          "prediction_sha256_float32": "7367c4b554cdf02756d9b068e0b38326e47d3fe6a4e6623daa024ae93256def4",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.321745488599256,
+          "mse": 0.2931513615335855,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.092013984870468
+        }
+      ]
+    },
+    {
+      "source_record": "completed_controls_Mouse_full_preflight.json",
+      "dataset": "Mouse",
+      "all_test_targets_match": true,
+      "full_runs": [
+        {
+          "seed": 123,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/spagat_seed123_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/seed123_test/test_predictions.npz",
+          "checkpoint_sha256": "bfa1235dc7579fe9a9c8c9d5e80e430a93b414b1787340bf9d1d1c0023409b6b",
+          "prediction_sha256_float32": "987f81a334998b12fc55ccd991c55aed91649e104436484a83e8f2fa374cb1be",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.24934929149913118,
+          "mse": 0.1539543447224085,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 12.841410640672857
+        },
+        {
+          "seed": 456,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/spagat_seed456_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/seed456_test/test_predictions.npz",
+          "checkpoint_sha256": "d34dc5bc9a159f2890524b4df7801d81ce61f26e0137748e5211ecbd56a89247",
+          "prediction_sha256_float32": "5bc455abbd45139c9be896acbd1689f2fce667c3418069547baacf52957ecf9e",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.25154439080059254,
+          "mse": 0.15328863833826684,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 13.218288795517418
+        },
+        {
+          "seed": 789,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/spagat_seed789_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/seed789_test/test_predictions.npz",
+          "checkpoint_sha256": "576cfcd38f687225851ec9422f1c2ab07f608bf1b39f2fda43e593cae96b3e32",
+          "prediction_sha256_float32": "0894fd361d1a298bb6289ed97681a9745d1cbb9a4d8c63e3293983dd6d0dec4e",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.24820752634347215,
+          "mse": 0.1533697015784885,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 13.172396244194129
+        }
+      ]
+    },
+    {
+      "source_record": "SEA_AD_recorded_preflight.json",
+      "dataset": "SEA_AD",
+      "all_test_targets_match": true,
+      "full_runs": [
+        {
+          "seed": 123,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/spagat_seed123_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/seed123_test/test_predictions.npz",
+          "checkpoint_sha256": "e91438490d10c906007a18c1f0ed619b44e056940ee96b5c73f346b5afeda23b",
+          "prediction_sha256_float32": "0f01da16dd33ff71822a1899a58cb656437e4ed9b55725b8d8cd4bc12c13dc77",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.3237167631689283,
+          "mse": 0.2928351588134735,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.183598536948839
+        },
+        {
+          "seed": 456,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/spagat_seed456_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/seed456_test/test_predictions.npz",
+          "checkpoint_sha256": "87063e3cc3ee303657b2e0d9be6bd062af03abb1d37ef2c84a9e764c44351c9f",
+          "prediction_sha256_float32": "160da522ae377789f3759f043953661fffb8faed9dbd0c245abb746a8215c253",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.32882370384254134,
+          "mse": 0.29277612358701766,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.20069742455451
+        },
+        {
+          "seed": 789,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/spagat_seed789_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/seed789_test/test_predictions.npz",
+          "checkpoint_sha256": "e3226224abd0c266f411b85f31b2cc083c6f9c574fbb967a304d3021dbdc1fde",
+          "prediction_sha256_float32": "7367c4b554cdf02756d9b068e0b38326e47d3fe6a4e6623daa024ae93256def4",
+          "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+          "first_32_predictions_match": true,
+          "parameter_count": 2520652,
+          "median_gene_pcc": 0.321745488599256,
+          "mse": 0.2931513615335855,
+          "mse0": 0.3452577022393979,
+          "ev_zero_percent": 15.092013984870468
+        }
+      ]
+    },
+    {
+      "source_record": "Mouse_recorded_preflight.json",
+      "dataset": "Mouse",
+      "all_test_targets_match": true,
+      "full_runs": [
+        {
+          "seed": 123,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/spagat_seed123_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/seed123_test/test_predictions.npz",
+          "checkpoint_sha256": "bfa1235dc7579fe9a9c8c9d5e80e430a93b414b1787340bf9d1d1c0023409b6b",
+          "prediction_sha256_float32": "987f81a334998b12fc55ccd991c55aed91649e104436484a83e8f2fa374cb1be",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.24934929149913118,
+          "mse": 0.1539543447224085,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 12.841410640672857
+        },
+        {
+          "seed": 456,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/spagat_seed456_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/seed456_test/test_predictions.npz",
+          "checkpoint_sha256": "d34dc5bc9a159f2890524b4df7801d81ce61f26e0137748e5211ecbd56a89247",
+          "prediction_sha256_float32": "5bc455abbd45139c9be896acbd1689f2fce667c3418069547baacf52957ecf9e",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.25154439080059254,
+          "mse": 0.15328863833826684,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 13.218288795517418
+        },
+        {
+          "seed": 789,
+          "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/spagat_seed789_best.pth",
+          "reference_prediction_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/seed789_test/test_predictions.npz",
+          "checkpoint_sha256": "576cfcd38f687225851ec9422f1c2ab07f608bf1b39f2fda43e593cae96b3e32",
+          "prediction_sha256_float32": "0894fd361d1a298bb6289ed97681a9745d1cbb9a4d8c63e3293983dd6d0dec4e",
+          "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+          "first_32_predictions_match": true,
+          "parameter_count": 2768288,
+          "median_gene_pcc": 0.24820752634347215,
+          "mse": 0.1533697015784885,
+          "mse0": 0.17663703124852526,
+          "ev_zero_percent": 13.172396244194129
+        }
+      ]
+    }
+  ]
+}

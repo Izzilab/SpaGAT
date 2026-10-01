@@ -1,0 +1,943 @@
+{
+  "passed": true,
+  "rules": {
+    "statistics": "mean and population variance of masked expression entering the edge branch over all 50 candidate nodes of each training receiver",
+    "transforms": [
+      "asinh(mean)",
+      "log1p(variance)"
+    ],
+    "standardization": "gene-panel mean and population SD, estimated from training inputs only",
+    "maximum_pair_difference_per_feature_panel_SD": 1.0,
+    "maximum_absolute_set_mean_difference_per_feature_panel_SD": 0.25,
+    "cost": "squared Euclidean feature distance plus Exponential(scale=0.25) random costs",
+    "maximum_draws_per_set": 100,
+    "candidate_pool": "measured genes outside the original retained ligand-gene set",
+    "replacement": "one-to-one within a set; overlap between sets allowed; duplicate complete sets prohibited",
+    "selection": "first assignment passing the fixed expression-only criteria; no prediction metric is read",
+    "set_seeds": [
+      2026093001
+    ]
+  },
+  "candidate_pool_size": 207,
+  "original_feature_count": 47,
+  "candidate_coverage": [
+    {
+      "ligand_gene": "Cdh9",
+      "eligible_candidates": 123
+    },
+    {
+      "ligand_gene": "Ntng2",
+      "eligible_candidates": 65
+    },
+    {
+      "ligand_gene": "Prok2",
+      "eligible_candidates": 106
+    },
+    {
+      "ligand_gene": "Crhr2",
+      "eligible_candidates": 107
+    },
+    {
+      "ligand_gene": "Npnt",
+      "eligible_candidates": 65
+    },
+    {
+      "ligand_gene": "Dscaml1",
+      "eligible_candidates": 38
+    },
+    {
+      "ligand_gene": "Rspo1",
+      "eligible_candidates": 144
+    },
+    {
+      "ligand_gene": "Ptprk",
+      "eligible_candidates": 19
+    },
+    {
+      "ligand_gene": "Gad1",
+      "eligible_candidates": 103
+    },
+    {
+      "ligand_gene": "Col14a1",
+      "eligible_candidates": 120
+    },
+    {
+      "ligand_gene": "Sst",
+      "eligible_candidates": 139
+    },
+    {
+      "ligand_gene": "Col15a1",
+      "eligible_candidates": 143
+    },
+    {
+      "ligand_gene": "Col24a1",
+      "eligible_candidates": 119
+    },
+    {
+      "ligand_gene": "Reln",
+      "eligible_candidates": 95
+    },
+    {
+      "ligand_gene": "Cdcp1",
+      "eligible_candidates": 109
+    },
+    {
+      "ligand_gene": "Sema5a",
+      "eligible_candidates": 47
+    },
+    {
+      "ligand_gene": "Bdnf",
+      "eligible_candidates": 150
+    },
+    {
+      "ligand_gene": "Corin",
+      "eligible_candidates": 110
+    },
+    {
+      "ligand_gene": "Pdgfc",
+      "eligible_candidates": 134
+    },
+    {
+      "ligand_gene": "Wnt7b",
+      "eligible_candidates": 73
+    },
+    {
+      "ligand_gene": "Cdh13",
+      "eligible_candidates": 47
+    },
+    {
+      "ligand_gene": "Fst",
+      "eligible_candidates": 126
+    },
+    {
+      "ligand_gene": "Timp3",
+      "eligible_candidates": 39
+    },
+    {
+      "ligand_gene": "Vip",
+      "eligible_candidates": 40
+    },
+    {
+      "ligand_gene": "Bgn",
+      "eligible_candidates": 138
+    },
+    {
+      "ligand_gene": "Igf2",
+      "eligible_candidates": 84
+    },
+    {
+      "ligand_gene": "Cd24a",
+      "eligible_candidates": 144
+    },
+    {
+      "ligand_gene": "Adam2",
+      "eligible_candidates": 108
+    },
+    {
+      "ligand_gene": "Penk",
+      "eligible_candidates": 131
+    },
+    {
+      "ligand_gene": "Spon1",
+      "eligible_candidates": 46
+    },
+    {
+      "ligand_gene": "Ceacam9",
+      "eligible_candidates": 109
+    },
+    {
+      "ligand_gene": "Thbs2",
+      "eligible_candidates": 127
+    },
+    {
+      "ligand_gene": "Vtn",
+      "eligible_candidates": 30
+    },
+    {
+      "ligand_gene": "Gpc6",
+      "eligible_candidates": 139
+    },
+    {
+      "ligand_gene": "Sema3e",
+      "eligible_candidates": 135
+    },
+    {
+      "ligand_gene": "Nxph1",
+      "eligible_candidates": 87
+    },
+    {
+      "ligand_gene": "Cd14",
+      "eligible_candidates": 133
+    },
+    {
+      "ligand_gene": "Tac2",
+      "eligible_candidates": 101
+    },
+    {
+      "ligand_gene": "Elfn1",
+      "eligible_candidates": 147
+    },
+    {
+      "ligand_gene": "Igfbp4",
+      "eligible_candidates": 45
+    },
+    {
+      "ligand_gene": "Cxcl14",
+      "eligible_candidates": 55
+    },
+    {
+      "ligand_gene": "Serpinf1",
+      "eligible_candidates": 119
+    },
+    {
+      "ligand_gene": "Lama3",
+      "eligible_candidates": 138
+    },
+    {
+      "ligand_gene": "Ptprm",
+      "eligible_candidates": 40
+    },
+    {
+      "ligand_gene": "Flrt3",
+      "eligible_candidates": 75
+    },
+    {
+      "ligand_gene": "Ltf",
+      "eligible_candidates": 106
+    },
+    {
+      "ligand_gene": "Nxph2",
+      "eligible_candidates": 110
+    }
+  ],
+  "sets": [
+    {
+      "set_id": "random_set_1",
+      "set_seed": 2026093001,
+      "accepted_draw": 1,
+      "original_genes": [
+        "Cdh9",
+        "Ntng2",
+        "Prok2",
+        "Crhr2",
+        "Npnt",
+        "Dscaml1",
+        "Rspo1",
+        "Ptprk",
+        "Gad1",
+        "Col14a1",
+        "Sst",
+        "Col15a1",
+        "Col24a1",
+        "Reln",
+        "Cdcp1",
+        "Sema5a",
+        "Bdnf",
+        "Corin",
+        "Pdgfc",
+        "Wnt7b",
+        "Cdh13",
+        "Fst",
+        "Timp3",
+        "Vip",
+        "Bgn",
+        "Igf2",
+        "Cd24a",
+        "Adam2",
+        "Penk",
+        "Spon1",
+        "Ceacam9",
+        "Thbs2",
+        "Vtn",
+        "Gpc6",
+        "Sema3e",
+        "Nxph1",
+        "Cd14",
+        "Tac2",
+        "Elfn1",
+        "Igfbp4",
+        "Cxcl14",
+        "Serpinf1",
+        "Lama3",
+        "Ptprm",
+        "Flrt3",
+        "Ltf",
+        "Nxph2"
+      ],
+      "replacement_genes": [
+        "Pou3f1",
+        "Cdh20",
+        "Ndst4",
+        "Sp8",
+        "St6galnac5",
+        "Meis2",
+        "Inpp4b",
+        "Igfbp5",
+        "Pdgfra",
+        "B4galnt3",
+        "Cacng5",
+        "Pou6f2",
+        "Frem2",
+        "Prox1",
+        "Fbxl7",
+        "Syt6",
+        "Hs3st5",
+        "Rxfp2",
+        "Ikzf2",
+        "Adra1b",
+        "Daam2",
+        "Tunar",
+        "Parm1",
+        "Rab3b",
+        "Lhx6",
+        "Opalin",
+        "Tbc1d4",
+        "Clrn1",
+        "Syt10",
+        "Trp53i11",
+        "1810046K07Rik",
+        "Nhs",
+        "Sox10",
+        "Plch1",
+        "Barx2",
+        "Grik1",
+        "Egln3",
+        "Pvalb",
+        "Nr2f2",
+        "Unc5d",
+        "Ano4",
+        "Slc44a5",
+        "Alk",
+        "Cdh12",
+        "Prr16",
+        "Muc20",
+        "Ccdc162"
+      ],
+      "pair_feature_differences": [
+        [
+          0.21870282343239603,
+          -0.06717742934387147
+        ],
+        [
+          -0.0954051506401673,
+          -0.11342766276219873
+        ],
+        [
+          0.08458755207877122,
+          0.06691794410602259
+        ],
+        [
+          -4.308366349681236e-05,
+          0.0665343320221563
+        ],
+        [
+          0.07837752340078086,
+          -0.20862567020018385
+        ],
+        [
+          -0.0854147877177327,
+          -0.0651247336561398
+        ],
+        [
+          -0.11096963734091103,
+          -0.10292132869166287
+        ],
+        [
+          0.3031849945029754,
+          -0.03823866613196847
+        ],
+        [
+          -0.016701966521023293,
+          0.15532019303933858
+        ],
+        [
+          -0.051910988124880264,
+          -0.12744669965703082
+        ],
+        [
+          -0.017302094393214396,
+          0.14905449942169463
+        ],
+        [
+          -0.07743570663310861,
+          -0.07796009809782434
+        ],
+        [
+          0.009888727885832727,
+          -0.024112605077014182
+        ],
+        [
+          -0.14185786186670607,
+          -0.16318791029918853
+        ],
+        [
+          -0.039331960529639165,
+          0.05444951888773075
+        ],
+        [
+          -0.17317125784133724,
+          0.2953753948190223
+        ],
+        [
+          -0.09104100465031817,
+          -0.15534707049785612
+        ],
+        [
+          -0.03157814458583519,
+          0.04322192554936588
+        ],
+        [
+          0.045090155369925,
+          0.073246592584011
+        ],
+        [
+          0.13757221999203484,
+          0.10328372599299906
+        ],
+        [
+          -0.08441982913981172,
+          -0.03349591414035746
+        ],
+        [
+          -0.0371685911114048,
+          0.04482078088122343
+        ],
+        [
+          -0.02320906790587185,
+          -0.1058433774055727
+        ],
+        [
+          0.1073879047213091,
+          0.16273139907114098
+        ],
+        [
+          0.04957393120146569,
+          -0.022630713143068665
+        ],
+        [
+          0.04015999888901722,
+          -0.0011468951085498724
+        ],
+        [
+          -0.10650044439248407,
+          0.13665791111494996
+        ],
+        [
+          -0.09959287397041527,
+          -0.059517142883509955
+        ],
+        [
+          -0.2560761289786492,
+          0.28578058826337505
+        ],
+        [
+          0.17754812153970345,
+          -0.04426057292271457
+        ],
+        [
+          0.04452974273815924,
+          0.016170191659118593
+        ],
+        [
+          0.06743629057538747,
+          0.027994741247671984
+        ],
+        [
+          0.23570331989491305,
+          0.20016939453169447
+        ],
+        [
+          -0.10035694006304798,
+          -0.12055705145447398
+        ],
+        [
+          0.019078260472942588,
+          -0.040363824711013074
+        ],
+        [
+          0.009221529575957815,
+          -0.19030814703729548
+        ],
+        [
+          0.22242836323574533,
+          -0.15254227097826928
+        ],
+        [
+          0.20373870981197906,
+          0.1854386886386754
+        ],
+        [
+          0.018774239063951204,
+          0.1271188317003345
+        ],
+        [
+          0.1519825106926853,
+          0.06115448267470369
+        ],
+        [
+          -0.15853836762196982,
+          -0.23762991211877427
+        ],
+        [
+          0.05020514154904243,
+          -0.14732921457917325
+        ],
+        [
+          0.1448857086347881,
+          -0.10259808077340227
+        ],
+        [
+          0.2234641581335064,
+          -0.009262422139157067
+        ],
+        [
+          -0.3020750857620177,
+          -0.015387639989526941
+        ],
+        [
+          -0.026701872538205107,
+          -0.01773590923872148
+        ],
+        [
+          0.0022832831240420237,
+          -0.017006932622271487
+        ]
+      ],
+      "set_feature_mean_difference": [
+        0.011042603500533274,
+        -0.004377548073522592
+      ],
+      "maximum_pair_absolute_difference": 0.3031849945029754,
+      "mean_pair_squared_distance": 0.03224913549655636,
+      "matching_passed": true,
+      "mapping_sha256": "1b665b0881c8363a0e3c7312e511523aebed0fd7d1c8a2ac0f78b46b8477af13"
+    }
+  ],
+  "failure": null,
+  "training_receivers": 122886,
+  "candidate_node_occurrences": 6144300,
+  "training_samples": [
+    {
+      "sample": "mouse1_slice1",
+      "training_receivers": 2351
+    },
+    {
+      "sample": "mouse1_slice10",
+      "training_receivers": 2393
+    },
+    {
+      "sample": "mouse1_slice102",
+      "training_receivers": 6636
+    },
+    {
+      "sample": "mouse1_slice112",
+      "training_receivers": 4920
+    },
+    {
+      "sample": "mouse1_slice122",
+      "training_receivers": 6082
+    },
+    {
+      "sample": "mouse1_slice131",
+      "training_receivers": 4994
+    },
+    {
+      "sample": "mouse1_slice162",
+      "training_receivers": 6868
+    },
+    {
+      "sample": "mouse1_slice170",
+      "training_receivers": 6354
+    },
+    {
+      "sample": "mouse1_slice180",
+      "training_receivers": 6173
+    },
+    {
+      "sample": "mouse1_slice190",
+      "training_receivers": 5636
+    },
+    {
+      "sample": "mouse1_slice200",
+      "training_receivers": 2169
+    },
+    {
+      "sample": "mouse1_slice21",
+      "training_receivers": 2010
+    },
+    {
+      "sample": "mouse1_slice212",
+      "training_receivers": 6447
+    },
+    {
+      "sample": "mouse1_slice221",
+      "training_receivers": 5696
+    },
+    {
+      "sample": "mouse1_slice232",
+      "training_receivers": 5288
+    },
+    {
+      "sample": "mouse1_slice241",
+      "training_receivers": 3990
+    },
+    {
+      "sample": "mouse1_slice260",
+      "training_receivers": 5656
+    },
+    {
+      "sample": "mouse1_slice271",
+      "training_receivers": 3855
+    },
+    {
+      "sample": "mouse1_slice283",
+      "training_receivers": 4255
+    },
+    {
+      "sample": "mouse1_slice301",
+      "training_receivers": 4345
+    },
+    {
+      "sample": "mouse1_slice31",
+      "training_receivers": 3065
+    },
+    {
+      "sample": "mouse1_slice313",
+      "training_receivers": 3853
+    },
+    {
+      "sample": "mouse1_slice50",
+      "training_receivers": 4285
+    },
+    {
+      "sample": "mouse1_slice62",
+      "training_receivers": 4719
+    },
+    {
+      "sample": "mouse1_slice71",
+      "training_receivers": 5665
+    },
+    {
+      "sample": "mouse1_slice81",
+      "training_receivers": 5181
+    }
+  ],
+  "training_edge_input_sha256": "07fe6bb24f80918900fae7cd512e28905846d9892744c6cb21b3cb32e9452c31",
+  "feature_center": [
+    0.32175333177154203,
+    0.23985967009138828
+  ],
+  "feature_scale": [
+    0.2726668573149336,
+    0.20753711963594845
+  ],
+  "note": "Repeated neighbors are weighted as they occur in training graphs; these are feature-matching statistics, not biological replicates.",
+  "dataset": "Mouse",
+  "split_sha256": "d7ec406fc3be3cf2aba12c53d0e9a9d901ed830f9827554e901fed494f8bb113",
+  "genes_sha256": "38a9f6a8608953ad4dceca952782f100d9d84874a59cd9c80822a6afd6f368c9",
+  "original_genes": [
+    "Cdh9",
+    "Ntng2",
+    "Prok2",
+    "Crhr2",
+    "Npnt",
+    "Dscaml1",
+    "Rspo1",
+    "Ptprk",
+    "Gad1",
+    "Col14a1",
+    "Sst",
+    "Col15a1",
+    "Col24a1",
+    "Reln",
+    "Cdcp1",
+    "Sema5a",
+    "Bdnf",
+    "Corin",
+    "Pdgfc",
+    "Wnt7b",
+    "Cdh13",
+    "Fst",
+    "Timp3",
+    "Vip",
+    "Bgn",
+    "Igf2",
+    "Cd24a",
+    "Adam2",
+    "Penk",
+    "Spon1",
+    "Ceacam9",
+    "Thbs2",
+    "Vtn",
+    "Gpc6",
+    "Sema3e",
+    "Nxph1",
+    "Cd14",
+    "Tac2",
+    "Elfn1",
+    "Igfbp4",
+    "Cxcl14",
+    "Serpinf1",
+    "Lama3",
+    "Ptprm",
+    "Flrt3",
+    "Ltf",
+    "Nxph2"
+  ],
+  "genes": [
+    "1700022I11Rik",
+    "1810046K07Rik",
+    "5031425F14Rik",
+    "5730522E02Rik",
+    "Acta2",
+    "Adam2",
+    "Adamts2",
+    "Adamts4",
+    "Adra1b",
+    "Alk",
+    "Ankfn1",
+    "Ano4",
+    "Aqp4",
+    "Asic4",
+    "B4galnt2",
+    "B4galnt3",
+    "Barx2",
+    "Bcl11b",
+    "Bdnf",
+    "Bgn",
+    "Blnk",
+    "Bmpr1b",
+    "Brinp3",
+    "C1ql3",
+    "C1qtnf7",
+    "Cacng5",
+    "Calb2",
+    "Camk2d",
+    "Car3",
+    "Cbln2",
+    "Cbln4",
+    "Ccbe1",
+    "Ccdc162",
+    "Ccdc3",
+    "Ccdc80",
+    "Ccnb1",
+    "Cd14",
+    "Cd24a",
+    "Cdca7",
+    "Cdcp1",
+    "Cdh12",
+    "Cdh13",
+    "Cdh20",
+    "Cdh9",
+    "Ceacam9",
+    "Cemip",
+    "Chat",
+    "Chn2",
+    "Chodl",
+    "Chrm2",
+    "Chrna2",
+    "Cldn5",
+    "Clrn1",
+    "Cntnap5b",
+    "Cobll1",
+    "Col14a1",
+    "Col15a1",
+    "Col23a1",
+    "Col24a1",
+    "Col25a1",
+    "Corin",
+    "Cplx3",
+    "Crhr2",
+    "Crispld2",
+    "Cspg4",
+    "Ctss",
+    "Cux2",
+    "Cxcl14",
+    "Daam2",
+    "Dmkn",
+    "Dnase1l3",
+    "Dscaml1",
+    "Egfem1",
+    "Egfr",
+    "Egln3",
+    "Egr2",
+    "Elfn1",
+    "Enpp6",
+    "Epha7",
+    "Fam19a2",
+    "Fam84b",
+    "Fbxl7",
+    "Fezf2",
+    "Flrt3",
+    "Flt1",
+    "Fndc7",
+    "Fosb",
+    "Foxp2",
+    "Frem2",
+    "Fst",
+    "Gfap",
+    "Glra1",
+    "Gpc6",
+    "Grik1",
+    "Grin3a",
+    "Grm1",
+    "Grm8",
+    "Hpse",
+    "Hs3st5",
+    "Igf2",
+    "Igfbp4",
+    "Igfbp5",
+    "Ikzf2",
+    "Il1rapl2",
+    "Il4ra",
+    "Inpp4b",
+    "Iqgap2",
+    "Itgb8",
+    "Kcng1",
+    "Kcnj8",
+    "L3mbtl4",
+    "Lama3",
+    "Lhx6",
+    "Lmo1",
+    "Lsp1",
+    "Ltf",
+    "Luzp2",
+    "Lypd1",
+    "Lyzl4",
+    "1-Mar",
+    "Marcksl1",
+    "Meis2",
+    "Moxd1",
+    "Mrc1",
+    "Mrgprx2",
+    "Muc20",
+    "Myh14",
+    "Ndst4",
+    "Nhs",
+    "Nkain3",
+    "Nnmt",
+    "Nos1",
+    "Npas1",
+    "Npnt",
+    "Npsr1",
+    "Npy2r",
+    "Nr2f2",
+    "Nr4a1",
+    "Nr4a2",
+    "Ntng2",
+    "Nxph1",
+    "Nxph2",
+    "Nxph4",
+    "Olah",
+    "Olfm3",
+    "Opalin",
+    "Oprk1",
+    "Osr1",
+    "Otof",
+    "Parm1",
+    "Pcdh8",
+    "Pde11a",
+    "Pdgfc",
+    "Pdgfra",
+    "Pdlim5",
+    "Phactr2",
+    "Plch1",
+    "Plcxd3",
+    "Pld5",
+    "Plekhg3",
+    "Pou3f1",
+    "Pou3f3",
+    "Pou6f2",
+    "Prdm8",
+    "Prok2",
+    "Prokr2",
+    "Prox1",
+    "Prr16",
+    "Prss12",
+    "Prss23",
+    "Ptger3",
+    "Ptprk",
+    "Ptprm",
+    "Ptprt",
+    "Ptpru",
+    "Pxdc1",
+    "Ramp1",
+    "Reln",
+    "Rerg",
+    "Rfx3",
+    "Rgs5",
+    "Rgs6",
+    "Rnf152",
+    "Ror1",
+    "Rorb",
+    "Rspo1",
+    "Rxfp1",
+    "Rxfp2",
+    "Satb2",
+    "Scgn",
+    "Sema3e",
+    "Sema5a",
+    "Serpinf1",
+    "Sertm1",
+    "Sgcd",
+    "Shisa9",
+    "Slc17a6",
+    "Slc17a8",
+    "Slc25a13",
+    "Slc30a3",
+    "Slc32a1",
+    "Slc44a5",
+    "Slco5a1",
+    "Sncg",
+    "Sox10",
+    "Sox6",
+    "Sp8",
+    "Spon1",
+    "St6galnac5",
+    "Sulf1",
+    "Sulf2",
+    "Syndig1",
+    "Syt10",
+    "Syt6",
+    "Tbc1d4",
+    "Tcap",
+    "Teddm3",
+    "Tenm3",
+    "Th",
+    "Thbs2",
+    "Thsd7a",
+    "Timp3",
+    "Tmem163",
+    "Tmtc2",
+    "Tnfaip6",
+    "Tox",
+    "Trp53i11",
+    "Trpc4",
+    "Trpc6",
+    "Tshz2",
+    "Tunar",
+    "Ubash3b",
+    "Unc13c",
+    "Unc5b",
+    "Unc5d",
+    "Ust",
+    "Vipr2",
+    "Vtn",
+    "Vwc2",
+    "Wipf3",
+    "Wnt7b",
+    "Zfp804b",
+    "Vip",
+    "Calb1",
+    "Gad2",
+    "Tac2",
+    "Lamp5",
+    "Cnr1",
+    "Pvalb",
+    "Sst",
+    "Rab3b",
+    "Slc17a7",
+    "Penk",
+    "Gad1"
+  ]
+}

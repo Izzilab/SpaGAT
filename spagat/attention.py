@@ -63,8 +63,8 @@ class GRIT_attention(nn.Module):
     def __init__(self, node_dim, edge_dim, att_dim=8, program_aware=False, routing_mode="program"):
         super().__init__()
         self.program_aware = program_aware
-        if routing_mode not in {"grit", "program"}:
-            raise ValueError("routing_mode must be 'grit' or 'program'.")
+        if routing_mode not in {"program", "uniform"}:
+            raise ValueError("routing_mode must be program or uniform.")
         self.routing_mode = routing_mode
         self.node_dim = node_dim
         self.base_edge_dim = edge_dim
@@ -147,13 +147,11 @@ class GRIT_attention(nn.Module):
             edge = self.W_Eo(edge)
             return [node, edge, None]
 
-        if self.routing_mode == "grit":
-            if program_tokens.shape[0] != 1:
-                raise ValueError("routing_mode='grit' is defined for the controlled K=1 ablation only.")
-            # Controlled routing ablation: retain GRIT's original scalar edge
-            # routing and expose it as the K=1 program-state interface.  The
-            # downstream program gate/messages/free decoder are unchanged.
-            program_attention = F.softmax(self.W_A(edge).squeeze(dim=-1), dim=-1).unsqueeze(dim=-1)
+        if self.routing_mode == "uniform":
+            # Same candidate nodes and K=4; only learned neighbor weighting is removed.
+            # Q/K-derived edge messages, ligand/distance inputs, gates and decoder remain.
+            program_scores = node.new_zeros((B, N, N, program_tokens.shape[0]))
+            program_attention = None
         else:
             # Program routing: the edge, receiver, and shared program token
             # interact multiplicatively. This is the pre-existing SpaGP score.
@@ -176,12 +174,8 @@ class GRIT_attention(nn.Module):
             # This is inference-time graph intervention: masked edges receive
             # exactly zero attention and remaining edges are renormalized by
             # the existing neighbor softmax.
-            if self.routing_mode == "grit":
-                grit_scores = self.W_A(edge).squeeze(dim=-1).masked_fill(~allowed[..., 0], float("-inf"))
-                program_attention = F.softmax(grit_scores, dim=-1).unsqueeze(dim=-1)
-            else:
-                program_scores = program_scores.masked_fill(~allowed, float("-inf"))
-                program_attention = F.softmax(program_scores, dim=2)
+            program_scores = program_scores.masked_fill(~allowed, float("-inf"))
+            program_attention = F.softmax(program_scores, dim=2)
         elif program_attention is None:
             program_attention = F.softmax(program_scores, dim=2)
 

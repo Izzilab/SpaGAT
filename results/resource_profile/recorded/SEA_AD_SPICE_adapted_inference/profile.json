@@ -1,0 +1,75 @@
+{
+  "dataset": "SEA_AD",
+  "model": "SPICE_adapted",
+  "phase": "inference",
+  "seed": 123,
+  "status": "complete",
+  "versions": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "torch-geometric": "2.8.0.post1",
+    "lightgbm": "4.6.0",
+    "psutil": "5.9.5"
+  },
+  "hardware": {
+    "gpu": "Tesla T4",
+    "logical_cpus": 8,
+    "torch_cpu_threads": 4,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "host_total_ram_gib": 50.99028778076172,
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz"
+  },
+  "original_files_modified": false,
+  "source_hashes": {
+    "spagat/__init__.py": "af200e1784421e427d17548ed9449a9257cd96ab1a0be46cc81e3c4fbf4b82ea",
+    "spagat/attention.py": "5a8c0fcb97e7973a5f842e4515b17e8211eb779d529800f0a0c4e40b2ef792af",
+    "spagat/dataloader.py": "9f7e97c8fd12a5f9d8fc968987549fbdcac52deff784ac9bfac3bd8e14fb12a2",
+    "spagat/embedding.py": "8e3d12e28410b3b40642564e5c34be9da87d1ee6a3de939e6a78f29f90634987",
+    "spagat/gene_program_model.py": "e9f7cdf2280f14659cfa8dd477f1ec3087a1c09bed981dcf31b890ceb50aa5a6",
+    "spagat/preprocess.py": "9bb77b4e200f8b1456bf2eb8901982816c0706be5878cea7f5e54e19676b7490",
+    "runners/GAT.py": "7f54709176e2b855323955bfc5957c8d0907a80ef60fb43cd31a9e5516b83fd5",
+    "runners/GITIII_official.py": "3a7e96a783ffd4544e5e09429f7f86d034eee564089a6f57f8cc46f889ed458c",
+    "runners/SPICE_adapted.py": "25e0daec779ba2913f0b117788663b4de9537318b491c78cf2199af2fdf0ff4b",
+    "runners/LightGBM.py": "e4e64b10e445e9f2e90a15bbacd4c641995e2d2a7d9a99d819daa742c7a38c02"
+  },
+  "dataset_loading": {
+    "seconds": 32.32088948499995,
+    "peak_process_tree_rss_gib_sampled": 1.3419342041015625,
+    "initial_process_tree_rss_gib": 0.5869483947753906,
+    "rss_sampling_interval_seconds": 0.02,
+    "peak_cuda_allocated_gib": null,
+    "peak_cuda_reserved_gib": null
+  },
+  "parameter_count": 71564,
+  "inference": {
+    "seconds": 16.381546963999995,
+    "peak_process_tree_rss_gib_sampled": 1.9379997253417969,
+    "initial_process_tree_rss_gib": 1.4078903198242188,
+    "rss_sampling_interval_seconds": 0.02,
+    "peak_cuda_allocated_gib": 0.01798248291015625,
+    "peak_cuda_reserved_gib": 0.02734375
+  },
+  "prediction_agreement": {
+    "matches_saved_predictions_within_tolerance": true,
+    "max_abs_error": 3.5762786865234375e-07,
+    "mean_abs_error": 1.4281644311608943e-08,
+    "rtol": 0.0001,
+    "atol": 0.0001
+  },
+  "n_test_receivers": 54762,
+  "n_genes": 140,
+  "scope": "Checkpoint-to-prediction wall time; includes local model loading, test input preparation, and CPU prediction collection; excludes processed dataset loading, initial Drive copy, accuracy scoring and reference comparison.",
+  "job_wall_seconds": 51.03535884099995,
+  "whole_process_peak_rss_gib_including_postcheck": 2.079051971435547
+}

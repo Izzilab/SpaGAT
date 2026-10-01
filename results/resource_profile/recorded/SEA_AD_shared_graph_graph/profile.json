@@ -1,0 +1,613 @@
+{
+  "dataset": "SEA_AD",
+  "model": "shared_graph",
+  "phase": "graph",
+  "seed": 123,
+  "status": "complete",
+  "versions": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "torch-geometric": "2.8.0.post1",
+    "lightgbm": "4.6.0",
+    "psutil": "5.9.5"
+  },
+  "hardware": {
+    "gpu": null,
+    "logical_cpus": 8,
+    "torch_cpu_threads": 4,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "host_total_ram_gib": 50.99028778076172,
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz"
+  },
+  "original_files_modified": false,
+  "source_hashes": {
+    "spagat/__init__.py": "af200e1784421e427d17548ed9449a9257cd96ab1a0be46cc81e3c4fbf4b82ea",
+    "spagat/attention.py": "5a8c0fcb97e7973a5f842e4515b17e8211eb779d529800f0a0c4e40b2ef792af",
+    "spagat/dataloader.py": "9f7e97c8fd12a5f9d8fc968987549fbdcac52deff784ac9bfac3bd8e14fb12a2",
+    "spagat/embedding.py": "8e3d12e28410b3b40642564e5c34be9da87d1ee6a3de939e6a78f29f90634987",
+    "spagat/gene_program_model.py": "e9f7cdf2280f14659cfa8dd477f1ec3087a1c09bed981dcf31b890ceb50aa5a6",
+    "spagat/preprocess.py": "9bb77b4e200f8b1456bf2eb8901982816c0706be5878cea7f5e54e19676b7490",
+    "runners/GAT.py": "7f54709176e2b855323955bfc5957c8d0907a80ef60fb43cd31a9e5516b83fd5",
+    "runners/GITIII_official.py": "3a7e96a783ffd4544e5e09429f7f86d034eee564089a6f57f8cc46f889ed458c",
+    "runners/SPICE_adapted.py": "25e0daec779ba2913f0b117788663b4de9537318b491c78cf2199af2fdf0ff4b",
+    "runners/LightGBM.py": "e4e64b10e445e9f2e90a15bbacd4c641995e2d2a7d9a99d819daa742c7a38c02"
+  },
+  "shared_neighbor_construction": {
+    "seconds": 41.68612098799997,
+    "peak_process_tree_rss_gib_sampled": 0.6066207885742188,
+    "initial_process_tree_rss_gib": 0.5683708190917969,
+    "rss_sampling_interval_seconds": 0.02,
+    "peak_cuda_allocated_gib": null,
+    "peak_cuda_reserved_gib": null
+  },
+  "all_sections_verified": true,
+  "sections": [
+    {
+      "section": "H20.33.001.CX28.MTG.02.007.1.02.02",
+      "n_cells": 7938,
+      "status": "verified",
+      "search_seconds": 0.774958182999967,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.001.CX28.MTG.02.007.1.02.03",
+      "n_cells": 15225,
+      "status": "verified",
+      "search_seconds": 2.5699922169999923,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.001.Cx28.MTG.02.007.1.01.03",
+      "n_cells": 6680,
+      "status": "verified",
+      "search_seconds": 0.5485875150000084,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.004.Cx26.MTG.02.007.1.01.04",
+      "n_cells": 5333,
+      "status": "verified",
+      "search_seconds": 0.38743212000002814,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.004.Cx26.MTG.02.007.1.01.05",
+      "n_cells": 3158,
+      "status": "verified",
+      "search_seconds": 0.18503460799996674,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.004.Cx26.MTG.02.007.1.02.02",
+      "n_cells": 4125,
+      "status": "verified",
+      "search_seconds": 0.27228553200001215,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.004.Cx26.MTG.02.007.1.02.03",
+      "n_cells": 4709,
+      "status": "verified",
+      "search_seconds": 0.31776488799999925,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.004.Cx26.MTG.02.007.1.02.04",
+      "n_cells": 6599,
+      "status": "verified",
+      "search_seconds": 0.5552077610000197,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.012.Cx24.MTG.02.007.1.01.01",
+      "n_cells": 3528,
+      "status": "verified",
+      "search_seconds": 0.20447515800003657,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.012.Cx24.MTG.02.007.1.03.02",
+      "n_cells": 3202,
+      "status": "verified",
+      "search_seconds": 0.1866487579999898,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.012.Cx24.MTG.02.007.1.03.03",
+      "n_cells": 3780,
+      "status": "verified",
+      "search_seconds": 0.23082373699998016,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.015.CX24.MTG.02.007.1.03.01",
+      "n_cells": 6505,
+      "status": "verified",
+      "search_seconds": 0.5529939269999886,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.015.CX24.MTG.02.007.1.03.02",
+      "n_cells": 3009,
+      "status": "verified",
+      "search_seconds": 0.16348414899999852,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.015.Cx24.MTG.02.007.1.03.03",
+      "n_cells": 5929,
+      "status": "verified",
+      "search_seconds": 0.4642532670000037,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.025.Cx28.MTG.02.007.1.01.02",
+      "n_cells": 5396,
+      "status": "verified",
+      "search_seconds": 0.3937767380000423,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.025.Cx28.MTG.02.007.1.01.04",
+      "n_cells": 5066,
+      "status": "verified",
+      "search_seconds": 0.3670450550000055,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.025.Cx28.MTG.02.007.1.01.06",
+      "n_cells": 3441,
+      "status": "verified",
+      "search_seconds": 0.19474793599999884,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.035.Cx26.MTG.02.007.1.01.03",
+      "n_cells": 6061,
+      "status": "verified",
+      "search_seconds": 0.4814998090000131,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.035.Cx26.MTG.02.007.1.01.04",
+      "n_cells": 4410,
+      "status": "verified",
+      "search_seconds": 0.3251395639999828,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.040.Cx25.MTG.02.007.1.01.03",
+      "n_cells": 8659,
+      "status": "verified",
+      "search_seconds": 0.9553999419999855,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.040.Cx25.MTG.02.007.1.01.04",
+      "n_cells": 8917,
+      "status": "verified",
+      "search_seconds": 1.0072375180000108,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.044.Cx26.MTG.02.007.1.01.02",
+      "n_cells": 3053,
+      "status": "verified",
+      "search_seconds": 0.1708203370000092,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.044.Cx26.MTG.02.007.1.01.03",
+      "n_cells": 5126,
+      "status": "verified",
+      "search_seconds": 0.3803089780000164,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H20.33.044.Cx26.MTG.02.007.1.01.04",
+      "n_cells": 6496,
+      "status": "verified",
+      "search_seconds": 0.5551727179999943,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.001.Cx22.MTG.02.007.1.01.03",
+      "n_cells": 10480,
+      "status": "verified",
+      "search_seconds": 1.2374874490000138,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.001.Cx22.MTG.02.007.1.01.04",
+      "n_cells": 6683,
+      "status": "verified",
+      "search_seconds": 0.584927859000004,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.005.Cx18.MTG.02.007.02.03",
+      "n_cells": 2122,
+      "status": "verified",
+      "search_seconds": 0.09356003499999588,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.005.Cx18.MTG.02.007.02.04",
+      "n_cells": 3705,
+      "status": "verified",
+      "search_seconds": 0.21611275999998725,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.006.Cx28.MTG.02.007.1.01.09.02",
+      "n_cells": 1955,
+      "status": "verified",
+      "search_seconds": 0.0840090959999884,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.006.Cx28.MTG.02.007.1.01.09.03",
+      "n_cells": 774,
+      "status": "verified",
+      "search_seconds": 0.025099264999994375,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.006.Cx28.MTG.02.007.1.01.09.04",
+      "n_cells": 2910,
+      "status": "verified",
+      "search_seconds": 0.1574724409999817,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.011.Cx26.MTG.02.007.3.01.04",
+      "n_cells": 6527,
+      "status": "verified",
+      "search_seconds": 0.540008537999995,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.011.Cx26.MTG.02.007.3.01.05",
+      "n_cells": 6342,
+      "status": "verified",
+      "search_seconds": 0.5341930969999567,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.011.Cx26.MTG.02.007.3.01.06",
+      "n_cells": 5407,
+      "status": "verified",
+      "search_seconds": 0.40245182000001023,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.012.Cx26.MTG.02.007.1.01.04",
+      "n_cells": 5747,
+      "status": "verified",
+      "search_seconds": 0.4468446120000067,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.012.Cx26.MTG.02.007.1.01.05",
+      "n_cells": 7476,
+      "status": "verified",
+      "search_seconds": 0.7326889679999908,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.012.Cx26.MTG.02.007.1.01.06",
+      "n_cells": 6859,
+      "status": "verified",
+      "search_seconds": 0.606719714999997,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.013.Cx24.MTG.02.007.1.06",
+      "n_cells": 2223,
+      "status": "verified",
+      "search_seconds": 0.09923636999997143,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.014.CX26.MTG.02.007.1.02.02",
+      "n_cells": 4114,
+      "status": "verified",
+      "search_seconds": 0.2562353229999985,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.015.Cx26.MTG.02.007.1.0",
+      "n_cells": 7574,
+      "status": "verified",
+      "search_seconds": 0.7522051930000089,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.015.Cx26.MTG.02.007.1.1",
+      "n_cells": 11093,
+      "status": "verified",
+      "search_seconds": 1.4261867809999558,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.015.Cx26.MTG.02.007.1.2",
+      "n_cells": 8059,
+      "status": "verified",
+      "search_seconds": 0.777680977999978,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.016.Cx26.MTG.02.007.3.01.01",
+      "n_cells": 4698,
+      "status": "verified",
+      "search_seconds": 0.3163309000000254,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.016.Cx26.MTG.02.007.3.01.02",
+      "n_cells": 6231,
+      "status": "verified",
+      "search_seconds": 0.4818213380000316,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.016.Cx26.MTG.02.007.3.01.03",
+      "n_cells": 5603,
+      "status": "verified",
+      "search_seconds": 0.4225451109999767,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.019.Cx30.MTG.02.007.5.01.02",
+      "n_cells": 5275,
+      "status": "verified",
+      "search_seconds": 0.3684166159999904,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.019.Cx30.MTG.02.007.5.0",
+      "n_cells": 4033,
+      "status": "verified",
+      "search_seconds": 0.25166908400001375,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.021.Cx26.MTG.02.007.1.04",
+      "n_cells": 4834,
+      "status": "verified",
+      "search_seconds": 0.31630466699999715,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.021.Cx26.MTG.02.007.1.06",
+      "n_cells": 3642,
+      "status": "verified",
+      "search_seconds": 0.21439122399999633,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.022.Cx26.MTG.02.007.2.M.02",
+      "n_cells": 1780,
+      "status": "verified",
+      "search_seconds": 0.0679787669999996,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.022.Cx26.MTG.02.007.2.M.03",
+      "n_cells": 2226,
+      "status": "verified",
+      "search_seconds": 0.09928339900000083,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.022.Cx26.MTG.02.007.2.M.04",
+      "n_cells": 2276,
+      "status": "verified",
+      "search_seconds": 0.09939889800000401,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.023.Cx26.MTG.02.007.1.03.01",
+      "n_cells": 6739,
+      "status": "verified",
+      "search_seconds": 0.606444592999992,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.023.Cx26.MTG.02.007.1.03.04",
+      "n_cells": 8306,
+      "status": "verified",
+      "search_seconds": 0.9923870549999947,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.023.Cx26.MTG.02.007.1.03.05",
+      "n_cells": 7185,
+      "status": "verified",
+      "search_seconds": 0.7228696409999884,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.025.CX26.MTG.02.007.4.01.02",
+      "n_cells": 3015,
+      "status": "verified",
+      "search_seconds": 0.17551575300001332,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.025.CX26.MTG.02.007.4.01.04",
+      "n_cells": 2709,
+      "status": "verified",
+      "search_seconds": 0.16413296600001104,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.025.CX26.MTG.02.007.4.01.06",
+      "n_cells": 1923,
+      "status": "verified",
+      "search_seconds": 0.08845898999999235,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.028.CX28.MTG.02.007.1.01.01",
+      "n_cells": 4427,
+      "status": "verified",
+      "search_seconds": 0.31119380400002683,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.028.Cx28.MTG.02.007.1.02.02",
+      "n_cells": 3310,
+      "status": "verified",
+      "search_seconds": 0.19266944100002092,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.028.Cx28.MTG.02.007.1.02.04",
+      "n_cells": 3000,
+      "status": "verified",
+      "search_seconds": 0.17314924099997597,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.031.CX24.MTG.02.007.1.01.01",
+      "n_cells": 9021,
+      "status": "verified",
+      "search_seconds": 1.01584901800004,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.031.CX24.MTG.02.007.1.01.02",
+      "n_cells": 8564,
+      "status": "verified",
+      "search_seconds": 0.9402553019999687,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.032.CX24.MTG.02.007.1.01.04",
+      "n_cells": 4951,
+      "status": "verified",
+      "search_seconds": 0.38351860599999554,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.038.Cx20.MTG.02.007.3.01.02",
+      "n_cells": 2421,
+      "status": "verified",
+      "search_seconds": 0.11704126299997597,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.038.Cx20.MTG.02.007.3.01.04",
+      "n_cells": 4128,
+      "status": "verified",
+      "search_seconds": 0.2720458649999955,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.040.Cx22.MTG.02.007.3.03.01",
+      "n_cells": 5802,
+      "status": "verified",
+      "search_seconds": 0.4583238080000456,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.040.Cx22.MTG.02.007.3.03.03",
+      "n_cells": 4878,
+      "status": "verified",
+      "search_seconds": 0.3447682089999944,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    },
+    {
+      "section": "H21.33.040.Cx22.MTG.02.007.3.03.04",
+      "n_cells": 8900,
+      "status": "verified",
+      "search_seconds": 0.9967449909999573,
+      "index_order_mismatch_rows": 0,
+      "unresolved_rows": 0
+    }
+  ],
+  "total_neighbor_search_seconds": 31.81171926499991,
+  "scope": "Shared 50-index neighborhood reconstruction from saved float64 coordinates, including all cells per section. Search timer excludes CSV loading, index allocation, eligibility filtering, expression preprocessing and verification. Whole-stage RSS includes CSV loading and verification. Existing input graph files are not changed. Model-specific edge tensor creation remains part of model runtime.",
+  "job_wall_seconds": 41.68883208799997,
+  "whole_process_peak_rss_gib_including_postcheck": 1.015167236328125
+}

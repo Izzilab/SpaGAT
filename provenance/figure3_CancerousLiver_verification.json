@@ -1,0 +1,31 @@
+{
+  "status": "computed_requires_Figure3_source_confirmation",
+  "path": "/content/drive/MyDrive/GITIII-main/liver_workdir/gitiii/influence_tensor/edges_CancerousLiver.pth",
+  "file_bytes": 6148739292,
+  "target_sha256_shape_float32": "444da3f45c143e04e1bae74a99c7ab41b584948ce3fafb3bd2582a27f21f1107",
+  "prediction_sha256_shape_float32": "4dcf2ac5be5e50ca84a82f2db08b31bfa2b7789b9095e8f49d5f934d0516fb8f",
+  "n_cells": 30000,
+  "gene_order_source": "/content/drive/MyDrive/GITIII-main/liver_workdir/gitiii/data/genes.pth",
+  "ordering": "Documented historical RandomState(42) 30000-cell sample",
+  "alignment": {
+    "sentinel_genes_checked": 18,
+    "float32_matches": true,
+    "documented_half_roundtrip_matches": false,
+    "full_gene_alignment_claimed": false
+  },
+  "distribution": {
+    "n_genes": 1000,
+    "n_defined": 1000,
+    "n_undefined": 0,
+    "median_defined_PCC": 0.263068661930679,
+    "q25_defined_PCC": 0.21007533932414907,
+    "q75_defined_PCC": 0.3849281132713797,
+    "n_negative": 0,
+    "n_above_0_5": 134,
+    "MSE": 0.1337487422983558,
+    "MSE0": 0.17774732521694542
+  },
+  "model_identity": "Not inferred from directory naming or PCC agreement",
+  "evaluation_scope": "Archived within-dataset fitted-model receiver cohort; not an independent test",
+  "historical_selection_rule": "Requires author confirmation; no prospective or random selection claimed"
+}

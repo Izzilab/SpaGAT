@@ -1,0 +1,196 @@
+{
+  "scope": "Source references for the configurations reported in revised Table 1.",
+  "record_type": "manuscript-scoped extract of saved execution metadata",
+  "full_references": [
+    {
+      "dataset": "SEA_AD",
+      "model": "SpaGAT",
+      "seed": 123,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/seed123_test/test_predictions.npz",
+      "bytes": 43033345,
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "0f01da16dd33ff71822a1899a58cb656437e4ed9b55725b8d8cd4bc12c13dc77",
+      "metrics_sha256": "86bcbae03e99fb9f0478ef282f16594d02481dc5550cd27513e59ed3d2373f10",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices.json",
+      "split_sha256": "b3536c1b8ca6b198a588ae1fa2b846b06214106c9f687200c79511f3d5b8250c",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices_samples.csv",
+      "samples_sha256": "56f6a99b6b71149b7b17116198c34149d5f34e19e71ae811fe28a9b807c2be54",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/spagat_seed123_best.pth"
+    },
+    {
+      "dataset": "SEA_AD",
+      "model": "SpaGAT",
+      "seed": 456,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/seed456_test/test_predictions.npz",
+      "bytes": 43025777,
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "160da522ae377789f3759f043953661fffb8faed9dbd0c245abb746a8215c253",
+      "metrics_sha256": "35ccb34fdec3a4c1535dae4a43b0e0d198f971d1d87b51d7ad2856064c5f8abf",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices.json",
+      "split_sha256": "b3536c1b8ca6b198a588ae1fa2b846b06214106c9f687200c79511f3d5b8250c",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices_samples.csv",
+      "samples_sha256": "56f6a99b6b71149b7b17116198c34149d5f34e19e71ae811fe28a9b807c2be54",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/spagat_seed456_best.pth"
+    },
+    {
+      "dataset": "SEA_AD",
+      "model": "SpaGAT",
+      "seed": 789,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/seed789_test/test_predictions.npz",
+      "bytes": 43063156,
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "7367c4b554cdf02756d9b068e0b38326e47d3fe6a4e6623daa024ae93256def4",
+      "metrics_sha256": "056322f963d6cd10b187f2332a2a62f11ee3ef7ed346373b0ff9d356d703bc94",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices.json",
+      "split_sha256": "b3536c1b8ca6b198a588ae1fa2b846b06214106c9f687200c79511f3d5b8250c",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/SEA_AD_inductive_split_indices_samples.csv",
+      "samples_sha256": "56f6a99b6b71149b7b17116198c34149d5f34e19e71ae811fe28a9b807c2be54",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/spagat_seed789_best.pth"
+    },
+    {
+      "dataset": "Mouse",
+      "model": "SpaGAT",
+      "seed": 123,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/seed123_test/test_predictions.npz",
+      "bytes": 176293041,
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "987f81a334998b12fc55ccd991c55aed91649e104436484a83e8f2fa374cb1be",
+      "metrics_sha256": "b448611ac98abce73830caffbe5eab903b26db004695b4c73c47ce9354a377c8",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices.json",
+      "split_sha256": "d7ec406fc3be3cf2aba12c53d0e9a9d901ed830f9827554e901fed494f8bb113",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices_samples.csv",
+      "samples_sha256": "f3d3022be6bd09f519834e2b7ea0cc614542e59ea3a0fe98de54f4332f3c5e4e",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/spagat_seed123_best.pth"
+    },
+    {
+      "dataset": "Mouse",
+      "model": "SpaGAT",
+      "seed": 456,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/seed456_test/test_predictions.npz",
+      "bytes": 176359307,
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "5bc455abbd45139c9be896acbd1689f2fce667c3418069547baacf52957ecf9e",
+      "metrics_sha256": "d7a023a9a7dda5f09b7c3e4936aa7478dc2d2074d69f4ac52e8cc4483d6e8e0b",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices.json",
+      "split_sha256": "d7ec406fc3be3cf2aba12c53d0e9a9d901ed830f9827554e901fed494f8bb113",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices_samples.csv",
+      "samples_sha256": "f3d3022be6bd09f519834e2b7ea0cc614542e59ea3a0fe98de54f4332f3c5e4e",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/spagat_seed456_best.pth"
+    },
+    {
+      "dataset": "Mouse",
+      "model": "SpaGAT",
+      "seed": 789,
+      "npz": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/seed789_test/test_predictions.npz",
+      "bytes": 176360873,
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "0894fd361d1a298bb6289ed97681a9745d1cbb9a4d8c63e3293983dd6d0dec4e",
+      "metrics_sha256": "eaa13c3a1c5ff9a73462000ffbf323ee4c26ab8e25eeef6cb3207ce421e07c14",
+      "split_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices.json",
+      "split_sha256": "d7ec406fc3be3cf2aba12c53d0e9a9d901ed830f9827554e901fed494f8bb113",
+      "samples_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/splits/Mouse_inductive_split_indices_samples.csv",
+      "samples_sha256": "f3d3022be6bd09f519834e2b7ea0cc614542e59ea3a0fe98de54f4332f3c5e4e",
+      "checkpoint_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/spagat_seed789_best.pth"
+    }
+  ],
+  "full_and_distance_predictions": [
+    {
+      "dataset": "Mouse",
+      "variant": "full",
+      "seed": 123,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/seed123_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "987f81a334998b12fc55ccd991c55aed91649e104436484a83e8f2fa374cb1be"
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "no_distance",
+      "seed": 123,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/Mouse/no_distance_seed123/seed123_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "8e10f6cfcfdf78c8fc7e836aec35b29fb361e7f9611fc3a3bef235a7cb3d31f3"
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "full",
+      "seed": 456,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/seed456_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "5bc455abbd45139c9be896acbd1689f2fce667c3418069547baacf52957ecf9e"
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "no_distance",
+      "seed": 456,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/Mouse/no_distance_seed456/seed456_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "f09bf9c3cd5cc26d551b1188ddf5e860d3dd2161b2929111b24053fa60e8a172"
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "full",
+      "seed": 789,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/seed789_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "0894fd361d1a298bb6289ed97681a9745d1cbb9a4d8c63e3293983dd6d0dec4e"
+    },
+    {
+      "dataset": "Mouse",
+      "variant": "no_distance",
+      "seed": 789,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/Mouse/no_distance_seed789/seed789_test/test_predictions.npz",
+      "target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "prediction_sha256_float32": "e02e44b31faa9f3c2ce99400a2b37a9b80c1c008b7ade7b61807fce0a8f6ebd3"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "full",
+      "seed": 123,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/seed123_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "0f01da16dd33ff71822a1899a58cb656437e4ed9b55725b8d8cd4bc12c13dc77"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "no_distance",
+      "seed": 123,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/SEA_AD/no_distance_seed123/seed123_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "a1078d41f660a4b3309b18873830dbb59be1dd0baa6bd3ec04b10401ad01937e"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "full",
+      "seed": 456,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/seed456_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "160da522ae377789f3759f043953661fffb8faed9dbd0c245abb746a8215c253"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "no_distance",
+      "seed": 456,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/SEA_AD/no_distance_seed456/seed456_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "6fada719e0d9c7ad160635a7c420c3ee4499ad9618a54a1d3bf8b3188a373fe2"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "full",
+      "seed": 789,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/seed789_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "7367c4b554cdf02756d9b068e0b38326e47d3fe6a4e6623daa024ae93256def4"
+    },
+    {
+      "dataset": "SEA_AD",
+      "variant": "no_distance",
+      "seed": 789,
+      "path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/component_ablation_independent_20260929_124440_UTC_d0700d/runs/SEA_AD/no_distance_seed789/seed789_test/test_predictions.npz",
+      "target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "prediction_sha256_float32": "20296640603b041c6c1b977896094aa153a7a4f3cbcb0b0b93d2008d126cb6de"
+    }
+  ],
+  "new_controls": "Frozen maps and current per-seed results are in configs/matched_genes/ and results/table1/.",
+  "source_note": "Unused comparison switches were removed for this publication package; MANIFEST.json records the delivered source bytes."
+}

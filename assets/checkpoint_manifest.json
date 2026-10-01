@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "SEA_AD",
+    "model": "SpaGAT",
+    "seed": 123,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/SEA_AD/spagat_seed123_best.pth",
+    "sha256": "e91438490d10c906007a18c1f0ed619b44e056940ee96b5c73f346b5afeda23b",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  },
+  {
+    "dataset": "SEA_AD",
+    "model": "SpaGAT",
+    "seed": 456,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed456/spagat_seed456_best.pth",
+    "sha256": "87063e3cc3ee303657b2e0d9be6bd062af03abb1d37ef2c84a9e764c44351c9f",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  },
+  {
+    "dataset": "SEA_AD",
+    "model": "SpaGAT",
+    "seed": 789,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/seaad_main_benchmark_v1/results/SpaGAT_seed789/spagat_seed789_best.pth",
+    "sha256": "e3226224abd0c266f411b85f31b2cc083c6f9c574fbb967a304d3021dbdc1fde",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  },
+  {
+    "dataset": "Mouse",
+    "model": "SpaGAT",
+    "seed": 123,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/results/Mouse/spagat_seed123_best.pth",
+    "sha256": "bfa1235dc7579fe9a9c8c9d5e80e430a93b414b1787340bf9d1d1c0023409b6b",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  },
+  {
+    "dataset": "Mouse",
+    "model": "SpaGAT",
+    "seed": 456,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed456/spagat_seed456_best.pth",
+    "sha256": "d34dc5bc9a159f2890524b4df7801d81ce61f26e0137748e5211ecbd56a89247",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  },
+  {
+    "dataset": "Mouse",
+    "model": "SpaGAT",
+    "seed": 789,
+    "author_drive_path": "/content/drive/MyDrive/SpaGAT_revision/inductive_training/20260922_104353_552891_UTC_f291de00/multiseed_456_789_v1/results/Mouse/SpaGAT_seed789/spagat_seed789_best.pth",
+    "sha256": "576cfcd38f687225851ec9422f1c2ab07f608bf1b39f2fda43e593cae96b3e32",
+    "public_url": "",
+    "included": false,
+    "status": "Previously checked on author Drive; bytes not present in this local bundle."
+  }
+]

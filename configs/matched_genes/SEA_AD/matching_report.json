@@ -1,0 +1,660 @@
+{
+  "passed": true,
+  "rules": {
+    "statistics": "mean and population variance of masked expression entering the edge branch over all 50 candidate nodes of each training receiver",
+    "transforms": [
+      "asinh(mean)",
+      "log1p(variance)"
+    ],
+    "standardization": "gene-panel mean and population SD, estimated from training inputs only",
+    "maximum_pair_difference_per_feature_panel_SD": 1.0,
+    "maximum_absolute_set_mean_difference_per_feature_panel_SD": 0.25,
+    "cost": "squared Euclidean feature distance plus Exponential(scale=0.25) random costs",
+    "maximum_draws_per_set": 100,
+    "candidate_pool": "measured genes outside the original retained ligand-gene set",
+    "replacement": "one-to-one within a set; overlap between sets allowed; duplicate complete sets prohibited",
+    "selection": "first assignment passing the fixed expression-only criteria; no prediction metric is read",
+    "set_seeds": [
+      2026093001
+    ]
+  },
+  "candidate_pool_size": 116,
+  "original_feature_count": 24,
+  "candidate_coverage": [
+    {
+      "ligand_gene": "ROBO1",
+      "eligible_candidates": 60
+    },
+    {
+      "ligand_gene": "LAMA4",
+      "eligible_candidates": 72
+    },
+    {
+      "ligand_gene": "LRRC4C",
+      "eligible_candidates": 55
+    },
+    {
+      "ligand_gene": "LRP1B",
+      "eligible_candidates": 64
+    },
+    {
+      "ligand_gene": "SEMA6D",
+      "eligible_candidates": 55
+    },
+    {
+      "ligand_gene": "NLGN1",
+      "eligible_candidates": 43
+    },
+    {
+      "ligand_gene": "NXPH2",
+      "eligible_candidates": 41
+    },
+    {
+      "ligand_gene": "VIP",
+      "eligible_candidates": 40
+    },
+    {
+      "ligand_gene": "FGF13",
+      "eligible_candidates": 64
+    },
+    {
+      "ligand_gene": "KIRREL3",
+      "eligible_candidates": 24
+    },
+    {
+      "ligand_gene": "PDGFD",
+      "eligible_candidates": 42
+    },
+    {
+      "ligand_gene": "NPY",
+      "eligible_candidates": 42
+    },
+    {
+      "ligand_gene": "NTNG2",
+      "eligible_candidates": 35
+    },
+    {
+      "ligand_gene": "COL11A1",
+      "eligible_candidates": 67
+    },
+    {
+      "ligand_gene": "FGF12",
+      "eligible_candidates": 63
+    },
+    {
+      "ligand_gene": "CNTN5",
+      "eligible_candidates": 64
+    },
+    {
+      "ligand_gene": "CDH6",
+      "eligible_candidates": 68
+    },
+    {
+      "ligand_gene": "SEMA3E",
+      "eligible_candidates": 47
+    },
+    {
+      "ligand_gene": "NRG1",
+      "eligible_candidates": 59
+    },
+    {
+      "ligand_gene": "SLIT3",
+      "eligible_candidates": 61
+    },
+    {
+      "ligand_gene": "TNR",
+      "eligible_candidates": 14
+    },
+    {
+      "ligand_gene": "DCN",
+      "eligible_candidates": 58
+    },
+    {
+      "ligand_gene": "ADAMTS3",
+      "eligible_candidates": 64
+    },
+    {
+      "ligand_gene": "CD22",
+      "eligible_candidates": 47
+    }
+  ],
+  "sets": [
+    {
+      "set_id": "random_set_1",
+      "set_seed": 2026093001,
+      "accepted_draw": 1,
+      "original_genes": [
+        "ROBO1",
+        "LAMA4",
+        "LRRC4C",
+        "LRP1B",
+        "SEMA6D",
+        "NLGN1",
+        "NXPH2",
+        "VIP",
+        "FGF13",
+        "KIRREL3",
+        "PDGFD",
+        "NPY",
+        "NTNG2",
+        "COL11A1",
+        "FGF12",
+        "CNTN5",
+        "CDH6",
+        "SEMA3E",
+        "NRG1",
+        "SLIT3",
+        "TNR",
+        "DCN",
+        "ADAMTS3",
+        "CD22"
+      ],
+      "replacement_genes": [
+        "NPAS3",
+        "DLX1",
+        "NKAIN2",
+        "ZMAT4",
+        "ITGB8",
+        "KCNMB2",
+        "THEMIS",
+        "TSHZ2",
+        "PRKG1",
+        "PEX5L",
+        "CALB1",
+        "SMYD1",
+        "RFX3",
+        "PAX6",
+        "CTSS",
+        "ROBO2",
+        "PALMD",
+        "SULF1",
+        "NOSTRIN",
+        "SORCS1",
+        "DCLK1",
+        "DLC1",
+        "NOS1",
+        "SLC14A1"
+      ],
+      "pair_feature_differences": [
+        [
+          -0.14014440439684103,
+          -0.06903459728395797
+        ],
+        [
+          -0.2685143287740708,
+          -0.019199393969401457
+        ],
+        [
+          0.049996879500383784,
+          0.10729943845907164
+        ],
+        [
+          -0.16187884795030524,
+          0.11267229888326
+        ],
+        [
+          0.014692599931882655,
+          -0.1518330528502801
+        ],
+        [
+          -0.14862943769980208,
+          -0.13190472845036894
+        ],
+        [
+          0.07642331946945324,
+          -0.04225428731377168
+        ],
+        [
+          0.10324203327398473,
+          0.04831843498434307
+        ],
+        [
+          -0.13499537159374075,
+          -0.02672323718894154
+        ],
+        [
+          0.2892302762705412,
+          -0.01862983485241476
+        ],
+        [
+          0.12553949269391795,
+          0.10308997298265132
+        ],
+        [
+          -0.09879823804240617,
+          0.04778482751409263
+        ],
+        [
+          -0.05448780606356074,
+          -0.20191774539476853
+        ],
+        [
+          -0.18814963018849512,
+          -0.1773369100993153
+        ],
+        [
+          -0.12402435068304951,
+          -0.1791702333232731
+        ],
+        [
+          -0.13632299806698867,
+          0.00036682050515919606
+        ],
+        [
+          0.04295400074702449,
+          0.056702582405412594
+        ],
+        [
+          0.0786967928388369,
+          -0.010628785257418949
+        ],
+        [
+          -0.15937787210122,
+          0.02758759473874417
+        ],
+        [
+          0.09637944763528922,
+          0.09891591303238789
+        ],
+        [
+          -0.09262299483528436,
+          0.1075149362204626
+        ],
+        [
+          0.1698894648786321,
+          0.017957941496686697
+        ],
+        [
+          -0.040083272630761946,
+          -0.1018438940710793
+        ],
+        [
+          -0.14943591399255415,
+          0.02229203390185852
+        ]
+      ],
+      "set_feature_mean_difference": [
+        -0.03543421499079726,
+        -0.015832246038785885
+      ],
+      "maximum_pair_absolute_difference": 0.2892302762705412,
+      "mean_pair_squared_distance": 0.028830244396419315,
+      "matching_passed": true,
+      "mapping_sha256": "bc0a4588737a8d718c09904096b14a65e025ffdab530dbe353586f7073e7b59a"
+    }
+  ],
+  "failure": null,
+  "training_receivers": 257152,
+  "candidate_node_occurrences": 12857600,
+  "training_samples": [
+    {
+      "sample": "H20.33.001.CX28.MTG.02.007.1.02.02",
+      "training_receivers": 7937
+    },
+    {
+      "sample": "H20.33.001.CX28.MTG.02.007.1.02.03",
+      "training_receivers": 15222
+    },
+    {
+      "sample": "H20.33.001.Cx28.MTG.02.007.1.01.03",
+      "training_receivers": 6680
+    },
+    {
+      "sample": "H20.33.004.Cx26.MTG.02.007.1.01.04",
+      "training_receivers": 5323
+    },
+    {
+      "sample": "H20.33.004.Cx26.MTG.02.007.1.01.05",
+      "training_receivers": 3157
+    },
+    {
+      "sample": "H20.33.004.Cx26.MTG.02.007.1.02.02",
+      "training_receivers": 4120
+    },
+    {
+      "sample": "H20.33.004.Cx26.MTG.02.007.1.02.03",
+      "training_receivers": 4709
+    },
+    {
+      "sample": "H20.33.004.Cx26.MTG.02.007.1.02.04",
+      "training_receivers": 6594
+    },
+    {
+      "sample": "H20.33.012.Cx24.MTG.02.007.1.01.01",
+      "training_receivers": 3525
+    },
+    {
+      "sample": "H20.33.012.Cx24.MTG.02.007.1.03.02",
+      "training_receivers": 3192
+    },
+    {
+      "sample": "H20.33.012.Cx24.MTG.02.007.1.03.03",
+      "training_receivers": 3776
+    },
+    {
+      "sample": "H20.33.025.Cx28.MTG.02.007.1.01.02",
+      "training_receivers": 5394
+    },
+    {
+      "sample": "H20.33.025.Cx28.MTG.02.007.1.01.04",
+      "training_receivers": 5063
+    },
+    {
+      "sample": "H20.33.025.Cx28.MTG.02.007.1.01.06",
+      "training_receivers": 3441
+    },
+    {
+      "sample": "H20.33.044.Cx26.MTG.02.007.1.01.02",
+      "training_receivers": 3040
+    },
+    {
+      "sample": "H20.33.044.Cx26.MTG.02.007.1.01.03",
+      "training_receivers": 5124
+    },
+    {
+      "sample": "H20.33.044.Cx26.MTG.02.007.1.01.04",
+      "training_receivers": 6491
+    },
+    {
+      "sample": "H21.33.001.Cx22.MTG.02.007.1.01.03",
+      "training_receivers": 10469
+    },
+    {
+      "sample": "H21.33.001.Cx22.MTG.02.007.1.01.04",
+      "training_receivers": 6677
+    },
+    {
+      "sample": "H21.33.005.Cx18.MTG.02.007.02.03",
+      "training_receivers": 2117
+    },
+    {
+      "sample": "H21.33.005.Cx18.MTG.02.007.02.04",
+      "training_receivers": 3702
+    },
+    {
+      "sample": "H21.33.014.CX26.MTG.02.007.1.02.02",
+      "training_receivers": 4112
+    },
+    {
+      "sample": "H21.33.015.Cx26.MTG.02.007.1.0",
+      "training_receivers": 7573
+    },
+    {
+      "sample": "H21.33.015.Cx26.MTG.02.007.1.1",
+      "training_receivers": 11091
+    },
+    {
+      "sample": "H21.33.015.Cx26.MTG.02.007.1.2",
+      "training_receivers": 8057
+    },
+    {
+      "sample": "H21.33.016.Cx26.MTG.02.007.3.01.01",
+      "training_receivers": 4696
+    },
+    {
+      "sample": "H21.33.016.Cx26.MTG.02.007.3.01.02",
+      "training_receivers": 6229
+    },
+    {
+      "sample": "H21.33.016.Cx26.MTG.02.007.3.01.03",
+      "training_receivers": 5600
+    },
+    {
+      "sample": "H21.33.019.Cx30.MTG.02.007.5.0",
+      "training_receivers": 4025
+    },
+    {
+      "sample": "H21.33.019.Cx30.MTG.02.007.5.01.02",
+      "training_receivers": 5271
+    },
+    {
+      "sample": "H21.33.022.Cx26.MTG.02.007.2.M.02",
+      "training_receivers": 1780
+    },
+    {
+      "sample": "H21.33.022.Cx26.MTG.02.007.2.M.03",
+      "training_receivers": 2225
+    },
+    {
+      "sample": "H21.33.022.Cx26.MTG.02.007.2.M.04",
+      "training_receivers": 2276
+    },
+    {
+      "sample": "H21.33.023.Cx26.MTG.02.007.1.03.01",
+      "training_receivers": 6738
+    },
+    {
+      "sample": "H21.33.023.Cx26.MTG.02.007.1.03.04",
+      "training_receivers": 8304
+    },
+    {
+      "sample": "H21.33.023.Cx26.MTG.02.007.1.03.05",
+      "training_receivers": 7181
+    },
+    {
+      "sample": "H21.33.025.CX26.MTG.02.007.4.01.02",
+      "training_receivers": 3012
+    },
+    {
+      "sample": "H21.33.025.CX26.MTG.02.007.4.01.04",
+      "training_receivers": 2693
+    },
+    {
+      "sample": "H21.33.025.CX26.MTG.02.007.4.01.06",
+      "training_receivers": 1918
+    },
+    {
+      "sample": "H21.33.031.CX24.MTG.02.007.1.01.01",
+      "training_receivers": 9014
+    },
+    {
+      "sample": "H21.33.031.CX24.MTG.02.007.1.01.02",
+      "training_receivers": 8563
+    },
+    {
+      "sample": "H21.33.032.CX24.MTG.02.007.1.01.04",
+      "training_receivers": 4940
+    },
+    {
+      "sample": "H21.33.038.Cx20.MTG.02.007.3.01.02",
+      "training_receivers": 2413
+    },
+    {
+      "sample": "H21.33.038.Cx20.MTG.02.007.3.01.04",
+      "training_receivers": 4125
+    },
+    {
+      "sample": "H21.33.040.Cx22.MTG.02.007.3.03.01",
+      "training_receivers": 5795
+    },
+    {
+      "sample": "H21.33.040.Cx22.MTG.02.007.3.03.03",
+      "training_receivers": 4873
+    },
+    {
+      "sample": "H21.33.040.Cx22.MTG.02.007.3.03.04",
+      "training_receivers": 8895
+    }
+  ],
+  "training_edge_input_sha256": "cb539daabf6cb89b9bd666b6207074596ad70d78c24ca9c46594e8d74209d8a4",
+  "feature_center": [
+    0.42911678925110386,
+    0.32535840760525614
+  ],
+  "feature_scale": [
+    0.2671655262760301,
+    0.1936520813894861
+  ],
+  "note": "Repeated neighbors are weighted as they occur in training graphs; these are feature-matching statistics, not biological replicates.",
+  "dataset": "SEA_AD",
+  "split_sha256": "b3536c1b8ca6b198a588ae1fa2b846b06214106c9f687200c79511f3d5b8250c",
+  "genes_sha256": "ec3cc40485b46213c829e29208a9325e81a1a8a54dd3c5080fc0565a89090342",
+  "original_genes": [
+    "ROBO1",
+    "LAMA4",
+    "LRRC4C",
+    "LRP1B",
+    "SEMA6D",
+    "NLGN1",
+    "NXPH2",
+    "VIP",
+    "FGF13",
+    "KIRREL3",
+    "PDGFD",
+    "NPY",
+    "NTNG2",
+    "COL11A1",
+    "FGF12",
+    "CNTN5",
+    "CDH6",
+    "SEMA3E",
+    "NRG1",
+    "SLIT3",
+    "TNR",
+    "DCN",
+    "ADAMTS3",
+    "CD22"
+  ],
+  "genes": [
+    "PRRT4",
+    "GRIP2",
+    "FOXP2",
+    "PDZD2",
+    "KIAA1217",
+    "PALMD",
+    "LRRC4C",
+    "ASIC2",
+    "NPAS3",
+    "LUZP2",
+    "GRIN2A",
+    "NLGN1",
+    "NTNG2",
+    "TACR1",
+    "PDGFD",
+    "ANK1",
+    "DLX1",
+    "CBLN2",
+    "ZNF804A",
+    "CACNA2D3",
+    "CDH6",
+    "CD22",
+    "ETNPPL",
+    "CALB1",
+    "TSHZ2",
+    "FGF13",
+    "KIRREL3",
+    "ROBO1",
+    "RBFOX3",
+    "ASTN2",
+    "ID3",
+    "TH",
+    "TENM2",
+    "ZMAT4",
+    "CLSTN2",
+    "SEMA6D",
+    "HPSE2",
+    "BTBD11",
+    "LRP1B",
+    "NOS1",
+    "GPC5",
+    "SNTB1",
+    "COL11A1",
+    "TMEM255A",
+    "SATB2",
+    "SORCS3",
+    "FBXL7",
+    "GRM8",
+    "GALNTL6",
+    "NOSTRIN",
+    "DCC",
+    "SOX6",
+    "MEIS2",
+    "STXBP6",
+    "SMYD1",
+    "SCUBE1",
+    "LAMA4",
+    "CNTN5",
+    "GRM7",
+    "KCNMB2",
+    "CUX2",
+    "LAMP5",
+    "SLIT3",
+    "TAFA1",
+    "PRKG1",
+    "CSMD1",
+    "CNTNAP5",
+    "NFIA",
+    "FRMPD4",
+    "GRID2",
+    "HS6ST3",
+    "SORCS1",
+    "ATRNL1",
+    "ADAMTS3",
+    "SLC24A2",
+    "RBFOX1",
+    "TMEM132D",
+    "NKAIN2",
+    "PEX5L",
+    "TNR",
+    "DGKG",
+    "RFX3",
+    "UNC5B",
+    "HTR2A",
+    "RGS12",
+    "CACHD1",
+    "RORB",
+    "LRRK1",
+    "THEMIS",
+    "CARTPT",
+    "SLC32A1",
+    "GAD2",
+    "MOG",
+    "DCN",
+    "TOX",
+    "ZNF385D",
+    "PDE4B",
+    "GRIP1",
+    "ITGB8",
+    "PLD5",
+    "NPY",
+    "NDNF",
+    "SEMA3E",
+    "KAZN",
+    "DLC1",
+    "PLCB1",
+    "HCN1",
+    "ITGA8",
+    "EBF1",
+    "PRRX1",
+    "SLC14A1",
+    "EGFR",
+    "FEZF2",
+    "PAX6",
+    "ROBO2",
+    "SV2C",
+    "DCLK1",
+    "EYA4",
+    "RYR3",
+    "L3MBTL4",
+    "GRIN3A",
+    "CD74",
+    "RGS6",
+    "CTSS",
+    "KCNIP4",
+    "DACH1",
+    "HTR2C",
+    "PVALB",
+    "HS3ST2",
+    "GRIK3",
+    "FGF12",
+    "LHX6",
+    "VIP",
+    "CA10",
+    "ADAMTSL1",
+    "CHODL",
+    "SULF1",
+    "NRG1",
+    "NXPH2",
+    "TLL1"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "status": "computed_requires_Figure3_source_confirmation",
+  "path": "/content/drive/MyDrive/GITIII-main/liver_workdir/gitiii/influence_tensor/edges_NormalLiver.pth",
+  "file_bytes": 2795757633,
+  "target_sha256_shape_float32": "309091f51c4a2a46cfe9240d6df9d7b4348fa1ab2bd575e308b95f336be5e282",
+  "prediction_sha256_shape_float32": "794d30474b16d591f5381fe36d0d8c1f2a438492f836d8102c6da70634f4deec",
+  "n_cells": 332828,
+  "gene_order_source": "/content/drive/MyDrive/GITIII-main/liver_workdir/gitiii/data/genes.pth",
+  "ordering": "All eligible cells in saved section order",
+  "alignment": {
+    "sentinel_genes_checked": 18,
+    "float32_matches": false,
+    "documented_half_roundtrip_matches": true,
+    "full_gene_alignment_claimed": false
+  },
+  "coordinate_check": {
+    "allowed_half_roundtrip": true,
+    "axes": {
+      "position_x": {
+        "verified": true,
+        "saved_dtype": "float32",
+        "n_cells": 332828,
+        "float32_exact": false,
+        "float32_half_float32_exact": true,
+        "max_abs_difference_from_float32": 4.0,
+        "accepted_representation": "documented_float16_roundtrip"
+      },
+      "position_y": {
+        "verified": true,
+        "saved_dtype": "float32",
+        "n_cells": 332828,
+        "float32_exact": false,
+        "float32_half_float32_exact": true,
+        "max_abs_difference_from_float32": 4.0,
+        "accepted_representation": "documented_float16_roundtrip"
+      }
+    },
+    "all_present_axes_verified": true
+  },
+  "distribution": {
+    "n_genes": 1000,
+    "n_defined": 1000,
+    "n_undefined": 0,
+    "median_defined_PCC": 0.09465687564346385,
+    "q25_defined_PCC": 0.06526761191330774,
+    "q75_defined_PCC": 0.17396661919217155,
+    "n_negative": 0,
+    "n_above_0_5": 14,
+    "MSE": 0.07026036393605448,
+    "MSE0": 0.07878482466733706
+  },
+  "model_identity": "Not inferred from directory naming or PCC agreement",
+  "evaluation_scope": "Archived within-dataset fitted-model receiver cohort; not an independent test",
+  "historical_selection_rule": "Requires author confirmation; no prospective or random selection claimed"
+}

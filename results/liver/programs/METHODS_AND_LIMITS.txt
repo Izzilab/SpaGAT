@@ -1,0 +1,17 @@
+Analysis scope: existing validation predictions and fixed-model matched-count masking.
+No model is loaded, trained, or run. No independent liver test or biological replication is added.
+Gene sets: all 50 human MSigDB Hallmark sets, v2026.1.Hs, downloaded from the cited Broad Institute release.
+Use exact symbol matching and only unambiguous hyphen-to-dot column-name mapping. Export all mappings and coverage.
+Each program is evaluated if at least 5 panel genes are available; the standardized score also needs at least 5 positive-variance genes. Report all 50 sets, including non-evaluable sets. The >=10-gene indicator is a prespecified sensitivity subset, not a significance threshold. Sparse coverage does not validate a whole pathway.
+Primary score within each annotated tumor population: mean of (gene value - observed validation mean)/observed validation SD over available program genes. Exactly the same observed means and SDs are applied to predictions. No prediction-specific rescaling. These descriptive validation-derived calibration constants are exported; this is not an independent-test estimate.
+Sensitivity score: unscaled mean of measured target or predicted values for the same gene set. This secondary score includes constant genes, if any. No second baseline subtraction is performed.
+Report PCC, Spearman, MSE, MSE0 and 100*(1-MSE/MSE0). For the standardized score, zero is the observed-mean program baseline. For the raw score, zero is the original target-zero baseline; its residual interpretation remains conditional on preprocessing provenance.
+Direction agreement compares the signs of standardized predicted and observed scores, excluding only |observed score|<=1e-12. For the standardized score this is direction around the observed population mean; for the raw score the reference is original target zero, as explicitly labeled. Neither is differential expression between tumor populations or tumor versus normal.
+Signed delta = masked prediction - full prediction. Program signed means for each masking repeat are exact linear combinations of existing gene-level repeat means. Repeat SD describes neighbor selection under a fixed model, not training variability or biological replication.
+Cell-level program deltas are projected from arrays already averaged across 10 repeats. Mean absolute of these cell-level averages is |mean over repeats(delta)| averaged over cells. It is NOT mean over repeats and cells(|delta|). This distinction is reflected in column names.
+Random-control subtraction is descriptive under equal removed counts; it does not remove all spatial, abundance, or graph-perturbation confounding.
+The source audit gathers candidate preprocessing code and historical metric records only. Near-zero target means, numerical agreement, or a code keyword does not by itself verify historical provenance. Residual target semantics, old Figure 4 identity and tumor molecular subtype identity remain subject to manual evidence review.
+Supplied tumor baseline vectors are exported for annotation follow-up, without inferring subtype identity or independent disease validation.
+No gene-set significance tests, cell-bootstrap confidence intervals, clinical subtype assignments, or causal claims are generated.
+
+Gene-set source: https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.1.Hs/h.all.v2026.1.Hs.symbols.gmt

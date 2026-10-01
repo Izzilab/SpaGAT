@@ -1,0 +1,31 @@
+{
+  "status": "computed_requires_Figure3_source_confirmation",
+  "path": "/content/drive/MyDrive/GITIII-main/mouse_workdir/gitiii/influence_tensor/edges_mouse1_slice271.pth",
+  "file_bytes": 205912755,
+  "target_sha256_shape_float32": "cf4d3ad3ed2e463d9693c44b8a6eb08956e89f4873103fc71de89567c987adac",
+  "prediction_sha256_shape_float32": "183df06f7daa6929af44b934861de3f37819998e719cd4ac2c6eb480621caf83",
+  "n_cells": 3855,
+  "gene_order_source": "/content/drive/MyDrive/GITIII-main/mouse_workdir/gitiii/data/genes.pth",
+  "ordering": "All eligible cells in saved section order",
+  "alignment": {
+    "sentinel_genes_checked": 17,
+    "float32_matches": true,
+    "documented_half_roundtrip_matches": false,
+    "full_gene_alignment_claimed": false
+  },
+  "distribution": {
+    "n_genes": 254,
+    "n_defined": 254,
+    "n_undefined": 0,
+    "median_defined_PCC": 0.3135500264541601,
+    "q25_defined_PCC": 0.19309831692092796,
+    "q75_defined_PCC": 0.41373309659311663,
+    "n_negative": 0,
+    "n_above_0_5": 33,
+    "MSE": 0.15899189249950094,
+    "MSE0": 0.1963934273874079
+  },
+  "model_identity": "Not inferred from directory naming or PCC agreement",
+  "evaluation_scope": "Archived within-dataset fitted-model receiver cohort; not an independent test",
+  "historical_selection_rule": "Requires author confirmation; no prospective or random selection claimed"
+}

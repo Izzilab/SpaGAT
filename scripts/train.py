@@ -1,16 +1,7 @@
-"""Controlled comparison of legacy and program-aware SpaGP decoders.
+"""SpaGAT inductive revision using a fixed train/validation/test split.
 
-Example (run from the parent directory of the spagatv2 package):
-
-    python -m spagatv2.run_spagp_decoder_comparison \
-        --data-dir /path/to/data/processed --output-dir /path/to/decoder_comparison \
-        --seeds 123 456 789 --max-epochs 30 --patience 5 --n-programs 16
-
-For every seed, all selected modes use the same dataset split, model hyperparameters,
-initialization seed, and DataLoader shuffle generator:
-  - legacy:            SpaGP(program_aware=False)
-  - free:              SpaGP(program_aware=True, message_decoder="free")
-  - program_aligned:   SpaGP(program_aware=True, message_decoder="program_aligned")
+Select checkpoints on validation median gene-wise PCC only, then evaluate the
+best checkpoint once on test per seed. Model and metric definitions are retained.
 """
 
 import argparse
@@ -79,7 +70,7 @@ def gene_wise_pcc(prediction, target):
 
 def explained_variance_percent(prediction, target):
     residual_sum = (target - prediction).square().sum()
-    total_sum = (target - target.mean(dim=0, keepdim=True)).square().sum().clamp_min(1e-12)
+    total_sum = target.square().sum().clamp_min(1e-12)  # zero-residual reference; logging only
     return (100 * (1 - residual_sum / total_sum)).item()
 
 
@@ -106,7 +97,7 @@ def routing_statistics(attention_batches):
     return entropy_per_program, similarity
 
 
-def evaluate(model, loader, loss_function, device):
+def evaluate(model, loader, loss_function, device, return_predictions=False):
     model.eval()
     predictions, targets = [], []
     activations, coefficients, attention_batches = [], [], []
@@ -123,15 +114,29 @@ def evaluate(model, loader, loss_function, device):
             steps += 1
             predictions.append(prediction.cpu())
             targets.append(batch["y"].cpu())
-            activations.append(info["activations"].cpu())
-            if info.get("program_message_coefficients") is not None:
+            if not return_predictions:
+                activations.append(info["activations"].cpu())
+            if not return_predictions and info.get("program_message_coefficients") is not None:
                 coefficients.append(info["program_message_coefficients"].cpu())
-            if info.get("program_attention") is not None:
+            if not return_predictions and info.get("program_attention") is not None:
                 attention_batches.append(info["program_attention"].cpu())
 
     prediction = torch.cat(predictions, dim=0)
     target = torch.cat(targets, dim=0)
     pcc = gene_wise_pcc(prediction, target)
+    # Final test uses the same metric functions, in one inference pass. Avoid
+    # retaining diagnostic attention tensors for the much larger held-out set.
+    if return_predictions:
+        return {
+            "test_loss": loss_sum / steps,
+            "test_mse": torch.mean((prediction - target).square()).item(),
+            "test_mse_zero": torch.mean(target.square()).item(),
+            "median_gene_pcc": torch.median(pcc).item(),
+            "mean_gene_pcc": torch.mean(pcc).item(),
+            "ev_percent": explained_variance_percent(prediction, target),
+            "n_cells": int(target.shape[0]),
+            "n_genes": int(target.shape[1]),
+        }, prediction, target, pcc
     entropy_per_program, routing_similarity = routing_statistics(attention_batches)
     off_diagonal_similarity = None
     if routing_similarity is not None and routing_similarity.shape[0] > 1:
@@ -153,21 +158,20 @@ def evaluate(model, loader, loss_function, device):
     }
 
 
-def load_and_validate_shared_split(split_path, dataset_size):
+def load_and_validate_shared_split(split_path, dataset_size, data_dir=None):
     """Load a previously saved split and verify it is valid for this dataset."""
     with open(split_path, "r", encoding="utf-8") as handle:
         split = json.load(handle)
-    if not isinstance(split, dict) or set(split) != {"train_indices", "val_indices"}:
+    keys = ("train_indices", "val_indices", "test_indices")
+    if not isinstance(split, dict) or not set(keys).issubset(split):
         raise ValueError(
-            f"{split_path} must contain exactly train_indices and val_indices."
+            f"{split_path} must contain train_indices, val_indices and test_indices."
         )
 
-    train_indices = split["train_indices"]
-    val_indices = split["val_indices"]
-    if not isinstance(train_indices, list) or not isinstance(val_indices, list):
-        raise ValueError("Shared split indices must be JSON lists.")
-    all_indices = train_indices + val_indices
-    if not all_indices or any(not isinstance(index, int) for index in all_indices):
+    if any(not isinstance(split[key], list) or not split[key] for key in keys):
+        raise ValueError("Each split must be a non-empty JSON list.")
+    all_indices = [index for key in keys for index in split[key]]
+    if any(type(index) is not int for index in all_indices):
         raise ValueError("Shared split must contain non-empty integer index lists.")
     if any(index < 0 or index >= dataset_size for index in all_indices):
         raise ValueError(
@@ -175,7 +179,40 @@ def load_and_validate_shared_split(split_path, dataset_size):
         )
     if len(set(all_indices)) != len(all_indices):
         raise ValueError("Shared split contains duplicate or overlapping indices.")
-    return {"train_indices": train_indices, "val_indices": val_indices}
+    if len(all_indices) != dataset_size:
+        raise ValueError("Fixed split must cover the current dataset exactly once.")
+    if data_dir is not None and "processed_dir" in split:
+        if os.path.realpath(split["processed_dir"]) != os.path.realpath(data_dir):
+            raise ValueError("--data-dir does not match the split's processed_dir.")
+    for key, count_key in zip(keys, ("n_train", "n_validation", "n_test")):
+        if count_key in split and split[count_key] != len(split[key]):
+            raise ValueError(f"{count_key} does not match {key}.")
+    return split  # Preserve the inductive split's provenance metadata.
+
+
+def validate_sample_order(split_path, dataset, split):
+    """Check the saved sample audit when present, without fetching any cells."""
+    audit_path = os.path.splitext(split_path)[0] + "_samples.csv"
+    if not os.path.isfile(audit_path):
+        return
+    audit = pd.read_csv(audit_path)
+    if audit["sample"].tolist() != list(dataset.samples):
+        raise ValueError("Dataset sample order differs from the saved split audit.")
+    counts = np.asarray(dataset.meta_counts, dtype=np.int64)
+    ends = np.cumsum(counts)
+    starts = ends - counts
+    for column, expected in (("eligible_cells", counts),
+                             ("global_start", starts),
+                             ("global_end_exclusive", ends)):
+        if not np.array_equal(audit[column].to_numpy(), expected):
+            raise ValueError(f"Dataset {column} differs from the saved split audit.")
+    membership = np.empty(len(dataset), dtype=np.int8)
+    labels = ("train", "validation", "test")
+    for label, key in enumerate(("train_indices", "val_indices", "test_indices")):
+        membership[split[key]] = label
+    for row, start, end in zip(audit.itertuples(index=False), starts, ends):
+        if row.split not in labels or not np.all(membership[start:end] == labels.index(row.split)):
+            raise ValueError(f"Sample {row.sample} differs from the fixed split.")
 
 
 def parse_args():
@@ -187,8 +224,8 @@ def parse_args():
     
 
     parser.add_argument(
-        "--shared-split", default=None,
-        help="Path to an existing shared_split.json to reuse exactly; do not regenerate a split.",
+        "--shared-split", required=True,
+        help="Fixed inductive JSON with train_indices, val_indices and test_indices.",
     )
     parser.add_argument(
     "--max-epochs", "--epochs", dest="max_epochs", type=int, default=10,
@@ -212,6 +249,9 @@ def parse_args():
     parser.add_argument("--lambda-orth", type=float, default=0.1)
     parser.add_argument("--lambda-sparse", type=float, default=0.01)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--component-ablation", choices=["full","no_distance","matched_random_edge","uniform_routing"], default="full")
+    parser.add_argument("--routing-mode", choices=["program","uniform"], default="program")
+    parser.add_argument("--edge-gene-map", default=None)
     return parser.parse_args()
 
 
@@ -221,9 +261,20 @@ def main():
         raise ValueError("--max-epochs must be at least 1.")
     if args.patience < 0:
         raise ValueError("--patience must be non-negative.")
+    if len(set(args.seeds)) != len(args.seeds):
+        raise ValueError("Duplicate seeds would overwrite results.")
     
+    expected = {"uniform_routing": (4,"uniform")}.get(args.component_ablation,(4,"program"))
+    edge_gene_map_payload = None
+    if args.component_ablation == "matched_random_edge":
+        if not args.edge_gene_map:raise ValueError("A frozen training-only gene map is required")
+        with open(args.edge_gene_map,encoding="utf-8") as f:edge_gene_map_payload=json.load(f)
+    elif args.edge_gene_map is not None:raise ValueError("Gene mapping is allowed only in the matched-gene control")
+    if (args.n_programs, args.routing_mode) != expected:
+        raise ValueError("Ablation definition/configuration mismatch")
     device = torch.device(args.device)
-    os.makedirs(args.output_dir, exist_ok=True)
+    # Each invocation owns a new output directory; never reuse old results.
+    os.makedirs(args.output_dir, exist_ok=False)
     data_dir = args.data_dir.rstrip("/")
     data_root = os.path.dirname(data_dir)
     genes = torch.load(os.path.join(data_root, "genes.pth"), weights_only=False)
@@ -232,13 +283,8 @@ def main():
     # Construct once; deterministic index sets are reused for every selected
     # mode/seed.  A supplied split is loaded exactly instead of regenerated.
     dataset = SPAGAT_dataset(processed_dir=data_dir, num_neighbors=args.num_neighbors)
-    if args.shared_split is not None:
-        split = load_and_validate_shared_split(args.shared_split, len(dataset))
-    else:
-        split_generator = torch.Generator().manual_seed(args.split_seed)
-        indices = torch.randperm(len(dataset), generator=split_generator).tolist()
-        train_size = int(0.8 * len(indices))
-        split = {"train_indices": indices[:train_size], "val_indices": indices[train_size:]}
+    split = load_and_validate_shared_split(args.shared_split, len(dataset), data_dir)
+    validate_sample_order(args.shared_split, dataset, split)
     with open(os.path.join(args.output_dir, "shared_split.json"), "w", encoding="utf-8") as handle:
         json.dump(split, handle)
 
@@ -261,8 +307,12 @@ def main():
                 program_aware=True,
                 program_token_dim=args.program_token_dim,
                 message_decoder="free",
-                routing_mode="program",
+                routing_mode=args.routing_mode,
             ).to(device)
+            model.embeddings.component_ablation = args.component_ablation
+            if edge_gene_map_payload is not None:
+                from control_support import apply_gene_map
+                apply_gene_map(model,genes,ligands_info,edge_gene_map_payload)
             optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, betas=(0.99, 0.999))
             loss_function = SpaGP_Loss(
                 genes, ligands_info, lambda_orth=args.lambda_orth, lambda_sparse=args.lambda_sparse
@@ -334,12 +384,14 @@ def main():
 
                 checkpoint = {
                     "model": model.state_dict(),
+                    "edge_gene_map": edge_gene_map_payload,
                     "optimizer": optimizer.state_dict(),
                     "config": vars(args),
                     "model_config": {
                         "program_aware": True,
                         "message_decoder": "free",
-                        "routing_mode": "program",
+                        "routing_mode": args.routing_mode,
+                        "component_ablation": args.component_ablation,
                         "n_programs": args.n_programs,
                         "program_token_dim": args.program_token_dim,
                         "node_dim": args.node_dim,
@@ -398,6 +450,42 @@ def main():
                         f"{epochs_without_improvement} epoch(s)."
                     )
                     break
+
+            if best_epoch is None:
+                raise RuntimeError("No finite validation PCC; test evaluation is not allowed.")
+            best_checkpoint = torch.load(best_checkpoint_path, map_location="cpu", weights_only=False)
+            model.load_state_dict(best_checkpoint["model"])
+            del best_checkpoint
+            # Test is evaluated exactly once per seed, only after selection ends.
+            test_loader = DataLoader(
+                Subset(dataset, split["test_indices"]), batch_size=args.batch_size,
+                shuffle=False, drop_last=False,
+            )
+            test_metrics, prediction, target, pcc = evaluate(
+                model, test_loader, loss_function, device, return_predictions=True
+            )
+            test_metrics.update({
+                "seed": seed, "best_epoch": best_epoch,
+                "best_validation_pcc": best_metric,
+                "checkpoint": os.path.basename(best_checkpoint_path),
+                "target_space": "residual relative to training-derived cell-type baseline",
+            })
+            test_dir = os.path.join(args.output_dir, f"seed{seed}_test")
+            os.makedirs(test_dir, exist_ok=False)
+            with open(os.path.join(test_dir, "test_metrics.json"), "x", encoding="utf-8") as handle:
+                json.dump(test_metrics, handle, indent=2)
+            pd.DataFrame([test_metrics]).to_csv(os.path.join(test_dir, "test_metrics.csv"), index=False)
+            pd.DataFrame({"gene": genes, "PCC": pcc.numpy()}).to_csv(
+                os.path.join(test_dir, "test_per_gene_PCC.csv"), index=False,
+            )
+            np.savez_compressed(
+                os.path.join(test_dir, "test_predictions.npz"),
+                prediction=prediction.numpy(), target=target.numpy(),
+                test_indices=np.asarray(split["test_indices"], dtype=np.int64),
+                genes=np.asarray(genes, dtype=str),
+            )
+            print(f"SpaGAT seed={seed} final test PCC={test_metrics['median_gene_pcc']:.4f}; saved to {test_dir}")
+            del prediction, target, pcc
 
             best_run_records.append(
                 {

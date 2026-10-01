@@ -1,96 +1,105 @@
 # SpaGAT
 
-SpaGAT is a receiver-conditioned graph attention framework for predicting residual cell-state variation from spatial transcriptomics data.
+SpaGAT predicts cell-type-centered expression residuals from spatial
+neighborhoods and evaluates model dependence on neighboring cell populations.
+This repository contains the code and recorded results accompanying the
+revised manuscript. The maintained repository is
+[WuBoFu/SpaGAT](https://github.com/WuBoFu/SpaGAT).
 
-The model decomposes observed expression into a cell-type baseline and a residual cell-state component, and predicts the residual component using spatial neighborhood information, ligand-associated features, distance-aware edge representations, and receiver-conditioned latent graph routing.
+## Start here
 
-## Repository structure
+| Task | Entry point | External inputs |
+|---|---|---|
+| Check included files and split records | `python scripts/verify_bundle.py` | None; Python standard library |
+| Regenerate numerical summaries | `scripts/reproduce_tables.py` | None beyond the included records |
+| Redraw Figure 2 and Figure S2 | `figures/plot_Figure2.py`, `figures/plot_FigureS2.py` | None beyond the included records |
+| Train and evaluate a brain benchmark or component control | `scripts/run_benchmark.py` | The original model-ready data and a training environment |
+| Inspect or adapt the supplementary analyses | [analysis/README.md](analysis/README.md) | Original inputs/predictions/checkpoints as specified in each workflow |
 
-SpaGAT_submission/
-- README.md
-- requirements.txt
-- spagat/
-  - __init__.py
-  - preprocess.py
-  - dataloader.py
-  - embedding.py
-  - attention.py
-  - gene_program_model.py
-- scripts/
-  - train.py
-  - evaluate.py
-  - sender_attribution.py
+## Reproduce included results without training
 
-## Requirements
+Run from this repository's root:
 
-Install dependencies with:
+```bash
+python -m pip install -r requirements.txt
+python scripts/verify_bundle.py
+python scripts/reproduce_tables.py --output-dir reproduced_tables
+python figures/plot_Figure2.py --output reproduced_figures/Figure2.pdf
+python figures/plot_FigureS2.py --output reproduced_figures/FigureS2.pdf
+```
 
-pip install -r requirements.txt
+These commands use the included numerical records. They do not reconstruct
+missing predictions from checkpoints or train new models. Figure S2 describes
+the original Figure 3 analysis cohorts, which differ from the brain test sets.
 
-## Data preparation
+## Independent-test brain benchmarks
 
-SpaGAT expects processed spatial transcriptomics data containing gene expression, cell-type annotations, spatial coordinates, cell-type baseline expression, residual-expression targets, and spatial-neighborhood information.
+SEA-AD and Mouse use the saved training, validation and test partitions, with
+training seeds **123, 456 and 789**. Cell-type baselines are training-derived.
+Checkpoint selection uses validation median gene-wise PCC; the selected model
+is then evaluated on the held-out test set. Neighborhoods remain within
+sections, and receiver/homotypic-neighbor residuals are masked in the inputs.
 
-The processed data directory should contain the metadata files:
+The five methods are SpaGAT, GITIII, GAT, SPICE-adapted and LightGBM. Use the
+same externally supplied model-ready inputs for every method. For example:
 
-- genes.pth
-- ligands.pth
-- cell_types.pth
+```bash
+python scripts/run_benchmark.py --dataset SEA_AD --method SpaGAT --seed 123 --data-dir /path/to/SEA_AD/data/processed --output-dir runs/SEA_AD_SpaGAT_123
+```
 
-By default, each receiver cell is represented together with 49 neighboring cells, resulting in a neighborhood size of 50 cells.
+The launcher validates required paths and creates a separate run directory.
+It stages the fixed partitions rather than generating a new random split.
+The underlying `scripts/train.py` requires all three partitions and includes
+the final test export; there is no root validation-only `evaluate.py` command.
+See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for all methods and controls,
+and [environment/README.md](environment/README.md) for recorded versions.
 
-The receiver residual expression is used only as the prediction target and is excluded from the model input. For neighbors sharing the same cell type as the receiver, SpaGAT uses the corresponding cell-type baseline expression. Heterotypic neighbors retain their cell-specific residual variation.
+## Component and supplementary analyses
 
-## Training
+Revised Table 1 compares the full model with distance removal, four-channel
+uniform routing, and matched random edge-gene replacement. Per-seed values and
+sample SDs are in `results/table1/`. One fixed matched gene set is used per
+dataset across training seeds; these runs do not measure between-gene-set
+variability. The comparison does not establish ligand-receptor specificity.
 
-Run:
+The liver analyses use their separately documented within-specimen cohorts;
+they are not independent-patient tests. Masking results measure model-derived
+prediction dependence rather than causal signaling. The additional notebooks
+and frozen source snapshots are indexed in [analysis/README.md](analysis/README.md).
+They retain author paths and require external inputs; they are not a universal
+run-all workflow. The component code and results in this package cover the
+configurations reported in revised Table 1.
 
-python scripts/train.py --data-dir /path/to/processed_data --output-dir /path/to/output
+The file-to-manuscript mapping is in [docs/PAPER_SCOPE.md](docs/PAPER_SCOPE.md).
 
-The default configuration uses a neighborhood size of 50, node dimension of 256, edge dimension of 48, two attention heads, one graph layer, four latent routing channels, and a program-token dimension of 32.
+## Repository contents
 
-The model is optimized with AdamW using a learning rate of 1e-4. The orthogonality and sparsity regularization weights are 0.1 and 0.01, respectively.
+- `spagat/`: model and data-loading code; SpaGAT is the public name, with
+  historical SpaGP identifiers retained for checkpoint compatibility.
+- `scripts/`, `baselines/`: fixed-partition training, controls and summary tools.
+- `splits/`, `configs/`, `environment/`: saved indices, settings, matching maps
+  and recorded environments.
+- `results/`, `figures/`: numerical records and selected plotting scripts.
+- `analysis/`: supplementary-analysis notebooks and recovered source snapshots.
+- `docs/`, `data_records/`, `provenance/`, `assets/`: protocol, source coverage,
+  filtering counts and external-input/checkpoint records.
 
-The best checkpoint is selected according to the highest validation median gene-wise Pearson correlation coefficient (PCC).
+## Data and reproducibility scope
 
-## Evaluation
+Public dataset sources and the model-ready input contract are documented in
+[docs/DATA_AND_PREPROCESSING.md](docs/DATA_AND_PREPROCESSING.md).
+**Actual checkpoints, complete model-ready matrices and complete raw-to-input
+conversion pipelines are not included.** Exact historical input order and
+scale are necessary to reuse the split indices. The Mouse LightGBM runner is
+a documented recovered adapter. Recorded environments have not been validated
+as a fresh portable training installation. Complete Figure 1/3/4 workflows and
+the original Figure 5 composite are not provided.
 
-Run:
+[docs/COVERAGE.csv](docs/COVERAGE.csv) and [docs/KNOWN_GAPS.md](docs/KNOWN_GAPS.md)
+identify what can be reproduced from the included records and what still needs
+external inputs. `validation_report.json` records local checks; it is not a
+claim of fresh full-data GPU training or checkpoint inference.
 
-python scripts/evaluate.py --data-dir /path/to/processed_data --checkpoint /path/to/best.pth --output-dir /path/to/evaluation_results
-
-The evaluation script reports median gene-wise PCC, mean gene-wise PCC, mean squared error (MSE), and explained variance (EV).
-
-## Sender-origin attribution
-
-SpaGAT includes an inference-time matched sender-masking analysis for estimating model-derived dependence on neighboring cell populations.
-
-For two sender populations, the matched removal count for receiver i is:
-
-m_i = min(n_i,1, n_i,2)
-
-For each eligible receiver, three conditions are compared:
-
-1. random removal of m_i neighbors;
-2. removal of m_i neighbors from sender population 1;
-3. removal of m_i neighbors from sender population 2.
-
-The receiver itself remains unchanged. Selected sender-to-receiver edges are removed across all latent routing channels during inference.
-
-Example:
-
-python scripts/sender_attribution.py --data-dir /path/to/processed_data --checkpoint /path/to/best.pth --output-dir /path/to/sender_results --receiver-types tumor_1 tumor_2 --sender-types tumor_1 tumor_2 --repeats 10
-
-The primary sender-attribution metrics are mean absolute prediction change and relative increase in prediction MSE.
-
-These quantities measure model-derived predictive dependence and should not be interpreted as evidence of causal cell-cell signaling.
-
-## Preprocessing note
-
-Expression preprocessing may differ across datasets and should follow the processed scale used for each dataset.
-
-For the Mouse MERFISH dataset used in the study, no additional logarithmic transformation was applied before residualization.
-
-## Citation
-
-If you use SpaGAT, please cite the corresponding manuscript.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source attribution and
+the retained GITIII license. Historical repository versions remain in Git
+history; the main entry points above describe the revised experiments.

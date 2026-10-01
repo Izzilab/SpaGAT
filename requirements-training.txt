@@ -1,0 +1,10 @@
+# Convenience dependency names, not an exact lockfile.
+# Install a hardware-appropriate PyTorch build first.
+# Recorded training versions are in environment/; a fresh install is unverified.
+numpy
+pandas
+scipy
+scikit-learn
+torch-geometric
+lightgbm
+psutil

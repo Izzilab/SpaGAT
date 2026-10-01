@@ -1,0 +1,18 @@
+item,status,scope
+SpaGAT model/source,included,reported architecture and Table 1 controls; checkpoint-compatible aliases retained
+five-model brain benchmark,source + 30 run summaries included,training requires external model-ready inputs
+fixed splits,included,exact index arrays; relocated paths; derived section audit validated
+environment,recorded versions included,fresh training installation not tested
+raw-data conversion,partial documentation,complete original conversion not recovered
+checkpoint downloads,manifest only,six recorded hashes; no checkpoint bytes or public links
+Figure 2,plot script + data included,regeneration without inference
+Figure S2,plot script + all-gene CSVs included,archived Figure 3 cohorts
+Figures 1/3/4,complete workflow not included,no claim of regeneration
+Figure 5,numeric records included,means/SD regenerated; composite artwork not rebuilt
+component comparisons,revised Table 1 per-seed + SD tables and source included,24 rows covering the configurations reported in Table 1
+neighborhood sensitivity,six result rows + notebook + completed source snapshot included,seed 123; external original data/checkpoints required
+liver followups,result tables + gene/program/distance-control notebooks and source included,within-specimen; original inputs/checkpoints not bundled
+random-gene/uniform-routing,12 completed runs + source + frozen mappings included,one fixed matched gene set per dataset; three training seeds
+resource measurements,measured tables + notebook + worker included,original external inputs/checkpoints required; no fresh resource rerun
+cohort flow and EV audit,tables + notebooks/source included,model-input filtering only; raw upstream reconstruction remains incomplete
+50% proportional masking,complete execution workflow not recovered,not claimed reproducible from this repository alone

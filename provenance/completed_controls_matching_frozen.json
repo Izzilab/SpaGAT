@@ -1,0 +1,13 @@
+{
+  "protocol_fingerprint": "3ec8f2893ef4040e5e098e1f21f29f3f7f37b4300f2915b725c2ca03bb0eb653",
+  "files": {
+    "matching/Mouse/matching_report.json": "ba01913ad4be0b6dcd9fa93fc034df1586350a2639893e355b6221a126d43a71",
+    "matching/Mouse/random_set_1.json": "894265fdceff428ddfe64929d2318236159448e80c3e4550555a05f9fa2645d4",
+    "matching/Mouse/random_set_1_pairs.csv": "61ec0d2ce4dbbc7fd27b8a6ca887499ff9bf611742119e43bf3c9f0e0f970e76",
+    "matching/Mouse/training_gene_statistics.csv": "1aa0c977574fe9ced0723f47478c0b78e7186407ec7ae0bd1e65604f5993eca1",
+    "matching/SEA_AD/matching_report.json": "5a0185f3a6c079a07ac813b3bdc5eabbbfff5734ab5cf8d6ca9c483cfc9c8ff1",
+    "matching/SEA_AD/random_set_1.json": "7f90fdc2ad506b892e028b1c41510911a8bf1c3d2136dfa366761b53885564a9",
+    "matching/SEA_AD/random_set_1_pairs.csv": "3a3c6c6be8e0d4bf3121aea198429defe44aa5994d9dcba64306af198764c410",
+    "matching/SEA_AD/training_gene_statistics.csv": "ada02c9b7064e91d9ae3525b449c74a6a633593f9856892811a7b11a9ee898fa"
+  }
+}

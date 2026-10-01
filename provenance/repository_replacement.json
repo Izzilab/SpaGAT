@@ -1,0 +1,11 @@
+{
+  "upstream_repository": "https://github.com/WuBoFu/SpaGAT",
+  "inspected_commit": "38c27adc029715800e735999469cd6c15e98c076",
+  "old_root_files_removed": [
+    "scripts/evaluate.py",
+    "scripts/sender_attribution.py"
+  ],
+  "train_entry_replaced": "scripts/train.py requires train_indices, val_indices and test_indices",
+  "public_launcher": "scripts/run_benchmark.py",
+  "remote_repository_modified": false
+}

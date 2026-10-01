@@ -1,15 +1,23 @@
+# Local Python/editor artifacts
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 .DS_Store
 .ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
 
+# Large external inputs and generated model weights
 *.pth
 *.pt
 *.ckpt
+*.npy
 *.npz
+/local_data/
+/runs/
+/reproduced_tables/
+/reproduced_figures/
 
-data/
-results/
-analysis/
+# Published analysis/, results/, configs/ and splits/ are intentionally tracked.

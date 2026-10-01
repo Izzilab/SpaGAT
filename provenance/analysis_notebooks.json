@@ -1,0 +1,56 @@
+[
+  {
+    "file": "analysis/notebooks/neighborhood_size.ipynb",
+    "original_name": "SpaGAT_Neighborhood_Size_Sensitivity_v2.ipynb",
+    "original_sha256": "a44db5d5f1f11b6bce1b4f924c28f356e4a5927fbceee005abe14314310fbdd1",
+    "changes": "Execution outputs cleared; unused component-test switches removed from embedded helpers; k-size computation retained; new workflow fingerprint."
+  },
+  {
+    "file": "analysis/notebooks/liver_gene_signed.ipynb",
+    "original_name": "SpaGAT_R3_5_7_Gene_Signed_Export.ipynb",
+    "original_sha256": "e84f992dc91123d9c7413c73917958d55beec188f0b9315a84c9846deb472fcb",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  },
+  {
+    "file": "analysis/notebooks/liver_programs.ipynb",
+    "original_name": "SpaGAT_R3_5_7_Program_Followup.ipynb",
+    "original_sha256": "c1c16290fca2623b9c590b540138bac0bb9709da54c204f667dd6bfa374a2a57",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  },
+  {
+    "file": "analysis/notebooks/liver_distance_message_controls.ipynb",
+    "original_name": "SpaGAT_R1_5_Distance_Message_Controls_v3.ipynb",
+    "original_sha256": "32197f89a0e86472d184555d92c696f5b64b036465c78373ef25421ebd281ab9",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  },
+  {
+    "file": "analysis/notebooks/resource_profile.ipynb",
+    "original_name": "SpaGAT_R2_Resource_Profile.ipynb",
+    "original_sha256": "4442d6af53c854c6e9a760554750cd7357ac06044435940c7d2dd91eb531f1de",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  },
+  {
+    "file": "analysis/notebooks/cohort_flow.ipynb",
+    "original_name": "SpaGAT_S1_Cohort_Flow_Audit.ipynb",
+    "original_sha256": "04f059e49c83975a3d4ae60c9c730471810dee2b3dcf749b0eb76bdc872088fb",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  },
+  {
+    "file": "analysis/notebooks/gene_distributions.ipynb",
+    "original_name": "SpaGAT_R1_Minor6_Postprocessing.ipynb",
+    "original_sha256": "039293614e6112459609fb2a04794d0f5434c6e9952912b23d327de1a0961bef",
+    "changes": "Publication-scoped derivative: removed unused independent-test gene-distribution and comparative-map workflows; retained the reported Figure 3 cohort inputs and unchanged numerical/provenance checks; cleared execution outputs."
+  },
+  {
+    "file": "analysis/notebooks/normal_liver_gene_distributions.ipynb",
+    "original_name": "SpaGAT_Minor6_NormalLiver_Followup.ipynb",
+    "original_sha256": "42c2b5e17eb06715bd09a209df47cc99a6a842929ec941a3dfeb8f3a1924d1cb",
+    "changes": "Publication-scoped derivative: removed unused independent-test gene-distribution and comparative-map workflows; retained the reported Figure 3 cohort inputs and unchanged numerical/provenance checks; cleared execution outputs."
+  },
+  {
+    "file": "analysis/notebooks/cell_type_EV_audit.ipynb",
+    "original_name": "R1_Minor9_NormalLiver_EV_fix.ipynb",
+    "original_sha256": "75b766d9c13b4f39fc2290e989dcac4249628eba9ee2edc61bc52531330b8723",
+    "changes": "execution outputs cleared; scope note added; original code cells unchanged"
+  }
+]

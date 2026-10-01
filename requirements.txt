@@ -1,5 +1,2 @@
-numpy
-pandas
-torch
-scikit-learn
-scipy
+# Lightweight result/figure reproduction; does not install the training stack.
+-r requirements-plots.txt

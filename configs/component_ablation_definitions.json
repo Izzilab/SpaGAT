@@ -1,0 +1,18 @@
+{
+  "datasets": [
+    "SEA_AD",
+    "Mouse"
+  ],
+  "seeds": [
+    123,
+    456,
+    789
+  ],
+  "full_model": "reused Figure 2 runs",
+  "no_distance": "zero distance-feature tensor, original neighborhoods retained",
+  "uniform_routing": "four channels with alpha=1/50 including receiver; original edge messages, gates and decoder retained",
+  "matched_random_edge": "replace edge gene indices only using one frozen matching map per dataset; all-gene node inputs unchanged",
+  "random_set_seed": 2026093001,
+  "matching_features": "training-edge-input expression mean and population variance, asinh/log1p transformed then standardized across panel",
+  "scope": "Configurations reported in revised main-text Table 1."
+}

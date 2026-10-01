@@ -1,0 +1,418 @@
+[
+  {
+    "path": "spagat/attention.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/attention.py",
+    "source_sha256": "5a8c0fcb97e7973a5f842e4515b17e8211eb779d529800f0a0c4e40b2ef792af",
+    "note": "Publication-scoped derivative; unused comparison switches removed, retained configurations preserved. Original source checksum identifies its source snapshot; MANIFEST.json records delivered bytes."
+  },
+  {
+    "path": "spagat/preprocess.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/preprocess.py",
+    "source_sha256": "9bb77b4e200f8b1456bf2eb8901982816c0706be5878cea7f5e54e19676b7490",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "spagat/embedding.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/embedding.py",
+    "source_sha256": "724505f8eb180542a27cba6c16af6d4c5393dde3402dea475c110d97cb4d1e4b",
+    "note": "Publication-scoped derivative; unused comparison switches removed, retained configurations preserved. Original source checksum identifies its source snapshot; MANIFEST.json records delivered bytes."
+  },
+  {
+    "path": "spagat/__init__.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/__init__.py",
+    "source_sha256": "af200e1784421e427d17548ed9449a9257cd96ab1a0be46cc81e3c4fbf4b82ea",
+    "note": "Public SpaGAT/SpaGATLoss aliases added; historical class names retained; model tensors unchanged."
+  },
+  {
+    "path": "spagat/gene_program_model.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/gene_program_model.py",
+    "source_sha256": "e9f7cdf2280f14659cfa8dd477f1ec3087a1c09bed981dcf31b890ceb50aa5a6",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "spagat/dataloader.py",
+    "source": "work/ablation_completed_20260930/returned/source/spagat/dataloader.py",
+    "source_sha256": "9f7e97c8fd12a5f9d8fc968987549fbdcac52deff784ac9bfac3bd8e14fb12a2",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "scripts/train.py",
+    "source": "work/ablation_completed_20260930/returned/source/scripts/train.py",
+    "source_sha256": "56c4d7d7f7e81f168345bcb2183a8faf989537691d57a9f158b0840abce8abf4",
+    "note": "Publication-scoped derivative; unused comparison switches removed, retained configurations preserved. Original source checksum identifies its source snapshot; MANIFEST.json records delivered bytes."
+  },
+  {
+    "path": "configs/component_ablation_definitions.json",
+    "source": "work/ablation_completed_20260930/returned/summary_status.json",
+    "source_sha256": "288c4761ed3ec7406f66777e49d0777b006cd41da2558a907728ec2b482f7cc3",
+    "note": "Publication-scoped derivative; unused comparison switches removed, retained configurations preserved. Original source checksum identifies its source snapshot; MANIFEST.json records delivered bytes."
+  },
+  {
+    "path": "baselines/SEA_AD/GAT.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/code/runners/GAT.py",
+    "source_sha256": "7f54709176e2b855323955bfc5957c8d0907a80ef60fb43cd31a9e5516b83fd5",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/Mouse/GAT.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/GAT_seed456/runner_source.py",
+    "source_sha256": "206e69c7fbb3ee4b2bd2ec2c3c666f3652dbeb4faa957246ff5cce3182457ae2",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/SEA_AD/SPICE_adapted.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/code/runners/SPICE_adapted.py",
+    "source_sha256": "25e0daec779ba2913f0b117788663b4de9537318b491c78cf2199af2fdf0ff4b",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/Mouse/SPICE_adapted.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/SPICE_adapted_seed456/runner_source.py",
+    "source_sha256": "08aee2cc44e108ecaff6910ba351e09926ffb1be47312f0054a8f14e791ea5bb",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/SEA_AD/GITIII_official.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/code/runners/GITIII_official.py",
+    "source_sha256": "3a7e96a783ffd4544e5e09429f7f86d034eee564089a6f57f8cc46f889ed458c",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/Mouse/GITIII_official.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/GITIII_official_seed456/runner_source.py",
+    "source_sha256": "8b7fa5baeb1194b030b4efdcd106b868212dbd914de5877e8f145c8839745bd5",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/SEA_AD/LightGBM.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/code/runners/LightGBM.py",
+    "source_sha256": "e4e64b10e445e9f2e90a15bbacd4c641995e2d2a7d9a99d819daa742c7a38c02",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "baselines/Mouse/LightGBM.py",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/code/runners/LightGBM.py",
+    "source_sha256": "e4e64b10e445e9f2e90a15bbacd4c641995e2d2a7d9a99d819daa742c7a38c02",
+    "note": "Dataset labels, expected split counts and gene count adapted. Original Mouse LightGBM runner was not recovered."
+  },
+  {
+    "path": "data_records/counts_by_section.csv",
+    "source": "work/r1_minor3/returned_20260929_105631_e2d6c2/counts_by_section.csv",
+    "source_sha256": "9bf720d12032a26471bdbe56bc846315741c467e0bf0bd83f1d5d794572b9ad7",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "data_records/counts_by_sample.csv",
+    "source": "work/r1_minor3/returned_20260929_105631_e2d6c2/counts_by_sample.csv",
+    "source_sha256": "3dc78c193047b2019c9dcf1edc59c197f8ccf8c397e244269bd1ac217a3ba26f",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "splits/SEA_AD_inductive_split_indices.json",
+    "source": "work/ablation_completed_20260930/returned/runs/SEA_AD/no_distance_seed123/shared_split.json",
+    "source_sha256": "b3536c1b8ca6b198a588ae1fa2b846b06214106c9f687200c79511f3d5b8250c",
+    "index_arrays_sha256": "f3123e388d34b32927ce8c8c08cd765140e567a4e802f80bfeb8e74fca314ec6",
+    "note": "Only processed_dir and split_manifest paths relocated. Index arrays unchanged."
+  },
+  {
+    "path": "splits/Mouse_inductive_split_indices.json",
+    "source": "work/ablation_completed_20260930/returned/runs/Mouse/no_distance_seed123/shared_split.json",
+    "source_sha256": "d7ec406fc3be3cf2aba12c53d0e9a9d901ed830f9827554e901fed494f8bb113",
+    "index_arrays_sha256": "93640126c8e5f473880700fe82c5946269d37af21574ec6756401ff7db33787f",
+    "note": "Only processed_dir and split_manifest paths relocated. Index arrays unchanged."
+  },
+  {
+    "path": "results/brain_benchmarks/per_seed_metrics.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/per_seed_metrics.csv",
+    "source_sha256": "7f4fa79c8ebe4ae916acfacb5be5e8c62cfe73e7b823416ba000cd50b97e8727",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/brain_benchmarks/seed_mean_sample_sd.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/seed_mean_sample_sd.csv",
+    "source_sha256": "81fb786ff756dcc991b2a22bc5d1fb38a4ce0f7416ad0bd42ff09334438136ef",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/brain_benchmarks/per_donor_or_section_per_seed.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/per_donor_or_section_per_seed.csv",
+    "source_sha256": "793164e5db7059bff8acb63bd44d401e254646e835864a5bb5453f51ac29b451",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/brain_benchmarks/unit_mean_sample_sd.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/unit_mean_sample_sd.csv",
+    "source_sha256": "426fa12a46225f758ebd2973a40fd33f81f5b0c44642b382b692b22818800a7f",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/brain_benchmarks/SEA_AD_donor_bootstrap_95CI.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/SEA_AD_donor_bootstrap_95CI.csv",
+    "source_sha256": "d78bf2cfec6eed806cecbc9f82068fbc60eb2cd7e600dc5d8155dbed2dd81351",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/brain_benchmarks/SEA_AD_paired_differences_95CI.csv",
+    "source": "work/r3_zip/R3_3_postprocessing_20260927_185908_667684_UTC_a621c7/SEA_AD_paired_differences_95CI.csv",
+    "source_sha256": "8b1ef89ad18b00203c780375202ec7c14254193b27ee2ebc6e8c262164054ad7",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/neighborhood_size/neighborhood_test_metrics.csv",
+    "source": "work/neighborhood_export_recovery/returned_20260930_181239_456f83/neighborhood_test_metrics.csv",
+    "source_sha256": "8f3b461f9cfb7469379333cec75dd957034c358b8053b48e695e6463d1fe6220",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "figures/Figure2_source_values.csv",
+    "source": "outputs/Figure2_source_values.csv",
+    "source_sha256": "4aefdc7cd04430cd73c5382e5985ab931879b17a966fb966c5e7d1d009f6540b",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "figures/plot_Figure2.py",
+    "source": "outputs/plot_Figure2.py",
+    "source_sha256": "6571be534d87eb32c2262667c3564922d2d21536e7688216c7dcc1c93eeffd62",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/distance_message_controls/control_summary.csv",
+    "source": "work/r1_5_returned/20260928_162046_d793be/control_summary.csv",
+    "source_sha256": "da3bd7668160db137acac544d73c2bde67bab1bfedb63a602d83d49427da77d1",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/distance_message_controls/control_repeats.csv",
+    "source": "work/r1_5_returned/20260928_162046_d793be/control_repeats.csv",
+    "source_sha256": "a356989525bd83c65520c20a9747c1c881b55ed42d67a195b6aad5dfe02213a4",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/distance_message_controls/paired_contrast_summary.csv",
+    "source": "work/r1_5_returned/20260928_162046_d793be/paired_contrast_summary.csv",
+    "source_sha256": "075737a2ca9a9da36e690b36573c98bb9b88615d0d52092cc14191d2d89d8d43",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/distance_message_controls/paired_contrast_repeats.csv",
+    "source": "work/r1_5_returned/20260928_162046_d793be/paired_contrast_repeats.csv",
+    "source_sha256": "c82dedcd72c3cd65bb07d387d3c90e685e15b0d2ed445ac9c52fb1ed5906eaac",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/distance_message_controls/selected_sender_balance.csv",
+    "source": "work/r1_5_returned/20260928_162046_d793be/selected_sender_balance.csv",
+    "source_sha256": "7f4fec50fe938dd4a57245b6ae8ea6632bf9e96d2f98b508b8781f6e7864010a",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/signed_gene/tumor_1_gene_recovery.csv",
+    "source": "work/r3_5_7_latest/R3_5_7_gene_signed_20260928_090940_UTC/tumor_1_gene_recovery.csv",
+    "source_sha256": "57eba26fdfa4d9460e9fb58f5072ef795934278dbd9dfeade79af8247bf2a537",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/signed_gene/tumor_2_gene_recovery.csv",
+    "source": "work/r3_5_7_latest/R3_5_7_gene_signed_20260928_090940_UTC/tumor_2_gene_recovery.csv",
+    "source_sha256": "51310aa0e2fa93dee05811d6d3d9ed9736a60a4e0727ed6bff342a5d740428bb",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/signed_gene/signed_masking_gene_summary.csv",
+    "source": "work/r3_5_7_latest/R3_5_7_gene_signed_20260928_090940_UTC/signed_masking_gene_summary.csv",
+    "source_sha256": "7d1d35536ee880cf7a73f25eb34ca208b03ed31a04e4ac95f1c361a5ceb7981a",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/programs/program_recovery.csv",
+    "source": "work/r3_program_result/R3_5_7_program_followup_20260928_095618_UTC_9d5d4d/program_recovery.csv",
+    "source_sha256": "41e5b48f3f46694d7a8edda779c3e846bac361ed939cf6d7357bd30ece090d83",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/programs/program_coverage.csv",
+    "source": "work/r3_program_result/R3_5_7_program_followup_20260928_095618_UTC_9d5d4d/program_coverage.csv",
+    "source_sha256": "10e3eb5293fe78cb1b4dc44f5f8b8e681a557dde2d00deef9ef5177f467fd414",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/programs/signed_program_summary.csv",
+    "source": "work/r3_program_result/R3_5_7_program_followup_20260928_095618_UTC_9d5d4d/signed_program_summary.csv",
+    "source_sha256": "2d9a77e76203439eef730781683abe245f8ee05dedef1b11272ad596dae31c89",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/programs/signed_program_minus_random_summary.csv",
+    "source": "work/r3_program_result/R3_5_7_program_followup_20260928_095618_UTC_9d5d4d/signed_program_minus_random_summary.csv",
+    "source_sha256": "320c4a19e71af9d1d9c606aad3c76f48681749c42274c8fcf731ca8b07a586c6",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/programs/METHODS_AND_LIMITS.txt",
+    "source": "work/r3_program_result/R3_5_7_program_followup_20260928_095618_UTC_9d5d4d/METHODS_AND_LIMITS.txt",
+    "source_sha256": "4ad0f875508399ed3f514d47aed82b542a9ed1fadf679a4ee1f35c6d733d0eca",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/cell_types/NormalLiver_MSE_EV_comparison.csv",
+    "source": "work/r1_minor9/ev_normal_followup/NormalLiver_MSE_EV_comparison.csv",
+    "source_sha256": "3b25b83836f4a03a0362897eea102fc35538750d85d9729fbc6cc8e6aa93cdf0",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/cell_types/CancerousLiver_MSE_EV_comparison.csv",
+    "source": "work/r1_minor9/ev_audit_returned/CancerousLiver_MSE_EV_comparison.csv",
+    "source_sha256": "2465fd0384b8d72258f851daf11542d7e4af0d0c7c9ba5611b371ce5268fbcd6",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/sender_masking/Figure5_mean_SD.csv",
+    "source": "work/figure5_sd/Figure5_mean_SD.csv",
+    "source_sha256": "c5d0e0588ab99ed3affb2dbac1c930f97d9a272d401eda3c140ea9f5a69f6fb2",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/sender_masking/liver_sender_origin_random_control_repeats.csv",
+    "source": "work/liver_locator_result/Liver_locator_20260928_082359_UTC_663cde/records/spagatv2/analysis/liver_sender_origin_random_control/matched_sender_random_control_repeats.csv",
+    "source_sha256": "6b3792cd29eb1456930479ba0706968aa7aecbcd9e175742e10326d9cc4a3c60",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/liver/sender_masking/liver_non_tumor_sender_control_repeats.csv",
+    "source": "work/liver_locator_result/Liver_locator_20260928_082359_UTC_663cde/records/spagatv2/analysis/liver_non_tumor_sender_control/matched_sender_random_control_repeats.csv",
+    "source_sha256": "b6bbe3c17a07513e7b73a643348eb980f6f4ace2834365ae36f9687e3236834e",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/figure3_cohorts/Mouse_gene_PCC.csv",
+    "source": "work/r1_minor6/returned_20260929_115310_44e602/archive_Mouse_gitiii_candidate/all_genes_archived_residual_PCC.csv",
+    "source_sha256": "ba6552f147b80bc38b587e76d9c97ef983d38dfca98d688b394fae8ce619af45",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "provenance/figure3_Mouse_verification.json",
+    "source": "work/r1_minor6/returned_20260929_115310_44e602/archive_Mouse_gitiii_candidate/verification.json",
+    "source_sha256": "8fdb2335e280bbc2477d83d20a456dc4615ff6baf1dadb105c44c81b9a110a80",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/figure3_cohorts/CancerousLiver_gene_PCC.csv",
+    "source": "work/r1_minor6/returned_20260929_115310_44e602/archive_CancerousLiver/all_genes_archived_residual_PCC.csv",
+    "source_sha256": "ef765c79bd36f68ab1236c5e9a14c3fc7a5845dda2ca8ca0a8f55a77e65a5627",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "provenance/figure3_CancerousLiver_verification.json",
+    "source": "work/r1_minor6/returned_20260929_115310_44e602/archive_CancerousLiver/verification.json",
+    "source_sha256": "5a9b88a666e88fafeebe85e75d87471db23514b73b9043113311e4cc4be65a78",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "results/figure3_cohorts/NormalLiver_gene_PCC.csv",
+    "source": "work/r1_minor6/returned_normal_20260929_120337_d87529/archive_NormalLiver/all_genes_archived_residual_PCC.csv",
+    "source_sha256": "2ed003e4d18d2de2e0db8eb0bdf1a73c2b8d06b0cc513298142ae407d7aed170",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "provenance/figure3_NormalLiver_verification.json",
+    "source": "work/r1_minor6/returned_normal_20260929_120337_d87529/archive_NormalLiver/verification.json",
+    "source_sha256": "d68d74b8cea3bf08c4d5ea78c6cd99b539255cc9bd0ba5023c20df31488ed1d8",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/SEA_AD_GAT_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/results/GAT_seed456/run_config.json",
+    "source_sha256": "9026f75afda118ab3c4d2fe650acb27177fc8af798b117f1064e890cb8b29e93",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/SEA_AD_SPICE_adapted_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/results/SPICE_adapted_seed456/run_config.json",
+    "source_sha256": "5a2d3f7268bf2e1b4ab03423ed700cb9d8600ba889c19ef15a5f2cd9b0c8345a",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/SEA_AD_GITIII_official_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/results/GITIII_official_seed456/run_config.json",
+    "source_sha256": "f535bcdf540562bf35630b6916c101838ebd1c203508c5fa827974b0489fb3d6",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/SEA_AD_LightGBM_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/results/LightGBM_seed456/run_config.json",
+    "source_sha256": "9afe713bca2e4556ea2356c81b5b75668e9bb9477dff1626fe162d73418bddc6",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/Mouse_GAT_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/GAT_seed456/run_config.json",
+    "source_sha256": "2163b9e40e3053e34a4c9b9c80c3b720321d48d50628525023aefee358e8253c",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/Mouse_SPICE_adapted_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/SPICE_adapted_seed456/run_config.json",
+    "source_sha256": "0ef8b7f48746f458e2cc63643851c2ab7eb5128230f324a7e95bb7750b4140a7",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/Mouse_GITIII_official_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/GITIII_official_seed456/run_config.json",
+    "source_sha256": "ac4bf99e1a67a0c623024529bad985bcec82f002a056616ef048f143e551655d",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "configs/recorded/Mouse_LightGBM_seed456.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/results/Mouse/LightGBM_seed456/run_config.json",
+    "source_sha256": "de07c44119d2317860e0658ea6d3cfde6a368d97122d6939fe5a4c3d786c2889",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "environment/Mouse_recorded.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/multiseed_456_789_v1/environment.json",
+    "source_sha256": "885c2b9e369bf8b6b885d708e8c18df30a698e4806aef41c71b4d32aab1c4f2b",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "environment/SEA_AD_recorded.json",
+    "source": "work/r2_resources/followup/R2_resource_logs_20260928_120922_UTC_eb5c50/records/seaad_main_benchmark_v1/environment.json",
+    "source_sha256": "ecd1008ddd5941cf0b0155051e784c4503947fe17bfcf6e8ec8f7568fe3f0884",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "environment/component_ablation_full_freeze.txt",
+    "source": "work/ablation_completed_20260930/returned/environment.txt",
+    "source_sha256": "855ad8dea8f742c42f146cb8fa928ed6fbd3f1cb2dc70de8ff0dcfd7a250ffc7",
+    "note": "unchanged source copy"
+  },
+  {
+    "path": "scripts/verify_bundle.py",
+    "source": "work/r1_major7/verify_bundle.py",
+    "source_sha256": "d0197739e1171333d3c0a81048ffdb6a08877e24e759d3b5e7b12db452086af7",
+    "note": "New packaging utility; not an original training script"
+  },
+  {
+    "path": "scripts/run_benchmark.py",
+    "source": "work/r1_major7/run_benchmark.py",
+    "source_sha256": "1d53f27994d02605dc55b6a98cb04eab078ff1adedf77a0adcd1013b6d375f58",
+    "note": "Publication-scoped derivative; unused comparison switches removed, retained configurations preserved. Original source checksum identifies its source snapshot; MANIFEST.json records delivered bytes."
+  },
+  {
+    "path": "scripts/reproduce_tables.py",
+    "source": "work/r1_major7/reproduce_tables.py",
+    "source_sha256": "4db603a69e5974acf8b5e5bfb050c2cd214ff9e557a78f8b1c7d36212a4515b0",
+    "note": "New packaging utility; not an original training script"
+  },
+  {
+    "path": "scripts/collect_checkpoints.py",
+    "source": "work/r1_major7/collect_checkpoints.py",
+    "source_sha256": "2df7aa159413984d12f1d43ff2adaf0ed6c7e53cf5fe448b9d322e684b37f4cd",
+    "note": "New packaging utility; not an original training script"
+  },
+  {
+    "path": "figures/plot_FigureS2.py",
+    "source": "work/r1_major7/plot_FigureS2.py",
+    "source_sha256": "5b231a07a0bd3a037bf02b511f01e8fe3319fcaf9e445ada07e84546032e900e",
+    "note": "Portable redraw of archived ECDFs; no manuscript edits"
+  }
+]
