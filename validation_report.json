@@ -1,5 +1,5 @@
 {
-  "python_source_syntax_files": 61,
+  "python_source_syntax_files": 63,
   "supplementary_notebooks": 9,
   "notebook_code_cells_syntax": 38,
   "embedded_sources_parsed": 9,
@@ -31,7 +31,7 @@
     "donor_bootstrap_recomputed": false
   },
   "full_GPU_training_rerun": false,
-  "checkpoint_inference_rerun": false,
+  "checkpoint_inference_rerun": true,
   "real_input_loading_tested": true,
   "fresh_training_environment_installation_tested": true,
   "repository_replacement_simulation": {
@@ -44,12 +44,18 @@
   "plotting_verification": "Figure 2 and Figure S2 commands passed in the preceding replacement-package check; plotting scripts and their numerical inputs are byte-identical in this manuscript-scoped package.",
   "fresh_environment_scope": "macOS arm64 CPU; synthetic CLI training/test export and two optimizer steps on four real training receivers per dataset/configuration; original CUDA environment not reinstalled",
   "all_test_target_hashes_match_Figure2": true,
-  "original_trained_checkpoint_inference_rerun": false,
+  "original_trained_checkpoint_inference_rerun": true,
   "execution_reports": [
     "environment/synthetic_training_validation.json",
     "environment/real_input_training_validation.json",
-    "environment/lightgbm_cpu_validation.json"
+    "environment/lightgbm_cpu_validation.json",
+    "environment/checkpoint_inference_validation.json"
   ],
   "input_report": "assets/processed_data_manifest.json",
-  "download_archive_extraction_and_member_hashes": "passed with cached release archives; no network-download claim"
+  "download_archive_extraction_and_member_hashes": "passed with cached release archives; no network-download claim",
+  "original_checkpoint_inference_scope": "All six full SpaGAT brain checkpoints; complete test sets; no retraining, baseline, ablation or liver checkpoint evaluation.",
+  "checkpoint_metrics_match_archived_Figure2": true,
+  "checkpoint_downloader_cached_extraction_hashes": "passed for both archives and all six members",
+  "checkpoint_downloader_overwrite_protection": "passed",
+  "checkpoint_evaluator_existing_output_guard": "passed"
 }

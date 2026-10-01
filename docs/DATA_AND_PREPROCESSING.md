@@ -44,5 +44,5 @@ audit records. The supplied splits use that exact cell/gene/sample order.
 SHA-256 checks for every archive and member are in `assets/processed_data_manifest.json`.
 Both full test-target matrices match the archived Figure 2 hashes.
 Use `scripts/verify_data.py` to repeat the loader/target check.
-Liver inputs and trained checkpoints are not included in this data release.
+Liver inputs are not included. The six full-model SpaGAT brain checkpoints are available separately in the benchmark-checkpoints-v1 release; see README.md.
 See DATA_LICENSES.md for provider terms and attribution.

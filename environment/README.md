@@ -24,4 +24,17 @@ For the tested Python dependencies use the CPU freeze file in an isolated
 environment. On Linux/CUDA, select the appropriate PyTorch build and consult
 the original recorded versions. These checks do not establish bit-identical
 training across platforms or reproduce complete paper-training runs. The
-original trained checkpoint files are still required for inference validation.
+six original trained SpaGAT brain checkpoints were subsequently verified and
+evaluated on every test receiver; see the inference check below.
+
+## Full test inference from original trained checkpoints
+
+`checkpoint_inference_validation.json` records six complete runs: three
+seeds (123, 456, 789) on each brain dataset, with 117,257 Mouse and 54,762
+SEA-AD test receivers per seed. The same fresh macOS CPU environment
+loaded the original weights and fixed partitions without retraining.
+Checkpoint hashes and all test-target hashes match the archived records.
+PCC, MSE and zero-reference EV match the saved Figure 2 values within
+the declared cross-platform numerical tolerances. Individual differences
+and prediction hashes are reported; byte-identical predictions are not
+claimed. Baseline, component-control and liver weights were not evaluated.

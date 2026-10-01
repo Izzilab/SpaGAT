@@ -37,12 +37,45 @@ The frozen baseline runners validate the split, sample order and dimensions. GIT
 
 The command wrapper, source syntax, full real input loading, all test-target hashes, synthetic CLI training/test export, and real-input optimizer/checkpoint steps were checked locally. Full-data GPU training was not rerun for this assembly, and stochastic results are not promised to be bit-identical across hardware/software. Do not infer independent patients from liver cell-level splits or independent animals from Mouse test sections.
 
+## Full test inference from the released SpaGAT checkpoints
+
+```bash
+python scripts/download_data.py --dataset all --output-dir EXTERNAL_DATA
+python scripts/download_checkpoints.py --dataset all --output-dir EXTERNAL_DATA
+python scripts/evaluate_checkpoint.py --dataset all --seed all --data-root EXTERNAL_DATA --checkpoint-dir EXTERNAL_DATA/checkpoints --output-dir checkpoint_test --device cpu
+```
+
+The six weights belong to the full SpaGAT model in Figure 2. Use `--dataset Mouse`
+or `--dataset SEA_AD` and `--seed 123`, `456`, or `789` for a single run; use
+`--device cuda` for GPU inference. Test sizes are 117,257 Mouse receivers and
+54,762 SEA-AD receivers. No test observations are used for model selection.
+
+The evaluator verifies each checkpoint SHA-256 before loading, checks all three
+partition index lists against the saved checkpoint, and checks the complete
+test-target hash. It uses the original inference code and batch size 32. It
+exports predictions, target/index/gene order, gene-wise PCC, and a JSON validation
+record. Summary metrics use float64 postprocessing and the lower-middle median
+for even gene counts, matching the archived Figure 2 calculation. EV is
+`100 * (1 - MSE / mean(target**2))`, relative to the zero-residual reference.
+
+Absolute cross-platform tolerances are 0.0001 for median/mean PCC, 0.00001 for
+MSE, 0.0000001 for MSE0, and 0.001 percentage points for EV. They are numerical
+checks, not confidence intervals. Prediction hashes are also recorded; metric
+agreement does not imply byte-identical predictions across CPU/CUDA environments.
+The script records failures and stops if a comparison exceeds its tolerance.
+It requires a new output directory and does not overwrite previous predictions.
+
+Baseline, component-control and liver checkpoints are not provided. This
+workflow therefore checks the six SpaGAT Figure 2 results, not all methods or
+every figure in the paper. See `environment/checkpoint_inference_validation.json`
+for the actual rerun results and environment.
+
 ## Optional collection of existing author checkpoints
 After placing this bundle on a Colab runtime with Drive already mounted:
 ```bash
 python scripts/collect_checkpoints.py --output-dir /content/SpaGAT_existing_checkpoints
 ```
-This only copies six existing full SpaGAT checkpoints whose hashes are recorded. It does not collect all historical/baseline checkpoints, infer missing files, rerun experiments, or publish anything. Public download links remain empty until the author actually deposits the files.
+This only copies six existing full SpaGAT checkpoints whose hashes are recorded. It does not collect all historical/baseline checkpoints, infer missing files, rerun experiments, or publish anything. Readers should use the public download command above.
 
 ## Validate or stage a command without training
 Use `--dry-run` to print the planned command without creating a run. Use

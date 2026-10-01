@@ -1,0 +1,79 @@
+{
+  "scope": "Six original full-model SpaGAT checkpoints for Figure 2: SEA-AD and Mouse, seeds 123/456/789. Baseline, ablation, and liver checkpoints are not included.",
+  "release_url": "https://github.com/WuBoFu/SpaGAT/releases/tag/benchmark-checkpoints-v1",
+  "unpack_into": "EXTERNAL_DATA",
+  "archives": [
+    {
+      "file": "SpaGAT_SEA_AD_checkpoints.zip",
+      "bytes": 63317596,
+      "sha256": "46a64c685599951dc0d7c7ba651d7cfdab338e07de3a6bd0824f3c0177ace6b1",
+      "members": [
+        "checkpoints/SEA_AD_SpaGAT_seed123.pth",
+        "checkpoints/SEA_AD_SpaGAT_seed456.pth",
+        "checkpoints/SEA_AD_SpaGAT_seed789.pth"
+      ],
+      "public_url": "https://github.com/WuBoFu/SpaGAT/releases/download/benchmark-checkpoints-v1/SpaGAT_SEA_AD_checkpoints.zip"
+    },
+    {
+      "file": "SpaGAT_Mouse_checkpoints.zip",
+      "bytes": 71037431,
+      "sha256": "7bc9ce03d20c54767e819a90136ec58d7136fd008faf291efb86d710335806f5",
+      "members": [
+        "checkpoints/Mouse_SpaGAT_seed123.pth",
+        "checkpoints/Mouse_SpaGAT_seed456.pth",
+        "checkpoints/Mouse_SpaGAT_seed789.pth"
+      ],
+      "public_url": "https://github.com/WuBoFu/SpaGAT/releases/download/benchmark-checkpoints-v1/SpaGAT_Mouse_checkpoints.zip"
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoints/SEA_AD_SpaGAT_seed123.pth",
+      "dataset": "SEA_AD",
+      "seed": 123,
+      "bytes": 24089405,
+      "sha256": "e91438490d10c906007a18c1f0ed619b44e056940ee96b5c73f346b5afeda23b",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "checkpoints/SEA_AD_SpaGAT_seed456.pth",
+      "dataset": "SEA_AD",
+      "seed": 456,
+      "bytes": 24089405,
+      "sha256": "87063e3cc3ee303657b2e0d9be6bd062af03abb1d37ef2c84a9e764c44351c9f",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "checkpoints/SEA_AD_SpaGAT_seed789.pth",
+      "dataset": "SEA_AD",
+      "seed": 789,
+      "bytes": 24089405,
+      "sha256": "e3226224abd0c266f411b85f31b2cc083c6f9c574fbb967a304d3021dbdc1fde",
+      "group": "SEA_AD"
+    },
+    {
+      "path": "checkpoints/Mouse_SpaGAT_seed123.pth",
+      "dataset": "Mouse",
+      "seed": 123,
+      "bytes": 26613373,
+      "sha256": "bfa1235dc7579fe9a9c8c9d5e80e430a93b414b1787340bf9d1d1c0023409b6b",
+      "group": "Mouse"
+    },
+    {
+      "path": "checkpoints/Mouse_SpaGAT_seed456.pth",
+      "dataset": "Mouse",
+      "seed": 456,
+      "bytes": 26613373,
+      "sha256": "d34dc5bc9a159f2890524b4df7801d81ce61f26e0137748e5211ecbd56a89247",
+      "group": "Mouse"
+    },
+    {
+      "path": "checkpoints/Mouse_SpaGAT_seed789.pth",
+      "dataset": "Mouse",
+      "seed": 789,
+      "bytes": 26613373,
+      "sha256": "576cfcd38f687225851ec9422f1c2ab07f608bf1b39f2fda43e593cae96b3e32",
+      "group": "Mouse"
+    }
+  ]
+}

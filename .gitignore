@@ -26,3 +26,4 @@ venv/
 /asset_downloads/
 /smoke_synthetic/
 /smoke_real_inputs/
+/checkpoint_test/

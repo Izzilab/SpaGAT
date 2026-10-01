@@ -2,10 +2,10 @@ item,status,scope
 SpaGAT model/source,included,reported architecture and Table 1 controls; checkpoint-compatible aliases retained
 five-model brain benchmark,source + 30 run summaries included,verified brain inputs available as release assets
 fixed splits,included,exact index arrays; relocated paths; derived section audit validated
-environment,recorded versions plus tested macOS CPU environment,synthetic CLI and real-input execution checks; no full GPU rerun
+environment,recorded versions plus tested macOS CPU environment,synthetic CLI and real-input checks plus six full SpaGAT test inference runs; no full GPU retraining
 raw-data conversion,partial documentation,complete original conversion not recovered
-checkpoint downloads,manifest only,six recorded hashes; no checkpoint bytes or public links
-Figure 2,plot script + data included,regeneration without inference
+checkpoint downloads,public release assets,six original full-model SpaGAT brain checkpoints; archive and individual-file hashes
+Figure 2,plot script + data and full SpaGAT inference entry point included,six full-model checkpoint test runs checked; baseline inference not rerun
 Figure S2,plot script + all-gene CSVs included,archived Figure 3 cohorts
 Figures 1/3/4,complete workflow not included,no claim of regeneration
 Figure 5,numeric records included,means/SD regenerated; composite artwork not rebuilt

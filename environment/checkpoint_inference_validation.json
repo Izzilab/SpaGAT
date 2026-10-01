@@ -1,0 +1,237 @@
+{
+  "complete": true,
+  "training_performed": false,
+  "device": "cpu",
+  "python": "3.12.14",
+  "platform": "macOS-15.7.3-arm64-arm-64bit",
+  "torch": "2.14.1",
+  "numpy": "2.5.3",
+  "batch_size": 32,
+  "absolute_tolerances": {
+    "median_gene_pcc": 0.0001,
+    "mean_gene_pcc": 0.0001,
+    "mse": 1e-05,
+    "mse_zero": 1e-07,
+    "ev_zero_percent": 0.001
+  },
+  "scope": "Full test inference from original released SpaGAT checkpoints; no baseline or liver inference.",
+  "runs": [
+    {
+      "dataset": "Mouse",
+      "seed": 123,
+      "checkpoint_sha256": "bfa1235dc7579fe9a9c8c9d5e80e430a93b414b1787340bf9d1d1c0023409b6b",
+      "best_epoch": 6,
+      "n_cells": 117257,
+      "n_genes": 254,
+      "metrics": {
+        "median_gene_pcc": 0.24934929021824273,
+        "mean_gene_pcc": 0.2532562935594141,
+        "mse": 0.15395434508781158,
+        "mse_zero": 0.17663703124852556,
+        "ev_zero_percent": 12.841410433806367
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.2493492914990608,
+        "mean_gene_pcc": 0.2532562978111055,
+        "mse": 0.1539543447224083,
+        "mse_zero": 0.1766370312485262,
+        "ev_zero_percent": 12.84141064067346
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 1.2808180627210675e-09,
+        "mean_gene_pcc": 4.2516913878465346e-09,
+        "mse": 3.654032909583549e-10,
+        "mse_zero": 6.38378239159465e-16,
+        "ev_zero_percent": 2.0686709412132132e-07
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "c155f65414ed30c2a91fe204acb8494ea5cc4372b93c536dc9fdaf02d61529ad",
+      "archived_prediction_sha256_float32": "987f81a334998b12fc55ccd991c55aed91649e104436484a83e8f2fa374cb1be",
+      "prediction_bytes_identical": false,
+      "seconds": 387.16213004197925
+    },
+    {
+      "dataset": "Mouse",
+      "seed": 456,
+      "checkpoint_sha256": "d34dc5bc9a159f2890524b4df7801d81ce61f26e0137748e5211ecbd56a89247",
+      "best_epoch": 8,
+      "n_cells": 117257,
+      "n_genes": 254,
+      "metrics": {
+        "median_gene_pcc": 0.25154438540250385,
+        "mean_gene_pcc": 0.25849966183208783,
+        "mse": 0.15328863866606204,
+        "mse_zero": 0.17663703124852556,
+        "ev_zero_percent": 13.218288609941986
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.2515443908005176,
+        "mean_gene_pcc": 0.2584996630001875,
+        "mse": 0.1532886383382674,
+        "mse_zero": 0.1766370312485262,
+        "ev_zero_percent": 13.21828879551754
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 5.398013758206588e-09,
+        "mean_gene_pcc": 1.168099672543832e-09,
+        "mse": 3.277946525326314e-10,
+        "mse_zero": 6.38378239159465e-16,
+        "ev_zero_percent": 1.8557555314657748e-07
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "be42353ebd1a9eb8d614f224b4e9bce5726a8e6215cb9bfbd3e3d5446ba230d7",
+      "archived_prediction_sha256_float32": "5bc455abbd45139c9be896acbd1689f2fce667c3418069547baacf52957ecf9e",
+      "prediction_bytes_identical": false,
+      "seconds": 489.6004902499262
+    },
+    {
+      "dataset": "Mouse",
+      "seed": 789,
+      "checkpoint_sha256": "576cfcd38f687225851ec9422f1c2ab07f608bf1b39f2fda43e593cae96b3e32",
+      "best_epoch": 8,
+      "n_cells": 117257,
+      "n_genes": 254,
+      "metrics": {
+        "median_gene_pcc": 0.24820753021039213,
+        "mean_gene_pcc": 0.2569845716463231,
+        "mse": 0.15336970186350032,
+        "mse_zero": 0.17663703124852556,
+        "ev_zero_percent": 13.172396082839766
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.2482075263435159,
+        "mean_gene_pcc": 0.2569845713852594,
+        "mse": 0.1533697015784885,
+        "mse_zero": 0.1766370312485262,
+        "ev_zero_percent": 13.172396244194612
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 3.8668762358806674e-09,
+        "mean_gene_pcc": 2.610637261923898e-10,
+        "mse": 2.850118197006424e-10,
+        "mse_zero": 6.38378239159465e-16,
+        "ev_zero_percent": 1.6135484592894045e-07
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "020e53bc1d45232be8eac049babd96e4b8bd9a33e5a40bd198ef309e8fb1dd38",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "674928e860deea8d3640e5a0fc8a70b3e253b5bd1a4d984fba6ff13eac262031",
+      "archived_prediction_sha256_float32": "0894fd361d1a298bb6289ed97681a9745d1cbb9a4d8c63e3293983dd6d0dec4e",
+      "prediction_bytes_identical": false,
+      "seconds": 432.95106333401054
+    },
+    {
+      "dataset": "SEA_AD",
+      "seed": 123,
+      "checkpoint_sha256": "e91438490d10c906007a18c1f0ed619b44e056940ee96b5c73f346b5afeda23b",
+      "best_epoch": 7,
+      "n_cells": 54762,
+      "n_genes": 140,
+      "metrics": {
+        "median_gene_pcc": 0.3237167536590896,
+        "mean_gene_pcc": 0.33061803015639124,
+        "mse": 0.2928351590125778,
+        "mse_zero": 0.34525770223939817,
+        "ev_zero_percent": 15.18359847928059
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.3237167631689732,
+        "mean_gene_pcc": 0.3306180320590398,
+        "mse": 0.2928351588134761,
+        "mse_zero": 0.3452577022394037,
+        "ev_zero_percent": 15.183598536949514
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 9.509883602820679e-09,
+        "mean_gene_pcc": 1.902648538720797e-09,
+        "mse": 1.9910167958769875e-10,
+        "mse_zero": 5.551115123125783e-15,
+        "ev_zero_percent": 5.766892385850042e-08
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "05a25ab3f38eb903580c14daaa9a317bdbc4d73fa0614f378335f5bfa913a6cb",
+      "archived_prediction_sha256_float32": "0f01da16dd33ff71822a1899a58cb656437e4ed9b55725b8d8cd4bc12c13dc77",
+      "prediction_bytes_identical": false,
+      "seconds": 222.89630433311686
+    },
+    {
+      "dataset": "SEA_AD",
+      "seed": 456,
+      "checkpoint_sha256": "87063e3cc3ee303657b2e0d9be6bd062af03abb1d37ef2c84a9e764c44351c9f",
+      "best_epoch": 9,
+      "n_cells": 54762,
+      "n_genes": 140,
+      "metrics": {
+        "median_gene_pcc": 0.328823693561211,
+        "mean_gene_pcc": 0.3318783448527926,
+        "mse": 0.2927761234333154,
+        "mse_zero": 0.34525770223939817,
+        "ev_zero_percent": 15.200697469072711
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.3288237038425849,
+        "mean_gene_pcc": 0.3318783444058791,
+        "mse": 0.2927761235870206,
+        "mse_zero": 0.3452577022394037,
+        "ev_zero_percent": 15.20069742455508
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 1.0281373918896719e-08,
+        "mean_gene_pcc": 4.4691350620240655e-10,
+        "mse": 1.5370521522228842e-10,
+        "mse_zero": 5.551115123125783e-15,
+        "ev_zero_percent": 4.451763047086388e-08
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "ee4ae525717d2c5084d50ada49eb940684982c7cdb21b164c5991763bd8e86b2",
+      "archived_prediction_sha256_float32": "160da522ae377789f3759f043953661fffb8faed9dbd0c245abb746a8215c253",
+      "prediction_bytes_identical": false,
+      "seconds": 225.80248149996623
+    },
+    {
+      "dataset": "SEA_AD",
+      "seed": 789,
+      "checkpoint_sha256": "e3226224abd0c266f411b85f31b2cc083c6f9c574fbb967a304d3021dbdc1fde",
+      "best_epoch": 8,
+      "n_cells": 54762,
+      "n_genes": 140,
+      "metrics": {
+        "median_gene_pcc": 0.3217454904517236,
+        "mean_gene_pcc": 0.3294764042889198,
+        "mse": 0.2931513607337593,
+        "mse_zero": 0.34525770223939817,
+        "ev_zero_percent": 15.09201421653118
+      },
+      "reference_metrics": {
+        "median_gene_pcc": 0.3217454885992327,
+        "mean_gene_pcc": 0.3294764030767559,
+        "mse": 0.2931513615335881,
+        "mse_zero": 0.3452577022394037,
+        "ev_zero_percent": 15.09201398487115
+      },
+      "absolute_differences": {
+        "median_gene_pcc": 1.8524909384254329e-09,
+        "mean_gene_pcc": 1.2121638692796921e-09,
+        "mse": 7.998288142907484e-10,
+        "mse_zero": 5.551115123125783e-15,
+        "ev_zero_percent": 2.3166002982577538e-07
+      },
+      "metrics_match_within_tolerance": true,
+      "test_target_sha256_float32": "58613a068b692e8621b8c3efaa93939c34b83abdd7aa060a74f0d0d68de7083e",
+      "all_test_targets_match": true,
+      "prediction_sha256_float32": "a3efb49a4cb62b19687f1fc61937798ad1b884af0f5f234478ce6c46985d8478",
+      "archived_prediction_sha256_float32": "7367c4b554cdf02756d9b068e0b38326e47d3fe6a4e6623daa024ae93256def4",
+      "prediction_bytes_identical": false,
+      "seconds": 224.89095237501897
+    }
+  ],
+  "orchestration": "Mouse and SEA-AD evaluated in separate concurrent CLI queues. The initial all-dataset queue was stopped after all three Mouse exports completed, to avoid repeating the separately evaluated SEA-AD runs."
+}

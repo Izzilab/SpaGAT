@@ -15,3 +15,8 @@
 This replaces the working files of WuBoFu/SpaGAT at inspected commit
 38c27adc029715800e735999469cd6c15e98c076. Existing Git history is preserved.
 The public component package covers the configurations reported in revised Table 1.
+
+- Publish verified model-ready SEA-AD/Mouse inputs and six original full-model
+  SpaGAT checkpoints in separate GitHub Releases. Add checksum-verifying
+  downloaders and full held-out inference without retraining. Record all
+  six checkpoint runs and their numerical agreement with Figure 2.

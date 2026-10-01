@@ -26,15 +26,20 @@ def main():
     a = p.parse_args()
     m = json.loads((ROOT/'assets/processed_data_manifest.json').read_text())
     wanted = ['Mouse', 'SEA_AD'] if a.dataset == 'all' else [a.dataset]
+    download_manifest(m, wanted, a.output_dir, a.cache_dir)
+
+
+def download_manifest(m, wanted, output_dir, cache_dir):
+    """Verify release archives and members without overwriting different files."""
     expected = {r['path']: r for r in m['files'] if r['group'] in wanted}
     archives = [r for r in m['archives'] if any(name in expected for name in r['members'])]
     if not archives or any(not r['public_url'].startswith('https://github.com/WuBoFu/SpaGAT/releases/download/') for r in archives):
         raise RuntimeError('This checkout has no published download URLs; update to the published release first.')
-    a.cache_dir.mkdir(parents=True, exist_ok=True)
-    root = a.output_dir.resolve()
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    root = output_dir.resolve()
     root.mkdir(parents=True, exist_ok=True)
     for asset in archives:
-        path = a.cache_dir/asset['file']
+        path = cache_dir/asset['file']
         if not (path.is_file() and sha(path) == asset['sha256']):
             if path.exists():
                 raise ValueError(f'Existing archive checksum mismatch: {path}; retain it for inspection and use a new cache directory.')
